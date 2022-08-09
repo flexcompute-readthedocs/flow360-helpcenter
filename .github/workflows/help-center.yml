@@ -1,0 +1,97 @@
+name: help center build&deploy
+on:
+    push:
+      branches:
+        - "main"
+      tags:
+        - "*"
+        
+    workflow_dispatch:
+        inputs:
+            env:
+                description: environment
+                default: dev
+                required: true
+jobs:
+    help-center-build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Dump GitHub context
+              env:
+                GITHUB_CONTEXT: ${{ toJson(github) }}
+              run: echo "$GITHUB_CONTEXT"
+
+            -   name: setup env if it is trigger by push 
+                if: ${{ github.event_name == 'push' }}
+                run: |
+                  echo "ENVIRONMENT=dev" >> $GITHUB_ENV
+
+            -   name:  setup env to prod if tag is not empty
+                if: ${{ github.ref_type == 'tag' }}
+                run: |
+                  echo "ENVIRONMENT=prod" >> $GITHUB_ENV
+
+            -   name: setup env if input env is not empty
+                if: ${{ github.event.inputs.env }}
+                run: |
+                  echo "ENVIRONMENT=${{ github.event.inputs.env }}" >> $GITHUB_ENV
+
+            -   run: |
+                    echo "::notice ::environment: ${{ env.ENVIRONMENT }}"
+
+
+            -   name: get registry & region by env
+                run: |
+                    case ${{ env.ENVIRONMENT }} in
+                        dev)
+                        echo "dev"
+                        echo "BUCKET=flow360-help-center-dev" >> $GITHUB_ENV
+                        echo "DIST_ID=EDDV9QC0FFXXM" >> $GITHUB_ENV
+                        ;;
+                        prod)
+                        echo "BUCKET=flow360-help-center-prod" >> $GITHUB_ENV
+                        echo "DIST_ID=EQJGZRMR89VA7" >> $GITHUB_ENV
+                        ;;
+                    esac
+
+            -   name: Checkout without tag
+                if: ${{ !github.event.release.tag_name }}
+                uses: actions/checkout@master
+            
+            -   name: Checkout with tag
+                uses: actions/checkout@master
+                if: ${{ github.event.release.tag_name }}
+                with:
+                  ref: ${{ github.event.release.tag_name }}
+
+
+            -   name: setup-node
+                uses: actions/setup-node@v3
+                with:
+                    node-version: 16
+
+            -   name: install yarn
+                run:
+                    npm install -g yarn
+
+            -   name: build
+                run: |
+                    yarn install
+                    yarn run docs:build
+
+            -   name: Configure AWS credentials
+                uses: aws-actions/configure-aws-credentials@v1
+                with:
+                    aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+                    aws-secret-access-key: ${{ secrets.AWS_ACCESS_SECRET }}
+                    aws-region: us-east-1
+
+            -   uses: reggionick/s3-deploy@v3
+                with:
+                    invalidation: '/*'
+                    bucket: ${{ env.BUCKET }}
+                    bucket-region: us-east-1
+                    folder: docs/.vuepress/dist
+                    dist-id: ${{ env.DIST_ID }}
+                    delete-removed: true
+                    private: true
