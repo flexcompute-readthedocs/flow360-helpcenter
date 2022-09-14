@@ -64,7 +64,9 @@ Subsonic outflow boundary condition, enforced through static pressure ratio. Thi
 
 ## SubsonicOutflowMach
   
-Equivalent static pressure outflow boundary condition set via a specified subsonic Mach number.
+Equivalent static pressure outflow boundary condition set via a specified subsonic Mach number:
+
+$$ p / p_t = (1 + \frac{\gamma - 1}{2} Ma^2)^{-\gamma/(\gamma - 1)}$$
 
 ### parameters:
 
