@@ -64,9 +64,11 @@ Subsonic outflow boundary condition, enforced through static pressure ratio. Thi
 
 ## SubsonicOutflowMach
   
-Equivalent static pressure outflow boundary condition set via a specified subsonic Mach number:
+Equivalent static pressure outflow boundary condition set via a specified subsonic Mach number. The flow is assumed to be adiabatic and isentropic. The static pressure, $p$, is updated according to:
 
-$$ p / p_t = (1 + \frac{\gamma - 1}{2} Ma^2)^{-\gamma/(\gamma - 1)}$$
+$$ p = p_{t,b}\left(1 + \frac{\gamma - 1}{2} Ma^2\right)^{-\gamma/(\gamma - 1)}$$
+where $p_{t,b}$ is total pressure for boundary point calculated by using actual local Mach number for this point.
+
 
 ### parameters:
 
@@ -96,7 +98,7 @@ Outflow boundary condition via mass-flow-rate out of the simulation domain throu
     - nondimensionalization used: the freestream density, the freestream speed of sound, and the mesh length unit: $\rho_{\infty}*C_{\infty}*L_{gridUnit}^2$
 
   
-## MassInflow: 
+## MassInflow
   
 Inflow boundary condition via mass-flow-rate into the simulation domain through this boundary.
 
