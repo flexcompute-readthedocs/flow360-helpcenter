@@ -9,7 +9,7 @@ Content:
         -   [Geometry](/04.case/01.step_by_step/01.geometry.html)
         -   [Freestream](/04.case/01.step_by_step/02.freestream.html)
         -   [Boundaries](/04.case/01.step_by_step/03.boundaries.html)
-        -   [Sliding Interfaces](/04.case/01.step_by_step/04.slidingInterfaces.html)
+        -   [Rotational Models](/04.case/01.step_by_step/04.rotationalModels.html)
         -   [Time Stepping](/04.case/01.step_by_step/05.timeStepping.html)
         -   [Navier Stokes Solver](/04.case/01.step_by_step/06.NavierStokesSolver.html)
         -   [Turbulence Model Solver](/04.case/01.step_by_step/07.turbulenceModelSolver.html)
