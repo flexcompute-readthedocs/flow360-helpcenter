@@ -1,6 +1,8 @@
 # Flow360 GUI Documentation
 
 Content:
+-   [Surface Mesh](/02.surface/01.createSurfaceMesh.html)
+    -  [Create Surface Mesh](/02.surface/01.createSurfaceMesh.html)
 -   [Volume Mesh](/03.volume/01.uploadVolumeMesh.html)
     -  [Upload Volume Mesh](/03.volume/01.uploadVolumeMesh.html)
     -  [Create Volume Mesh](/03.volume/02.createVolumeMesh.html)
