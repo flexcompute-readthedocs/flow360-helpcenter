@@ -9,6 +9,4 @@ Entities are the basic components used for simulation setup in Flow360.
 - [Volumes](./03.volumes.md)
 - [Points](./04.points.md)
 - [Slices](./05.slices.md)
-- [Derived](./06.derived.md) 
-
-some changes
+- [Derived](./06.derived.md)
