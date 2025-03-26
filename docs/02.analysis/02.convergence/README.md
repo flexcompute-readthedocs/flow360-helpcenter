@@ -1,3 +1,148 @@
-# Convergence
+# Convergence Monitoring in Flow360
 
-This document describes how to monitor and analyze convergence in Flow360 simulations. 
+*This document describes how to monitor and analyze convergence in Flow360 simulations through the graphical user interface.*
+
+---
+
+### 📋 **Available Plots**
+
+| **Plot Type** | **Description** | **Purpose** |
+|---------------|-----------------|-------------|
+| `Nonlinear Residuals` | Displays absolute or relative residuals for continuity, momentum, energy equations | Primary convergence indicator |
+| `Linear Residuals` | Shows solver iteration convergence for each equation | Solver performance analysis |
+| `CFL` | Displays Courant-Friedrichs-Lewy number evolution | Stability monitoring |
+| `MinMax` | Shows minimum/maximum values of flow variables | Solution bounds monitoring |
+
+---
+
+### 🔍 **Detailed Descriptions**
+
+Each convergence plot provides specific insights into the simulation:
+
+#### **Nonlinear Residuals**
+  - View Options: Absolute or Relative scaling
+  - Variables tracked:
+    - `cont`: Continuity equation
+    - `momx/y/z`: Momentum equations
+    - `enrg`: Energy equation
+    - `nuhat`: Turbulence model - modified viscosity (SA)
+    - `k`: Turbulence model - turbulence kinetic energy (SST)
+    - `omega`: Turbulence model - specific dissipation rate (SST)
+  - Logarithmic scale display
+
+#### **Linear Residuals**
+  - Variables tracked:
+    - `cont`: Continuity equation
+    - `momx/y/z`: Momentum equations
+    - `enrg`: Energy equation
+    - `nuhat`: Turbulence model - modified viscosity (SA)
+    - `k`: Turbulence model - turbulence kinetic energy (SST)
+    - `omega`: Turbulence model - specific dissipation rate (SST)
+  - Logarithmic scale display
+
+#### **CFL Evolution**
+  - Variables tracked:
+    - `NavierStokes_cfl`: Main flow equations
+    - `SpallartAllmaras_cfl`: Turbulence (when applicable)
+  - Linear scale display
+
+#### **MinMax Values**
+
+  - Variables tracked:
+    - min density
+    - min pressure
+    - max velocity magnitude
+    - min/max modified viscosity (SA)
+    - min/max turbulence kinetic energy (SST)
+    - min/max specific dissipation rate (SST)
+  - Logarithmic scale display
+  - Obtain more information in a tabular form by clicking on a point in the plot
+
+### Interactive Features
+
+- Toggle visibility of individual variables
+- Select time range using the bottom timeline
+- Export plots as images
+- Hover for detailed values
+
+---
+
+### 📊 **Example Convergence Patterns**
+
+1. **Good Convergence:**
+   - Monotonic residual decrease
+   - Smooth CFL ramping
+   - Stable MinMax values
+   - Clear asymptotic behavior
+
+2. **Poor Convergence:**
+   - Oscillatory residuals
+   - Erratic CFL behavior
+   - Diverging MinMax values
+   - Stalled residual reduction
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 💡 Tips for Convergence Analysis</h3></summary>
+
+- Monitor nonlinear residuals dropping at least 3-4 orders of magnitude
+- Check for oscillatory behavior in residuals that might indicate instability
+- Verify CFL number stability and ramping behavior
+- Examine MinMax values for physical reasonableness
+- Use logarithmic scale for better visualization of residual drops
+
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Advanced Monitoring Tips</h4></summary>
+
+- Cross-reference force coefficients with residual convergence
+- Look for plateauing of residuals indicating steady-state
+- Check for correlation between CFL changes and convergence behavior
+- Monitor individual equation components for potential source terms
+
+</details>
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> ❓ Frequently Asked Questions</h3></summary>
+
+- **What indicates good convergence?**
+  > A drop of 3-4 orders of magnitude in residuals, stable force coefficients, and physically reasonable MinMax values typically indicate good convergence.
+
+- **Why are my residuals oscillating?**
+  > Oscillations can indicate physical unsteadiness, numerical instability, or too aggressive CFL numbers. Try reducing CFL or switching to time-accurate simulation if physical unsteadiness is expected.
+
+- **What should I do if convergence stalls?**
+  > Check CFL numbers, examine boundary conditions, verify mesh quality, and consider solution initialization. Reducing CFL or implementing solution limiting might help.
+
+- **How do I interpret the linear residuals plot?**
+  > The linear residuals show solver performance within each physical timestep. Steeper slopes indicate better convergence rates, while flattening might suggest preconditioning issues.
+
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 🐍 Python Example Usage</h3></summary>
+
+Below is a Python code example showing how to access residuals:
+
+```python
+import flow360 as fl
+
+case = fl.Case(id="case-XXXXX") # provide a valid case id
+case.wait() # wait for the case to finish running
+results = case.results
+
+# Non-linear residuals
+nonlinear_residuals = results.nonlinear_residuals
+print(nonlinear_residuals)
+
+# CFL
+cfl = results.cfl
+print(cfl)
+```
+
+</details> 

@@ -1,3 +1,238 @@
 # Monitor
 
-This document describes how to set up and use monitors in Flow360 simulations. 
+This document describes how to set up and use monitors in Flow360 simulations. Monitors allow you to track flow field variables at specific locations during the simulation, providing real-time feedback on how your solution is developing.
+
+## 📋 **Available Options**
+
+| **Option** | **Description** |
+|------------|-----------------|
+| `Total Forces` | Integrated forces and moments over all surfaces |
+| `Forces by Surface` | Force and moment distribution over individual surfaces |
+| `Heat Transfer by Surface` | Heat transfer distribution over surfaces |
+| `BET Forces and Moments` | Blade Element Theory forces and moments for rotors |
+| `BET Sectional Loading` | Blade Element Theory radial distribution of forces and moments for rotors |
+| `Force Distribution (Y)` | Force distribution along the y-axis |
+| `Force Distribution (X)` | Force distribution along the x-axis |
+| `Actuator Disk` | Forces and moments for actuator disk models |
+
+## 🔍 **Detailed Descriptions**
+
+### Total Forces
+
+Total Forces monitor calculates the integrated forces and moments over all surfaces in the computational domain.
+
+#### Axis settings
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **X-axis** | pseudo step (for steady state simulation)<br>physical step (for unsteady simulation) |
+| **Y-axis** | CL<br>CD<br>CFx<br>CFy<br>CFz<br>CMx<br>CMy<br>CMz<br>CLPressure<br>CDPressure<br>CFxPressure<br>CFyPressure<br>CFzPressure<br>CMxPressure<br>CMyPressure<br>CMzPressure<br>CLSkinFriction<br>CDSkinFriction<br>CFxSkinFriction<br>CFySkinFriction<br>CFzSkinFriction<br>CMxSkinFriction<br>CMySkinFriction<br>CMzSkinFriction |
+
+>**Notes:** 
+  - Provides overall aerodynamic performance metrics
+  - Calculates lift, drag, and moment coefficients
+  - Available for both steady and unsteady simulations
+
+### Forces by Surface
+
+Forces by Surface monitor provides detailed force and moment distribution over individual surfaces.
+
+#### Axis settings
+  
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **X-axis** | pseudo step (for steady state simulation)<br>physical step (for unsteady simulation) |
+| **Y-axis** | CL<br>CD<br>CFx<br>CFy<br>CFz<br>CMx<br>CMy<br>CMz<br>CLPressure<br>CDPressure<br>CFxPressure<br>CFyPressure<br>CFzPressure<br>CMxPressure<br>CMyPressure<br>CMzPressure<br>CLSkinFriction<br>CDSkinFriction<br>CFxSkinFriction<br>CFySkinFriction<br>CFzSkinFriction<br>CMxSkinFriction<br>CMySkinFriction<br>CMzSkinFriction |
+| **Series** | Available wall-type surfaces |
+
+>**Notes:**
+  - Useful for analyzing contribution of different components
+  - Provides local force and moment coefficients
+  - Supports both steady and unsteady simulations
+
+### Heat Transfer by Surface
+
+Heat Transfer by Surface monitor calculates heat transfer distribution over surfaces.
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **X-axis** | pseudo step (for steady state simulation)<br>physical step (for unsteady simulation) |
+| **Y-axis** | HeatTransferRate |
+| **Series** | Available wall-type surfaces |
+
+>**Notes:**
+  - Provides local heat flux and heat transfer coefficients
+  - Useful for thermal analysis
+  - Available for both steady and unsteady simulations
+
+### BET (Blade Element Theory) Analysis
+
+BET analysis provides two types of monitors for rotor analysis:
+
+#### Forces and Moments
+- Calculates forces and moments for each blade element
+- Provides detailed rotor performance metrics
+- Available for both steady and unsteady simulations
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **Disk** | Available BET disks |
+| **X-axis** | pseudo step (for steady state simulation)<br>physical step (for unsteady simulation) |
+| **Y-axis** | Force_x<br>Force_y<br>Force_z<br>Moment_x<br>Moment_y<br>Moment_z |
+
+#### Sectional Loading
+- Shows radial distribution of forces and moments
+- Useful for analyzing blade loading
+- Provides insight into rotor performance across the span
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **Disk** | Available BET Disks |
+| **X-axis** | radius |
+| **Y-axis** | ThrustCoeff<br>TorqueCoeff |
+| **Series** | Blades available for selected Disk |
+
+### Force Distribution
+
+Force Distribution monitors provide spanwise and chordwise force distributions:
+
+#### Y-Direction Distribution
+- Shows force distribution along the y-axis
+- Useful for analyzing spanwise loading
+- Provides sectional force coefficients
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **X-axis** | Y |
+| **Y-axis** | CMy_per_span<br>CFx_per_span<br>CFz_per_span |
+| **Series** | Available wall-type surfaces |
+
+#### X-Direction Distribution
+- Shows force distribution along the x-axis
+- Useful for analyzing chordwise loading
+- Provides sectional force coefficients
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **X-axis** | X |
+| **Y-axis** | CD_per_length<br>Cumulative_CD_Curve |
+| **Series** | Available wall-type surfaces |
+
+### Actuator Disk
+
+Actuator Disk monitor calculates forces and moments for actuator disk models.
+
+| **Axis** | **Available Values** |
+|----------|----------------------|
+| **X-axis** | pseudo step (for steady state simulation)<br>physical step (for unsteady simulation) |
+| **Y-axis** | Power<br>Force<br>Moment |
+| **Series** | Available actuator disks |
+
+>**Notes:**
+  - Provides integrated forces and moments
+  - Useful for simplified rotor modeling
+  - Available for both steady and unsteady simulations
+
+## Available Output Fields
+
+The following table lists all available output fields that can be monitored in Flow360, along with their descriptions and units:
+
+| **Output** | **Description** |
+|------------|-----------------|
+| **Force Monitors** |
+| CD | Drag coefficient (force parallel to freestream direction) |
+| CL | Lift coefficient (force perpendicular to freestream direction) |
+| CS | Side force coefficient (force perpendicular to lift and drag) |
+| CMx | Rolling moment coefficient (moment about x-axis) |
+| CMy | Pitching moment coefficient (moment about y-axis) |
+| CMz | Yawing moment coefficient (moment about z-axis) |
+| CFx | Force coefficient in x-direction (body-fixed coordinate system) |
+| CFy | Force coefficient in y-direction (body-fixed coordinate system) |
+| CFz | Force coefficient in z-direction (body-fixed coordinate system) |
+| **Heat Transfer Monitors** |
+| HeatTransferRate | Heat flux through surface |
+| **BET Analysis** |
+| ThrustCoeff | Thrust coefficient (normalized axial force on rotor) |
+| TorqueCoeff | Torque coefficient (normalized moment about rotation axis) |
+| **Force Distribution** |
+| CMy_per_span | Sectional pitching moment coefficient per unit span |
+| CFx_per_span | Sectional force coefficient in x-direction per unit span |
+| CFz_per_span | Sectional force coefficient in z-direction per unit span |
+| CD_per_length | Sectional drag coefficient per unit length |
+| Cumulative_CD_Curve | Integrated drag coefficient from leading edge to current position |
+| **Actuator Disk** |
+| Power | Power generated/consumed by actuator disk |
+| Force | Force vector generated by actuator disk |
+| Moment | Moment vector generated by actuator disk |
+
+These outputs are dimensionless in the case of coefficients, while others use our own unit system. To learn more about non-dimensional outputs, refer to [documentation](https://docs.flexcompute.com/projects/flow360/en/beta-v2.0/knowledgeBase/NonDimensionalization/NonDimOutputs/NonDimOutputs.html).
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 💡 Tips</h3></summary>
+
+- Use force monitors to track convergence of aerodynamic coefficients
+- Monitor heat transfer for thermal analysis and cooling system design
+- BET analysis provides detailed insight into rotor performance
+- Force distribution monitors help identify critical loading regions
+- Actuator disk monitors are useful for simplified rotor modeling
+
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Best Practices for Force Analysis</h4></summary>
+
+- Monitor both total and component-specific forces
+- Use force distribution monitors to identify critical regions
+- Monitor forces at key operating conditions
+- Compare results with experimental data when available
+
+</details>
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> ❓ Frequently Asked Questions</h3></summary>
+
+- **What is the difference between Total Forces and Forces by Surface?**  
+  > Total Forces provides overall aerodynamic performance metrics, while Forces by Surface gives detailed distribution over individual components.
+
+- **How do I interpret BET analysis results?**  
+  > BET analysis provides both integrated forces/moments and sectional loading, helping understand rotor performance at both global and local scales.
+
+- **What monitors should I use for thermal analysis?**  
+  > Use Heat Transfer by Surface monitor to track heat flux and heat transfer coefficients over surfaces.
+
+- **How do I analyze force distributions?**  
+  > Use X and Y direction force distribution monitors to understand spanwise and chordwise loading patterns.
+
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 🐍 Python Example Usage</h3></summary>
+
+Below is a Python code example showing how to access force monitors:
+
+```python
+import flow360 as fl
+
+case = fl.Case(id="case-XXXXX") # provide a valid case id
+case.wait() # wait for the case to finish running
+results = case.results
+
+# Force monitor
+total_forces = results.total_forces
+print(total_forces)
+
+# Surface force monitor
+surface_forces = results.surface_forces
+print(surface_forces)
+
+# BET monitor
+bet_forces = results.bet_forces
+print(bet_forces)
+```
+
+</details> 
