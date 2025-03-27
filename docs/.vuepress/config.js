@@ -3,6 +3,7 @@ const getConfig = require("vuepress-bar");
 let { sidebar } = getConfig({
 	addReadMeToFirstGroup: false,
 	mixDirectoriesAndFilesAlphabetically: false,
+	maxLevel: 3,
 });
 
 module.exports = {
