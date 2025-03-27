@@ -6,12 +6,12 @@ This document provides an overview of mesh refinement capabilities in Flow360. R
 
 | **Type** | **Description** | **Applicable To** | **Documentation** |
 |----------|----------------|------------------|------------------|
-| Surface Edge Refinement | Controls mesh resolution near edges | Edges | [Details](03.1.surface-edge-refinement.md) |
-| Surface Refinement | Controls surface mesh cell size | Surfaces | [Details](03.2.surface-refinement.md) |
-| Boundary Layer Refinement | Creates prismatic layers near walls | Surfaces | [Details](03.3.boundary-layer-refinement.md) |
-| Passive Spacing | Controls mesh behavior without direct refinement | Surfaces | [Details](03.4.passive-spacing.md) |
-| Uniform Refinement | Creates uniform mesh spacing in a region | Boxes and cylinders | [Details](03.5.uniform-refinement.md) |
-| Axisymmetric Refinement | Creates structured-like mesh with cylindrical bias | Cylinders | [Details](03.6.axisymmetric-refinement.md) |
+| Surface Edge Refinement | Controls mesh resolution near edges | Edges | [Details](./01.surface-edge-refinement.md) |
+| Surface Refinement | Controls surface mesh cell size | Surfaces | [Details](./02.surface-refinement.md) |
+| Boundary Layer Refinement | Creates prismatic layers near walls | Surfaces | [Details](./03.boundary-layer-refinement.md) |
+| Passive Spacing | Controls mesh behavior without direct refinement | Surfaces | [Details](./04.passive-spacing.md) |
+| Uniform Refinement | Creates uniform mesh spacing in a region | Boxes and cylinders | [Details](./05.uniform-refinement.md) |
+| Axisymmetric Refinement | Creates structured-like mesh with cylindrical bias | Cylinders | [Details](./06.axisymmetric-refinement.md) |
 
 ## 🔍 General Guidelines
 
