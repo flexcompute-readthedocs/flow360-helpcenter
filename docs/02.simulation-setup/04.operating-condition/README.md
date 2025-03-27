@@ -100,7 +100,8 @@ Optional reference Mach number used for calculating force and moment coefficient
 
 ---
 
-### 💡 **Tips**
+<details>
+<summary><h3 style="display:inline-block"> 💡 Tips</h3></summary>
 
 - For steady hover simulations, set freestream velocity to zero and provide a reference velocity.
 - Use standard atmosphere for simulations that need realistic atmospheric conditions.
@@ -108,9 +109,21 @@ Optional reference Mach number used for calculating force and moment coefficient
 - For low-speed simulations (M < 0.3), incompressible formulations may be more efficient.
 - Reynolds number in the simulation is calculated using the mesh unit length, not necessarily a physical reference length.
 
----
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Advanced Mach and Reynolds Number Considerations</h4></summary>
 
-### ❓ **Frequently Asked Questions**
+- For transonic flows (0.8 < M < 1.2), use finer meshes near shock regions to capture discontinuities.
+- When matching experimental data, ensure you're using the same reference values for non-dimensionalization.
+- Remember that the Reynolds number affects boundary layer thickness—higher Reynolds numbers result in thinner boundary layers requiring finer near-wall mesh resolution.
+- For multi-component simulations, consistent reference values should be used across all components.
+- When using Standard Atmosphere, be aware that density decreases exponentially with altitude, which affects Reynolds number significantly.
+
+</details>
+</details>
+
+---
+<details>
+<summary><h3 style="display:inline-block"> ❓ Frequently Asked Questions</h3></summary>
 
 - **What is the difference between velocity magnitude and reference velocity?**  
   > Velocity magnitude defines the actual freestream flow speed, while reference velocity is used for calculating non-dimensional coefficients. For most cases, they are the same, but for hover or special cases, you might want different values.
@@ -134,3 +147,84 @@ Optional reference Mach number used for calculating force and moment coefficient
 
 - **Can I specify a different material other than Air?**  
   > In the GUI, only Air is available. For custom materials, you need to use the Python API. 
+
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 🐍 Python Example Usage</h3></summary>
+
+Below is a Python code example showing how to configure operating conditions using the Flow360 Python API:
+
+```python
+import flow360 as fl
+from flow360 import u
+
+# Example 1: Setting up a condition with velocity magnitude
+condition = fl.AerospaceCondition(
+    velocity_magnitude=100 * u.m / u.s,
+    alpha=5 * u.degree,
+    beta=0 * u.degree,
+    thermal_state=fl.ThermalState(
+        temperature=288.15 * u.K,
+        density=1.225 * u.kg / u.m**3
+    )
+)
+
+# Example 2: Setting up a condition using from_mach with a reference Mach
+condition = fl.AerospaceCondition.from_mach(
+    mach=0.8,
+    alpha=2 * u.degree,
+    beta=1 * u.degree,
+    thermal_state=fl.ThermalState(
+        temperature=250 * u.K,
+        density=0.9 * u.kg / u.m**3
+    ),
+    reference_mach=0.75  # For coefficient calculations
+)
+
+# Example 3: Setting up a hover condition (zero freestream) with reference values
+hover_condition = fl.AerospaceCondition(
+    velocity_magnitude=0 * u.m / u.s,
+    alpha=0 * u.degree,
+    beta=0 * u.degree,
+    thermal_state=fl.ThermalState(
+        temperature=288.15 * u.K,
+        density=1.225 * u.kg / u.m**3
+    ),
+    reference_velocity_magnitude=100 * u.m / u.s  # Required for hover cases
+)
+
+# Example 4: Using standard atmosphere model for thermal state
+condition = fl.AerospaceCondition(
+    velocity_magnitude=200 * u.m / u.s,
+    alpha=3 * u.degree,
+    beta=0 * u.degree,
+    thermal_state=fl.ThermalState.from_standard_atmosphere(
+        altitude=10000 * u.m,
+        temperature_offset=-5 * u.K
+    )
+)
+
+# Example 5: Creating a condition from Mach and Reynolds number
+
+condition = fl.operating_condition_from_mach_reynolds(
+    mach=0.85,
+    reynolds=1e6,
+    project_length_unit=1 * u.m,
+    temperature=288.15 * u.K,
+    alpha=2.0 * u.degree,
+    beta=0.0 * u.degree,
+    reference_mach=0.85
+)
+
+# Example 6: Calculating Reynolds number for an existing condition
+project_length_unit = 1 * u.m  # Physical length represented by unit length in mesh
+reynolds = condition.flow360_reynolds_number(length_unit=project_length_unit)
+print(f"Reynolds number: {reynolds}")
+
+
+```
+
+</details>

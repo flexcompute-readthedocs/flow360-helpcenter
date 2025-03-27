@@ -8,9 +8,9 @@
 
 | **Option** | **Description**                  | **Unit** |
 |------------|----------------------------------|----------|
-| `Option_1` | Brief description of option 1    | Unit     |
-| `Option_2` | Brief description of option 2    | Unit     |
-| `Option_n` | Brief description of option n    | Unit     |
+| `Option_1` | Brief description of option 1,   | |
+| `Option_2` | Brief description of option 2,   | pressure (e.g., Pa) |
+| `Option_n` | Brief description of option n,   | length (e.g., m) |
 
 ---
 

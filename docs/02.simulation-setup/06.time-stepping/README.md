@@ -12,13 +12,13 @@ The Time Stepping section in Flow360 allows you to configure how your simulation
 
 | **Option** | **Description** | **Unit** |
 |------------|-----------------|----------|
-| `Simulation Type` | Steady or unsteady simulation | N/A |
+| `Simulation Type` | Steady or unsteady simulation | |
 | `Maximum Steps` | Maximum pseudo-time steps (steady) | steps |
 | `Steps` | Number of physical time steps (unsteady) | steps |
 | `Step Size` | Physical time between solution snapshots (unsteady) | time (e.g., s) |
 | `Maximum Pseudo Steps` | Maximum iterations within each physical step (unsteady) | steps |
-| `Order of Accuracy` | Temporal accuracy (unsteady) | N/A |
-| `CFL Type` | Adaptive or Ramp CFL setting | N/A |
+| `Order of Accuracy` | Temporal accuracy (unsteady) | |
+| `CFL Type` | Adaptive or Ramp CFL setting | |
 | `CFL Parameters` | Control parameters for CFL strategy | various |
 
 ---
@@ -195,12 +195,13 @@ For flows with vortex shedding (e.g., bluff bodies, airfoils at high angles):
 For rotating geometries (propellers, turbomachinery):
 - Use 3-6° of rotation per step for initial flow development
 - Use 1-3° per step for accurate data collection
-- Use 0.5-1° per step for detailed flow visualization
+- Use 0.5-1° per step for aeroacoustic or detailed flow visualization
 
 </details>
 
 ### When to Adjust CFL Parameters
 - **Increase Maximum Relative Change**: When convergence is too slow
+- **Decrease Maximum Relative Change**: When simulation is diverging
 - **Decrease Convergence Limiting Factor**: When simulation shows signs of instability
 - **Reduce Maximum CFL**: When turbulence equations become unstable
 
