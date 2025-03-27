@@ -1,3 +1,7 @@
+---
+title: Boundary Conditions
+---
+
 # Boundary Conditions
 
 This section covers the various boundary conditions available in Flow360. 

@@ -1,3 +1,7 @@
+---
+title: 3D Models
+---
+
 # 3D Models
 
 This section covers the physical models that simulate the 3D flow behavior in Flow360.
