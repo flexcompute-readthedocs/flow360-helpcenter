@@ -35,7 +35,7 @@
 
 | **Feature** | **Description** | **Icon** |
 |-------------|----------------|-------------------|
-| View modes | Toggle between Geometry/Mesh/Visualization views | <img src="./Figures/view_selection.png" height="48" width="500" alt="view selection"/> |
+| View modes | Toggle between Geometry/Mesh/Visualization views | <img src="./Figures/view_selection.png" height="48" width="750" alt="view selection"/> |
 | Boundary conditions | Toggle coloring of boundaries based on their assigned boundary condition | <img src="./Figures/boundary_conditions.png" height="48" alt="boundary conditions"/> |
 | Diagnostic tools | Geometry quality inspection features | <img src="./Figures/diagnostic_tools.png" height="48" alt="diagnostic tools"/> |
 | Mesh display | Mesh display options | <img src="./Figures/mesh_display_solid.png" height="48" alt="mesh display solid"/> <img src="./Figures/mesh_display_edges.png" height="48" alt="mesh display edges"/> |
