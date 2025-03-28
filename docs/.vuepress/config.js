@@ -2,7 +2,7 @@ const getConfig = require("vuepress-bar");
 
 let { sidebar } = getConfig({
 	addReadMeToFirstGroup: false,
-	mixDirectoriesAndFilesAlphabetically: false,
+	mixDirectoriesAndFilesAlphabetically: true,
 	maxLevel: 4,
 	sortByPath: true, 
 });
