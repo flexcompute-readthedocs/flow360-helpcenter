@@ -65,6 +65,7 @@ Similar to geometry-based projects, with containers for:
 - [Points](./04.points.md)
 - [Slices](./05.slices.md)
 - [Derived](./06.derived.md)
+- [Viewpoints](./07.viewpoints.md)
 
 ---
 

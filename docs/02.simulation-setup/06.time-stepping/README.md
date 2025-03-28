@@ -165,7 +165,7 @@ Number of steps to reach the final CFL.
 ### For Steady Simulations
 - Start with the default Adaptive CFL settings
 - If convergence is slow, increase the Convergence Limiting Factor (up to 0.5)
-- For complex cases with convergence difficulties, reduce the Maximum Relative Change to 0.5
+- For complex cases with convergence difficulties, reduce the Convergence Limiting Factor (down to 0.1)
 - Monitor residuals to ensure they're decreasing consistently
 
 ### For Unsteady Simulations
@@ -200,9 +200,7 @@ For rotating geometries (propellers, turbomachinery):
 </details>
 
 ### When to Adjust CFL Parameters
-- **Increase Maximum Relative Change**: When convergence is too slow
-- **Decrease Maximum Relative Change**: When simulation is diverging
-- **Decrease Convergence Limiting Factor**: When simulation shows signs of instability
+- **Decrease Convergence Limiting Factor**: When simulation shows signs of instability or has convergence difficulties
 - **Reduce Maximum CFL**: When turbulence equations become unstable
 
 </details>

@@ -115,7 +115,7 @@ Optional reference Mach number used for calculating force and moment coefficient
 - For steady hover simulations, set freestream velocity to zero and provide a reference velocity.
 - Use standard atmosphere for simulations that need realistic atmospheric conditions.
 - When comparing with wind tunnel data, match Reynolds number by adjusting both velocity and thermal state.
-- For low-speed simulations (M < 0.3), incompressible formulations may be more efficient.
+- For low-speed simulations (M < 0.3), using a low Mach preconditioner is recommended for better efficiency.
 - Reynolds number in the simulation is calculated using the mesh unit length, not necessarily a physical reference length.
 
 <details style="padding-left:20px">
@@ -124,7 +124,7 @@ Optional reference Mach number used for calculating force and moment coefficient
 - For transonic flows (0.8 < M < 1.2), use finer meshes near shock regions to capture discontinuities.
 - When matching experimental data, ensure you're using the same reference values for non-dimensionalization.
 - Remember that the Reynolds number affects boundary layer thickness—higher Reynolds numbers result in thinner boundary layers requiring finer near-wall mesh resolution.
-- For multi-component simulations, consistent reference values should be used across all components.
+- For simulations containing multiple components (e.g., many propellers), the same reference values will be used across all components.
 - When using Standard Atmosphere, be aware that density decreases exponentially with altitude, which affects Reynolds number significantly.
 
 </details>
