@@ -1,6 +1,16 @@
-# Entities in Flow360
+# Entities browser
+
 
 Entities are the fundamental components used for simulation setup in Flow360. They provide a hierarchical structure for organizing and managing CFD simulations, from geometry definition to results analysis. The entity structure varies depending on whether you start your project from geometry or from a volume mesh.
+
+**Showing/hiding the entities browser**: The Entities browser is shown by clicking the button in the top-right corner of the viewer area.  
+
+**Entities visibility, highlighting (hover)**: As you hover the mouse over items in the Entities browser, they are highlighted in the viewer.  
+
+**Entities browser modes**: The Entities browser shows the Geometry, Mesh or Visualization items currently available in the viewer, and so it changes when the View mode is selected. The Entities available in each mode are described below.
+
+**"View only" mode**: The Entities browser has limited functionality when the Workbench is in "View only" mode. It can be used to show/hide elements and to browse the available entities and highlight them in the viewer. Creating and updating viewpoints is also supported at any time.  
+
 
 ---
 
