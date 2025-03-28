@@ -103,7 +103,7 @@ The project tree supports multiple branches at each level:
 
 ### 🎯 Component Actions
 
-When clicking on a component in the project tree, a menu of available actions appears. Below are the common actions for different components:
+When clicking on a component in the project tree, a menu of available actions appears. Below are the available actions:
 
 <div align="center">
   <img src="./Figures/details.png" width="50%" alt="details"/>
