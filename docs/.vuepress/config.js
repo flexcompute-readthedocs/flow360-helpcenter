@@ -4,6 +4,7 @@ let { sidebar } = getConfig({
 	addReadMeToFirstGroup: false,
 	mixDirectoriesAndFilesAlphabetically: false,
 	maxLevel: 4,
+	sortByPath: true, 
 });
 
 module.exports = {
