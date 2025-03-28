@@ -50,8 +50,12 @@ The angle of attack defining the orientation of the freestream flow relative to 
 - **Notes:** 
   - The angle is applied around the Y-axis of the global coordinate system.
   - Affects velocity components according to these formulas:
-    - U_∞ = Mach · cos(β) · cos(α)
-    - W_∞ = Mach · cos(β) · sin(α)
+    - U_∞ = U_mag · cos(β) · cos(α)
+    - W_∞ = U_mag · cos(β) · sin(α)
+  - Where:
+    - U_mag is the velocity magnitude prescribed by either Velocity Magnitude or Mach number
+    - U_∞ is the x-component of velocity in the global coordinate system
+    - W_∞ is the z-component of velocity in the global coordinate system
 
 #### `Beta`
 
@@ -62,9 +66,14 @@ The sideslip angle defining the orientation of the freestream flow relative to t
 - **Notes:** 
   - The angle is applied around the Z-axis of the global coordinate system after alpha is applied.
   - Affects velocity components according to these formulas:
-    - U_∞ = Mach · cos(β) · cos(α)
-    - V_∞ = -Mach · sin(β)
-    - W_∞ = Mach · cos(β) · sin(α)
+    - U_∞ = U_mag · cos(β) · cos(α)
+    - V_∞ = -U_mag · sin(β)
+    - W_∞ = U_mag · cos(β) · sin(α)
+  - Where:
+    - U_mag is the velocity magnitude prescribed by either Velocity Magnitude or Mach number
+    - U_∞ is the x-component of velocity in the global coordinate system
+    - V_∞ is the y-component of velocity in the global coordinate system
+    - W_∞ is the z-component of velocity in the global coordinate system
 
 #### `Thermal State - Direct`
 
@@ -139,11 +148,11 @@ Optional reference Mach number used for calculating force and moment coefficient
 
 - **How do alpha and beta affect the simulation?**  
   > Rather than rotating the geometry, Flow360 adjusts the freestream flow direction based on alpha and beta using the formulas:
-  > - U_∞ = Mach · cos(β) · cos(α)
-  > - V_∞ = -Mach · sin(β)
-  > - W_∞ = Mach · cos(β) · sin(α)
+  > - U_∞ = U_mag · cos(β) · cos(α)
+  > - V_∞ = -U_mag · sin(β)
+  > - W_∞ = U_mag · cos(β) · sin(α)
   > 
-  > This simplifies comparing results at different angles without modifying the mesh.
+  > Where U_mag is the velocity magnitude prescribed by either Velocity Magnitude or Mach number and U_∞, V_∞, and W_∞ represent the x, y, and z components of velocity in the global coordinate system, respectively. This simplifies comparing results at different angles without modifying the mesh.
 
 - **Can I specify a different material other than Air?**  
   > In the GUI, only Air is available. For custom materials, you need to use the Python API. 
