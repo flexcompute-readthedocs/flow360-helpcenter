@@ -8,11 +8,11 @@
 
 | **Option** | **Description** | **Purpose** |
 |------------|-----------------|-------------|
-| [`Dashboard`](./01.dashboard/README.md) | Interactive overview of simulation progress and key metrics | Real-time monitoring and analysis |
-| [`Convergence`](./02.convergence/README.md) | Analysis of solution convergence behavior | Solution quality assessment |
-| [`Monitor`](./03.monitor/README.md) | Tracking of flow field variables at specific locations | Detailed flow analysis |
-| [`Visualization`](./04.visualization/) | Advanced visualization tools for flow field data | Flow pattern analysis |
-| [`Aeroacoustic`](./05.aeroacoustic/README.md) | Acoustic analysis and noise prediction | Sound generation and propagation |
+| [`Dashboard`](./01.dashboard.md) | Interactive overview of simulation progress and key metrics | Real-time monitoring and analysis |
+| [`Convergence`](./02.convergence.md) | Analysis of solution convergence behavior | Solution quality assessment |
+| [`Monitor`](./03.monitor.md) | Tracking of flow field variables at specific locations | Detailed flow analysis |
+| [`Visualization`](./04.visualization.md) | Advanced visualization tools for flow field data | Flow pattern analysis |
+| [`Aeroacoustic`](./05.aeroacoustic.md) | Acoustic analysis and noise prediction | Sound generation and propagation |
 
 ---
 
