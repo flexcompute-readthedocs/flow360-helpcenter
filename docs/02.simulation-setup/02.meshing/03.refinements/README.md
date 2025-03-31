@@ -1,17 +1,17 @@
 # Refinements
 
-This document provides an overview of mesh refinement capabilities in Flow360. Refinements enable precise control over mesh resolution in specific regions of your geometry to better capture flow features or geometric details.
+*This document provides an overview of mesh refinement capabilities in Flow360. Refinements enable precise control over mesh resolution in specific regions of your geometry to better capture flow features or geometric details.*
 
 ## 📋 Available Refinement Types
 
-| **Type** | **Description** | **Applicable To** | **Documentation** |
-|----------|----------------|------------------|------------------|
-| Surface Edge Refinement | Controls mesh resolution near edges | Edges | [Details](./01.surface-edge-refinement.md) |
-| Surface Refinement | Controls surface mesh cell size | Surfaces | [Details](./02.surface-refinement.md) |
-| Boundary Layer Refinement | Creates prismatic layers near walls | Surfaces | [Details](./03.boundary-layer-refinement.md) |
-| Passive Spacing | Controls mesh behavior without direct refinement | Surfaces | [Details](./04.passive-spacing.md) |
-| Uniform Refinement | Creates uniform mesh spacing in a region | Boxes and cylinders | [Details](./05.uniform-refinement.md) |
-| Axisymmetric Refinement | Creates structured-like mesh with cylindrical bias | Cylinders | [Details](./06.axisymmetric-refinement.md) |
+| **Type** | **Description** | **Applicable To** |
+|----------|----------------|------------------|
+| [Surface Edge Refinement](./01.surface-edge-refinement.md) | Controls mesh resolution near edges | Edges |
+| [Surface Refinement](./02.surface-refinement.md) | Controls surface mesh cell size | Surfaces |
+| [Boundary Layer Refinement](./03.boundary-layer-refinement.md) | Creates prismatic layers near walls | Surfaces |
+| [Passive Spacing](./04.passive-spacing.md) | Controls mesh behavior without direct refinement | Surfaces |
+| [Uniform Refinement](./05.uniform-refinement.md) | Creates uniform mesh spacing in a region | Boxes and cylinders |
+| [Axisymmetric Refinement](./06.axisymmetric-refinement.md) | Creates structured-like mesh with cylindrical bias | Cylinders |
 
 ## 🔍 General Guidelines
 

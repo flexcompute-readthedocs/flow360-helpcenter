@@ -1,47 +1,71 @@
- # Meshing Settings
+# Meshing Settings
 
 *Comprehensive guide to Flow360's meshing capabilities, covering default parameters, volume zones, and refinement techniques for optimal CFD simulations.*
 
-## Overview
+## 📋 **Available Options**
 
-Flow360 provides a meshing system that combines automated and user-controlled approaches to generate high-quality computational meshes. The meshing process is governed by three main components:
+| **Component** | **Description** |
+|---------------|-----------------|
+| [Meshing Defaults](./01.meshing-defaults.md) | Fundamental control parameters for mesh generation |
+| [Volume Zones](./02.volume-zone.md) | Specialized regions for specific flow features |
+| [Refinements](./03.refinements/README.md) | Local mesh control for critical regions |
 
-1. [Meshing Defaults](./01.meshing-defaults.md) - Fundamental control parameters for mesh generation
-2. [Volume Zones](./02.volume-zone.md) - Specialized regions for specific flow features
-3. [Refinements](./03.refinements.md) - Local mesh control for critical regions
-
-## Core Components
+## 🔍 **Detailed Descriptions**
 
 ### Meshing Defaults
-The foundation of mesh generation, controlling:
+*Core parameters controlling the fundamental aspects of mesh generation.*
+
 - Surface mesh characteristics
 - Boundary layer properties
 - Global refinement levels
 - Gap treatment strategies
 
 ### Volume Zones
-Specialized regions for specific applications:
+*Specialized regions for specific flow applications.*
+
 - Farfield zones for external flow simulations
 - Rotation cylinder zones for rotating machinery
 - Custom volume zones for specific flow features
 
 ### Refinements
-Local mesh control mechanisms:
+*Local mesh control mechanisms for critical regions.*
+
 - Surface edge refinements
 - Boundary layer refinements
 - Uniform refinements
 - Axisymmetric refinements
 - Passive spacing controls
 
-## Best Practices
+</edit>
 
-### General Guidelines
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 💡 Tips</h3></summary>
+
+- Begin with default settings and adjust based on specific needs
+- Use refinement regions strategically for critical flow features
+- Consider using passive spacing for interface regions
+- Monitor solution convergence when adjusting mesh parameters
+- Validate mesh quality metrics before proceeding with simulation
 - Start with coarser meshes and refine based on solution quality
 - Ensure smooth transitions between different mesh regions
 - Consider computational resources when setting refinement levels
-- Validate mesh quality metrics before simulation
 
-### Critical Considerations
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Common Pitfalls</h4></summary>
+
+- Over-refinement in non-critical regions
+- Insufficient wake resolution
+- Poor boundary layer transition
+- Inadequate gap treatment
+- Inconsistent refinement levels
+
+</details>
+
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Meshing Considerations</h4></summary>
+
 1. **Surface Mesh Quality**
    - Maintain element quality metrics
    - Ensure proper resolution of geometric features
@@ -56,26 +80,6 @@ Local mesh control mechanisms:
    - Extend refinement regions appropriately
    - Consider flow angles and operating conditions
    - Account for expected flow features
-
----
-
-<details>
-<summary><h3 style="display:inline-block"> 💡 Tips</h3></summary>
-
-- Begin with default settings and adjust based on specific needs
-- Use refinement regions strategically for critical flow features
-- Consider using passive spacing for interface regions
-- Monitor solution convergence when adjusting mesh parameters
-- Validate mesh quality metrics before proceeding with simulation
-
-<details style="padding-left:20px">
-<summary><h4 style="display:inline-block"> Common Pitfalls</h4></summary>
-
-- Over-refinement in non-critical regions
-- Insufficient wake resolution
-- Poor boundary layer transition
-- Inadequate gap treatment
-- Inconsistent refinement levels
 
 </details>
 </details>
