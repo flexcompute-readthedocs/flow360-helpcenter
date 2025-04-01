@@ -2,7 +2,7 @@
 
 The Flow360 GUI top bar provides essential navigation and project management functionality, enabling efficient workflow control and access to key features.
 
-![top_bar_marked](./Figures/top_bar.png)
+![top_bar_marked](./Figures/top_bar_marked.png)
 
 ---
 
