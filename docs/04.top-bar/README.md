@@ -2,7 +2,7 @@
 
 The Flow360 GUI top bar provides essential navigation and project management functionality, enabling efficient workflow control and access to key features.
 
-![top_bar_marked](./Figures/top_bar_marked.png)
+![top_bar_marked](./Figures/top_bar.png)
 
 ---
 
@@ -14,9 +14,9 @@ The Flow360 GUI top bar provides essential navigation and project management fun
 | [`Project tree`](./01.project-tree/README.md) | <img src="./Figures/project_tree.png" height="32" alt="project tree"/> | Hierarchical view of project components, for more details, refer to this [page](./01.project-tree/) |
 | `More` | <img src="./Figures/more.png" height="32" alt="more menu"/> | Click the three dots to export / import settings |
 | `View only` | <img src="./Figures/view_only.png" height="32" alt="view only"/> | Appears when you're accessing the project in view only mode |
-| `Assets` | <img src="./Figures/assets.png" height="32" alt="assets"/> | Access project assets and resources |
-| `Help` | <img src="./Figures/help.png" height="32" alt="help"/> | Access documentation and support |
-| `Project settings` | <img src="./Figures/project_settings.png" height="32" alt="project settings"/> | Configure project parameters |
+| `Assets` | <img src="./Figures/assets.svg" height="32" alt="assets"/> | Access project assets and resources |
+| `Help` | <img src="./Figures/help.svg" height="32" alt="help"/> | Access documentation and support |
+| `Project settings` | <img src="./Figures/project_settings.svg" height="32" alt="project settings"/> | Configure project parameters |
 | `Fork/New run` | <img src="./Figures/fork_new_run.png" height="32" alt="fork/new run"/> | Create project variants |
 
 ---

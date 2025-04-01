@@ -6,7 +6,9 @@ The project tree is a hierarchical visualization interface that displays the com
 >
 >For example, if a surface mesh with identical settings already exists in the project, Flow360 will reuse it rather than generating a duplicate. Similarly, when a case with matching simulation parameters exists, the system will utilize the existing case instead of running a redundant simulation.
 
-![project_tree](./Figures/project_tree.png)
+<div align="center">
+  <img src="./Figures/project_tree.png" alt="project_tree">
+</div>
 
 ---
 
@@ -14,12 +16,12 @@ The project tree is a hierarchical visualization interface that displays the com
 
 | **Icon** | **Name** | **Description** |
 |----------|----------|-----------------|
-| <img src="./Figures/geometry.png" width="32" height="32" alt="geometry"/> | Geometry | Represents the CAD geometry input for the simulation |
-| <img src="./Figures/surface_mesh.png" width="32" height="32" alt="surface mesh"/> | Surface Mesh | Represents the discretized surface of the geometry |
-| <img src="./Figures/volume_mesh.png" width="32" height="32" alt="volume mesh"/> | Volume Mesh | Represents the 3D computational mesh used for simulation |
-| <img src="./Figures/case.png" width="32" height="32" alt="case"/> | Case | Represents a simulation case with defined parameters |
-| <img src="./Figures/fork.png" width="32" height="32" alt="fork"/> | Fork | Indicates a continuation / branched variant of an existing parent |
-| <img src="./Figures/draft.png" width="32" height="32" alt="draft"/> | Draft | Represents a simulation setup that hasn't been run yet |
+| <img src="./Figures/geometry.svg" width="32" height="32" alt="geometry"/> | Geometry | Represents the CAD geometry input for the simulation |
+| <img src="./Figures/surface_mesh.svg" width="32" height="32" alt="surface mesh"/> | Surface Mesh | Represents the discretized surface of the geometry |
+| <img src="./Figures/volume_mesh.svg" width="32" height="32" alt="volume mesh"/> | Volume Mesh | Represents the 3D computational mesh used for simulation |
+| <img src="./Figures/case.svg" width="32" height="32" alt="case"/> | Case | Represents a simulation case with defined parameters |
+| <img src="./Figures/fork.svg" width="32" height="32" alt="fork"/> | Fork | Indicates a continuation / branched variant of an existing parent |
+| <img src="./Figures/draft.svg" width="32" height="32" alt="draft"/> | Draft | Represents a simulation setup that hasn't been run yet |
 
 ---
 
