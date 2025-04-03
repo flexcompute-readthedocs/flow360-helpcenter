@@ -6,6 +6,7 @@ title: 3D Models
 
 This section covers the physical models that simulate the 3D flow behavior in Flow360.
 
+
 ## Overview of 3D Models
 
 3D models in Flow360 define the physical processes that occur within volumetric regions of the simulation domain.
@@ -18,6 +19,16 @@ This section covers the physical models that simulate the 3D flow behavior in Fl
 | [Turbulence Model](./01.fluid/02.turbulence-model.md) | Models for turbulent flow simulation | Model Type (SA, SST, etc.), Model Coefficients |
 | [Transition Model](./01.fluid/03.transition-model.md) | Models for laminar-turbulent transition | Transition Criteria, Intermittency |
 | [Initial Condition](./01.fluid/04.initial-condition.md) | Starting solution for the simulation | Freestream Values, Custom Field Initialization |
+
+### Heat Transfer Models
+
+::: warning Project Workflow starting from Volume Mesh Only
+The solid model is only available in projects started from volume mesh. They cannot be used with the surface mesh or geometry workflow.
+:::
+
+| Model | Description | Key Parameters |
+|-------|-------------|----------------|
+| [Solid](./02.solid/index.html) | Conjugate heat transfer in solid materials | Material Properties, Heat Equation Settings |
 
 ### Special Models
 
