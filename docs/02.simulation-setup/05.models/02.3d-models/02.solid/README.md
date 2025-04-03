@@ -1,5 +1,9 @@
 ## **Solid Model**
 
+::: warning Volume Mesh Workflow Only
+The Solid model is only available in the volume mesh workflow. It cannot be used with the surface mesh workflow.
+:::
+
 *The Solid model is used for setting up conjugate heat transfer volume models that contain all the common fields every heat transfer zone should have. This model is essential for simulating heat transfer in solid materials within the Flow360 simulation environment.*
 
 ---

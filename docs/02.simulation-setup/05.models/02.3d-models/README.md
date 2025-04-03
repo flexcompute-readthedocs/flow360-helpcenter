@@ -23,9 +23,9 @@ This section covers the physical models that simulate the 3D flow behavior in Fl
 
 | Model | Description | Key Parameters |
 |-------|-------------|----------------|
-| [Rotation](./02.rotation.md) | Handling of rotating components | Rotation Type (MRF/SRF/Physical), Angular Velocity |
-| [BET Disk](./03.bet-disk.md) | Blade Element Theory for propeller/rotor modeling | Polars, RPM |
-| [Actuator Disk](./04.actuator-disk.md) | Simplified model for propellers and rotors | Thrust Coefficient, Swirl Distribution |
-| [Porous Medium](./05.porous-medium.md) | Model for flow through porous regions | Darcy Coefficient, Forchheimer Coefficient |
+| [Rotation](./03.rotation.md) | Handling of rotating components | Rotation Type (MRF/SRF/Physical), Angular Velocity |
+| [BET Disk](./04.bet-disk.md) | Blade Element Theory for propeller/rotor modeling | Polars, RPM |
+| [Actuator Disk](./05.actuator-disk.md) | Simplified model for propellers and rotors | Thrust Coefficient, Swirl Distribution |
+| [Porous Medium](./06.porous-medium.md) | Model for flow through porous regions | Darcy Coefficient, Forchheimer Coefficient |
 
 Click on each model to see detailed documentation including available parameters, descriptions, usage tips, and example configurations. 
