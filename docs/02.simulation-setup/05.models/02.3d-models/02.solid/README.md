@@ -67,9 +67,12 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 
 *Initial temperature condition for the heat equation solver.*
 
-- **Default:** `None`
+- **Default:** For unsteady: required, For steady: `None`
 - **Example:** `HeatEquationInitialCondition(temperature="1.0")`
-- **Notes:** Can be specified using expressions for spatial variation.
+- **Notes:** 
+  - Can be specified using expressions for spatial variation
+  - Required for unsteady simulations
+  - Optional for steady simulations (will use a default uniform temperature field if not specified)
 
 ---
 
@@ -88,9 +91,8 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 <details>
 <summary><h3 style="display:inline-block"> ❓ Frequently Asked Questions</h3></summary>
 
-
 - **What happens if I don't specify an initial condition?**  
-  > The solver will use a default uniform temperature field.
+  > For steady simulations, the solver will use a default uniform temperature field. For unsteady simulations, an initial condition must be specified.
 
 - **Can I simulate multiple solid materials?**  
   > Yes, create multiple Solid model instances with different materials and assign them to different volumes.
