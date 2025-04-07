@@ -24,4 +24,8 @@ module.exports = {
 		navbar: false,
 		sidebar,
 	},
+	head: [
+		['meta', { 'http-equiv': 'cache-control', content: 'no-store' }],
+		['meta', { 'http-equiv': 'expires', content: '0' }]
+	  ]
 };
