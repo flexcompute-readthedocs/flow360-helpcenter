@@ -1,13 +1,12 @@
 # Flow360 GUI Documentation
 
 Content:
--   [Introduction](/01.introduction/index.html)
+-   Introduction
     -   [Dashboard](/01.introduction/01.dashboard.md)
     -   [Starting a Project](/01.introduction/02.starting-project.md)
     -   [Workbench Layout](/01.introduction/03.workbench-layout.md)
     -   [General Workflow](/01.introduction/04.general-workflow.md)
 -   [Simulation Setup](/02.simulation-setup/index.html)
-    -   [Entities](/02.simulation-setup/01.entities/index.html)
     -   [Meshing](/02.simulation-setup/02.meshing/index.html)
     -   [Reference Geometry](/02.simulation-setup/03.reference-geometry/index.html)
     -   [Operating Condition](/02.simulation-setup/04.operating-condition/index.html)
@@ -24,11 +23,11 @@ Content:
     -   [User Defined Dynamics](/02.simulation-setup/07.user-defined-dynamics/index.html)
     -   [Output Settings](/02.simulation-setup/08.output-settings/index.html)
 -   [Analysis](/03.analysis/index.html)
-    -   [Dashboard](/03.analysis/01.dashboard/index.html)
-    -   [Convergence](/03.analysis/02.convergence/index.html)
-    -   [Monitor](/03.analysis/03.monitor/index.html)
-    -   [Visualization](/03.analysis/04.visualization/index.html)
-    -   [Aeroacoustic](/03.analysis/05.aeroacoustic/index.html)
+    -   [Dashboard](/03.analysis/01.dashboard.md)
+    -   [Convergence](/03.analysis/02.convergence.md)
+    -   [Monitor](/03.analysis/03.monitor.md)
+    -   [Visualization](/03.analysis/04.visualization.md)
+    -   [Aeroacoustic](/03.analysis/05.aeroacoustic.md)
 -   [Top Bar](/04.top-bar/index.html)
     -   [Project Tree](/04.top-bar/01.project-tree/index.html)
 

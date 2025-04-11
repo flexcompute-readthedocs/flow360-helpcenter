@@ -4,7 +4,6 @@ This section covers all aspects of setting up a simulation in Flow360.
 
 ## Contents
 
-- [Entities](./01.entities/README.md)
 - [Meshing](./02.meshing/README.md)
 - [Reference Geometry](./03.reference-geometry/README.md)
 - [Operating Condition](./04.operating-condition/README.md)
