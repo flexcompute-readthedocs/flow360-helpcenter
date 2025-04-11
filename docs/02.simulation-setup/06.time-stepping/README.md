@@ -1,0 +1,293 @@
+# Time Stepping
+
+The Time Stepping section in Flow360 allows you to configure how your simulation advances in time, which is crucial for both solution accuracy and computational efficiency.
+
+## 📝 **Time Stepping Configuration**
+
+*Time stepping controls how your Flow360 simulation advances in time, determining whether the simulation is steady or unsteady, and how convergence is managed.*
+
+---
+
+### 📋 **Available Options**
+
+| **Option** | **Description** | **Unit** |
+|------------|-----------------|----------|
+| `Simulation Type` | Steady or unsteady simulation | |
+| `Maximum Steps` | Maximum pseudo-time steps (steady) | steps |
+| `Steps` | Number of physical time steps (unsteady) | steps |
+| `Step Size` | Physical time between solution snapshots (unsteady) | time (e.g., s) |
+| `Maximum Pseudo Steps` | Maximum iterations within each physical step (unsteady) | steps |
+| `Order of Accuracy` | Temporal accuracy (unsteady) | |
+| `CFL Type` | Adaptive or Ramp CFL setting | |
+| `CFL Parameters` | Control parameters for CFL strategy | various |
+
+---
+
+### 🔍 **Detailed Descriptions**
+
+#### `Simulation Type`
+
+Determines whether the simulation is steady (time-invariant) or unsteady (time-accurate).
+
+- **Options:** Steady, Unsteady
+- **Default:** Steady
+- **Notes:** Steady simulations are appropriate for flows that have reached equilibrium, while unsteady simulations are necessary for time-dependent phenomena.
+
+#### `Maximum Steps` (Steady only)
+
+The maximum number of pseudo-time steps to run for a steady simulation.
+
+- **Default:** 2000
+- **Example:** 5000
+- **Notes:** Increase this value for complex simulations that may require more iterations to reach convergence.
+
+#### `Steps` (Unsteady only)
+
+The total number of physical time steps for an unsteady simulation.
+
+- **Default:** None (must be specified)
+- **Example:** 1000
+- **Notes:** Set based on the total physical time needed to capture the phenomenon of interest.
+
+#### `Step Size` (Unsteady only)
+
+The physical time interval between solution snapshots.
+
+- **Default:** None (must be specified)
+- **Example:** 0.001 s
+- **Notes:** Should be small enough to resolve the time-dependent features of interest.
+
+#### `Maximum Pseudo Steps` (Unsteady only)
+
+Maximum number of iterations performed within each physical time step.
+
+- **Default:** 20
+- **Example:** 30
+- **Notes:** Higher values ensure better convergence within each physical time step but increase computational cost.
+
+#### `Order of Accuracy` (Unsteady only)
+
+The temporal discretization order.
+
+- **Options:** 1, 2
+- **Default:** 2
+- **Notes:** Second-order is generally recommended for better accuracy.
+
+#### `CFL Type`
+
+Method for controlling the Courant-Friedrichs-Lewy (CFL) number, which affects convergence.
+
+- **Options:** Adaptive, Ramp
+- **Default:** Adaptive
+- **Notes:** Adaptive automatically adjusts CFL based on solution behavior, while Ramp linearly increases it.
+
+#### `CFL Parameters - Adaptive`
+
+When using Adaptive CFL, these parameters control its behavior:
+
+##### `Minimum`
+
+Lower bound for the CFL number.
+
+- **Default:** 0.1
+- **Example:** 0.05
+- **Notes:** Lower values improve stability for challenging cases.
+
+##### `Maximum`
+
+Upper bound for the CFL number.
+
+- **Default:**
+  - For steady simulations: 10,000
+  - For unsteady simulations: 1,000,000
+- **Example:** 50,000
+- **Notes:** Higher values can accelerate convergence if the solution remains stable.
+
+##### `Maximum Relative Change`
+
+Controls how quickly the CFL can increase.
+
+- **Default:**
+  - For steady simulations: 1% per step
+  - For unsteady simulations: 50% per step
+- **Example:** 5.0
+- **Notes:** Higher values allow more aggressive CFL increases.
+
+##### `Convergence Limiting Factor`
+
+Controls the aggressiveness of the CFL adaptation.
+
+- **Default:**
+  - For steady simulations: 0.25 (more conservative)
+  - For unsteady simulations: 1.0 (more aggressive)
+- **Example:** 0.5
+- **Notes:** Lower values make the adaptation more conservative.
+
+#### `CFL Parameters - Ramp`
+
+When using Ramp CFL, these parameters control its behavior:
+
+##### `Initial`
+
+Starting CFL number.
+
+- **Default:**
+  - For steady simulations: 5
+  - For unsteady simulations: 1
+- **Example:** 2
+- **Notes:** Lower values improve stability at the start of the simulation.
+
+##### `Final`
+
+Maximum CFL number to reach.
+
+- **Default:**
+  - For steady simulations: 200
+  - For unsteady simulations: 1,000,000
+- **Example:** 300
+- **Notes:** Higher values can accelerate convergence if the solution remains stable.
+
+##### `Ramp Steps`
+
+Number of steps to reach the final CFL.
+
+- **Default:**
+  - For steady simulations: 40
+  - For unsteady simulations: 30
+- **Example:** 50
+- **Notes:** More steps create a more gradual increase in CFL.
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 💡 Tips</h3></summary>
+
+### For Steady Simulations
+- Start with the default Adaptive CFL settings
+- If convergence is slow, increase the Convergence Limiting Factor (up to 0.5)
+- For complex cases with convergence difficulties, reduce the Convergence Limiting Factor (down to 0.1)
+- Monitor residuals to ensure they're decreasing consistently
+
+### For Unsteady Simulations
+- Choose physical time step based on the phenomenon of interest:
+  - For vortex shedding: Δt = 0.01/f where f is the shedding frequency
+  - For rotating geometries: Use 1-6° of rotation per step for accurate data
+- Use Adaptive CFL with default settings
+- Ensure sufficient pseudo-steps for convergence within each physical step
+- Monitor residual convergence within each physical step
+
+### Time Step Selection Guidelines
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Based on Vortex Shedding</h4></summary>
+
+For flows with vortex shedding (e.g., bluff bodies, airfoils at high angles):
+1. Estimate the vortex shedding frequency using: f = (St × U)/D
+   - St is the Strouhal number (typically ~0.2)
+   - U is the freestream velocity
+   - D is the characteristic length
+2. Set time step to capture ~100 steps per shedding cycle: Δt = 0.01/f
+
+</details>
+
+<details style="padding-left:20px">
+<summary><h4 style="display:inline-block"> Based on Rotation</h4></summary>
+
+For rotating geometries (propellers, turbomachinery):
+- Use 3-6° of rotation per step for initial flow development
+- Use 1-3° per step for accurate data collection
+- Use 0.5-1° per step for aeroacoustic or detailed flow visualization
+
+</details>
+
+### When to Adjust CFL Parameters
+- **Decrease Convergence Limiting Factor**: When simulation shows signs of instability or has convergence difficulties
+- **Reduce Maximum CFL**: When turbulence equations become unstable
+
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> ❓ Frequently Asked Questions</h3></summary>
+
+- **What is the difference between steady and unsteady simulations?**  
+  > Steady simulations assume flow conditions do not change with time and are suitable for equilibrium states. Unsteady simulations capture time-dependent phenomena and are necessary for moving geometries, vortex shedding, and transient flows.
+
+- **How do I know if my simulation should be steady or unsteady?**  
+  > Use steady simulation if you're interested in the final equilibrium state (e.g., cruise conditions). Use unsteady if you need to capture time-varying phenomena (e.g., vortex shedding, blade passing).
+
+- **What is CFL and why is it important?**  
+  > The CFL (Courant-Friedrichs-Lewy) number controls the size of pseudo-time steps. Higher values accelerate convergence but may cause instability. Lower values are more stable but converge more slowly.
+
+- **Which CFL method should I choose?**  
+  > Adaptive CFL is recommended for most cases as it automatically adjusts based on solution behavior. Ramp CFL is an alternative if you want more direct control over the CFL progression.
+
+- **How many pseudo steps do I need for unsteady simulations?**  
+  > Typically 15-30 pseudo steps are sufficient. Check residual convergence within each physical step - residuals should drop by 1-2 orders of magnitude.
+
+- **What order of accuracy should I use for unsteady simulations?**  
+  > Second-order (default) is recommended for most cases as it provides better temporal accuracy. First-order can be used for initial development or if stability issues occur.
+
+- **How can I check if my time step size is appropriate?**  
+  > Run a time-step sensitivity study by halving the time step and comparing results. If results don't change significantly, your original time step is adequate.
+
+- **What should I do if my simulation diverges?**  
+  > For Adaptive CFL: Decrease the Maximum CFL and Convergence Limiting Factor.  
+  > For Ramp CFL: Lower the Initial and Final CFL values.  
+  > If still diverging, reduce the time step size (for unsteady) or refine the mesh in problematic regions.
+
+</details>
+
+---
+
+<details>
+<summary><h3 style="display:inline-block"> 🐍 Python Example Usage</h3></summary>
+
+### Steady Simulation Example
+
+```python
+# Create a steady simulation with Adaptive CFL
+time_stepping = fl.Steady(
+    max_steps=3000,
+    CFL=fl.AdaptiveCFL(
+        min=0.1,
+        max=8000,
+        max_relative_change=1.0,
+        convergence_limiting_factor=0.25
+    )
+)
+```
+
+### Unsteady Simulation Example
+
+```python
+# Create an unsteady simulation with Adaptive CFL
+time_stepping = fl.Unsteady(
+    step_size=0.001 * fl.u.s,
+    steps=1000,
+    max_pseudo_steps=25,
+    order_of_accuracy=2,
+    CFL=fl.AdaptiveCFL(
+        min=0.1,
+        max=1e6,
+        max_relative_change=50,
+        convergence_limiting_factor=1.0
+    )
+)
+```
+
+### Ramp CFL Example
+
+```python
+# Create a steady simulation with Ramp CFL
+time_stepping = fl.Steady(
+    max_steps=3000,
+    CFL=fl.RampCFL(
+        initial=5,
+        final=200,
+        ramp_steps=40
+    )
+)
+```
+
+</details> 
