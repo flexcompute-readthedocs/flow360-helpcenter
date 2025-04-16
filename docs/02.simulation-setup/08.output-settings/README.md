@@ -14,8 +14,8 @@
 | [`Time Average Surface Output`](04.time-averaging-surface-output.md) | Time-averaged flow field data on surfaces | Statistical analysis of surface phenomena |
 | [`Slice Output`](05.slice-output.md) | Flow field data on user-defined slice planes | Examining flow cross-sections |
 | [`Time Average Slice Output`](06.time-averaging-slice-output.md) | Time-averaged flow field data on slice planes | Statistical analysis on planes |
-| [`Monitor Outputs`](07.probe-outputs.md) | Flow field data monitoring during simulation | Tracking convergence and flow properties |
-| [`Time Average Monitor Outputs`](08.time-averaged-probe-outputs.md) | Time-averaged monitoring data | Statistical monitoring data |
+| [`Probe Outputs`](07.probe-outputs.md) | Flow field data monitoring during simulation | Tracking convergence and flow properties |
+| [`Time Average Probe Outputs`](08.time-averaged-probe-outputs.md) | Time-averaged monitoring data | Statistical monitoring data |
 | [`Surface Probe Output`](09.surface-probe-outputs.md) | Flow field data at specific points projected onto surfaces | Point-specific surface data |
 | [`Surface Slice Output`](10.surface-slice-output.md) | Flow field data on slices of surfaces | Cross-sectional analysis of surface phenomena |
 | [`Isosurface Output`](11.isosurface-output.md) | Flow field data on surfaces of constant variable value | Visualization of vortices, shock waves |
@@ -99,7 +99,7 @@ Flow360 supports multiple output file formats:
 
 - **Paraview** (.vtu, .vtp) - For visualization in ParaView
 - **Tecplot** (.szplt) - For visualization in Tecplot
-- **CSV** - For tabular data (used with some monitor outputs)
+- **CSV** - For tabular data
 
 For more information about output file formats, see the [Output Formats](13.output-formats.md) page.
 
