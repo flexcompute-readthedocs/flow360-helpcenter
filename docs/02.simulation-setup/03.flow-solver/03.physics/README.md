@@ -28,7 +28,7 @@ The solid model is only available in projects started from volume mesh. They can
 
 | Model | Description | Key Parameters |
 |-------|-------------|----------------|
-| [Solid](./02.solid/index.html) | Conjugate heat transfer in solid materials | Material Properties, Heat Equation Settings |
+| [Solid](./02.solid/README.md) | Conjugate heat transfer in solid materials | Material Properties, Heat Equation Settings |
 
 ### Special Models
 

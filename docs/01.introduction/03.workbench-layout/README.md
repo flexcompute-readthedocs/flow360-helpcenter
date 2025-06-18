@@ -2,7 +2,7 @@
 
 The Flow360 workbench provides an intuitive interface for computational fluid dynamics (CFD) simulations. This document describes the key areas of the workbench layout and their functions.
 
-![Workbench Layout Overview](./Figures/workbench_arrows.png)
+![Workbench Layout Overview](../Figures/workbench_arrows.png)
 
 ---
 
@@ -11,8 +11,8 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 | **Section** | **Description** |
 |-------------|-----------------|
 | 1 | [Viewer region](./05.viewer-region/README.md) |
-| 2 | [Simulation setup](./../02.simulation-setup/README.md) / [Analysis](./../03.analysis/README.md) |
-| 3 | [Entities browser](./../02.simulation-setup/01.entities/README.md) |
+| 2 | [Simulation setup](./../../02.simulation-setup/README.md) / [Analysis](./../../03.analysis/README.md) |
+| 3 | [Entities browser](./06.entities-browser/README.md) |
 | 4 | Coordinate system |
 | 5 | [Top navigation bar](./04.top-bar/README.md) |
 | 6 | [Bottom status bar](./07.status-bar/README.md) |
@@ -83,7 +83,7 @@ Information and status display showing:
 
 Allows you to switch between different modes as well as choosing selection options.
 
-The possible view modes depend on the [project creation method](./02.starting-project.md) and are:
+The possible view modes depend on the [project creation method](../02.starting-project.md) and are:
 - Geometry: presents the geometry of the simulated object.
 - Mesh: shows the surface mesh generated on the surfaces
 - Visualisation: visualises the flow field according to the chosen criteria (eg. Cp contour on surface)
