@@ -1,4 +1,4 @@
-## 📝 **Output List**
+## 📝 **Outputs List**
 
 *Control what data is generated during and after simulation runs, including which flow variables are saved, where they are saved, and how frequently they are written to files.*
 

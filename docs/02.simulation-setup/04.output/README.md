@@ -6,5 +6,5 @@
 
 | **Settings group** | **Short description** |
 |--------------------|-----------------------|
-| `Reference dimensions` | Form for filling in dimensions that are used for force coefficients calculation. |
-| `Outputs list` | A list containing all outputs to generate from the simulation | 
+| [`Reference dimensions`](./01.reference-dimensions.md) | Form for filling in dimensions that are used for force coefficients calculation. |
+| [`Outputs list`](./02.outputs-list/README.md) | A list containing all outputs to generate from the simulation | 
