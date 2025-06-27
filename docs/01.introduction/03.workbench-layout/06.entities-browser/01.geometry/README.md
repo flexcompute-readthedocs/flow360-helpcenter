@@ -1,16 +1,16 @@
 # Geometry
 
-Geometry is used to define the physical domain of the simulation in Flow360. Consequently, generation of surface and volume mesh will be based on the provided geometry.
+*Geometry is used to define the physical domain of the simulation in Flow360. Consequently, generation of surface and volume mesh will be based on the provided geometry.*
 
 
 ## Interacting with the geometry
 
 In Flow360 you can do the following with geometry:
 
-### Views
+### **Views**
 Flow360 provides three different ways to view and organize geometric entities using the view buttons at the top of the Geometry group:
 
-#### Grouping View
+#### **Grouping View**
 In this view, entities are organized by their functional groups:
 
 - **Edges grouping** - Controls how edges are grouped based on tags/names from the imported geometry.
@@ -45,21 +45,21 @@ In this view, entities are organized by their functional groups:
     - This color serves as the default for all faces in the group.
     - Individual face colors can override the body group color by setting colors on specific faces.
 
-#### Tree View
+#### **Tree View**
 In this view, entities are organized in a hierarchical structure:
 
 - **Bodies** - Shows all bodies available in the geometry.
   - **Edges** - Shows the edges associated with each body.
   - **Faces** - Shows the faces belonging to each body.
 
-#### List View
+#### **List View**
 In this view, entities are organized in simple lists:
 
 - **Edges** - Shows a flat list of all edges in the geometry.
 - **Faces** - Shows a flat list of all faces in the geometry.
 
-### Selection
-Allows for interactive selection of geometric entities. 
+### **Selection**
+*Allows for interactive selection of geometric entities.*
 
 There are 4 entity selection modes that define whether a given entity can be selected or not:
 - Select point
@@ -67,24 +67,26 @@ There are 4 entity selection modes that define whether a given entity can be sel
 - Select face
 - Select volume
 
-### Grouping
-Grouping is based on geometric attributes and allows for organizing multiple elements into a single group for easier handling and assignment. As described in the Views section, you can control how edges and faces are grouped using the "Edges grouping" and "Faces grouping" options in the Grouping view. Proper grouping of geometric entities facilitates:
+### **Grouping**
+*Grouping is based on geometric attributes and allows for organizing multiple elements into a single group for easier handling and assignment.*
+
+As described in the Views section, you can control how edges and faces are grouped using the "Edges grouping" and "Faces grouping" options in the Grouping view. Proper grouping of geometric entities facilitates:
 
 - Efficient assignment of boundary conditions
 - Organized visualization of complex geometries
 - Simplified selection of related entities
 
-### Visualization
-Geometric entities are visualized in real-time. You can toggle on/off the visiblity of grouped edges and faces.
+### **Visualization**
+*Geometric entities are visualized in real-time. You can toggle on/off the visiblity of grouped edges and faces.*
 
-### Statistics
+### **Statistics**
 To view detailed statistics about your geometry, click the **Geometry Stats** button located to the right of the "Geometry" group heading. This opens a dialog displaying comprehensive statistics for the geometry in your project, including:
 - Number of faces and edges
 - Surface area calculations
 - Other relevant geometric metrics
 
 
-## Geometric Entities
+## **Geometric Entities**
 
 Flow360 recognizes two primary types of geometric entities:
 
@@ -101,15 +103,9 @@ Faces are surfaces that constitute the boundaries of the computational domain. T
 - Organizing geometric features into logical groups
 
 
-## Geometric Considerations
+## **Geometric Considerations**
 
 When preparing a simulation, keep in mind:
 
 - **Mesh Generation**: The shape of geometry as well as its level of detail influences the quality and efficiency of the resulting mesh
 - **Boundary Conditions and refinements**: Proper grouping of faces and edges makes assigning boundary conditions and local mesh refinements a much easier task.
-
-## Related Topics
-
-For more information about specific aspects of handling geometry entities, refer to:
-- [Edges](./01.edges.md) - Detailed information about edge operations and management
-- [Faces](./02.faces.md) - Comprehensive guide to face handling and applications 

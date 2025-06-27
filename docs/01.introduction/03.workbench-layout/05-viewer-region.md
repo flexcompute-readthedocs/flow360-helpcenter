@@ -2,19 +2,19 @@
 
 *The viewer region is the primary visualization interface in Flow360 GUI, providing interactive 3D visualization capabilities for geometry inspection, mesh analysis, and results visualization.*
 
-### 📸 **Example Views**
+## 📸 **Example Views**
 
-#### Geometry View Mode
+### Geometry View Mode
 ![viewer_geometry](./Figures/viewer_geometry.png)
 *Example of the geometry view mode showing a CAD model with entity selection panel.*
 
-#### Mesh View Mode
+### Mesh View Mode
 ![viewer_mesh](./Figures/viewer_mesh.png)
 *Example of the mesh view mode displaying a mesh visualization.*
 
 ---
 
-### **Mouse Operations**
+## **Mouse Operations**
 
 *Control viewport camera and model interaction using mouse inputs.*
 
@@ -31,26 +31,26 @@
 
 ---
 
-### 📋 **Core Features**
+## 📋 **Core Features**
 
-| **Feature** | **Description** | **Icon** |
-|-------------|----------------|-------------------|
-| View modes | Toggle between Geometry/Mesh/Visualization views | <img src="./Figures/view_selection.png" height="48" width="1000" alt="view selection"/> |
-| Boundary conditions | Toggle coloring of boundaries based on their assigned boundary condition | <img src="./Figures/boundary_conditions.png" height="48" alt="boundary conditions"/> |
-| Diagnostic tools | Geometry quality inspection features | <img src="./Figures/diagnostic_tools.png" height="48" alt="diagnostic tools"/> |
-| Mesh display | Mesh display options | <img src="./Figures/mesh_display_solid.png" height="48" alt="mesh display solid"/> <img src="./Figures/mesh_display_edges.png" height="48" alt="mesh display edges"/> |
-| Entity selection mode | Tools for selecting and managing geometry entities | <img src="./Figures/entity_selection.png" height="48" alt="entity selection"/> |
-| Entities visibility | Toggle the visibility of entities by clicking the eye icon when hovering over them | <img src="./Figures/entities_visibility.png" height="48" alt="entities visibility"/> |
-| Mesh metrics | Expand the mesh metrics view by clicking on the icon when in mesh view | <img src="./Figures/mesh_metrics.png" height="48" alt="mesh metrics"/> |
-| Viewpoints | Controls for saving and loading specific camera positions | <img src="./Figures/viewpoint.png" height="48" alt="viewpoint"/> |
-| Length scale indicator | Visual reference showing model dimensions to help maintain perspective | <img src="./Figures/length_scale.png" height="48" alt="length scale"/> |
-| Rotation cube | Interactive orientation widget for quick view rotation to standard angles | <img src="./Figures/rotation_cube.png" height="48" alt="rotation cube"/> |
+| *Feature*                | *Icon*                                                                                                   | *Description*                                                                                      |
+|----------------------------|------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| **View modes**             | <img src="./Figures/view_selection.png" height="48" width="1000" alt="view selection"/>                    | Toggle between Geometry, Mesh, and Visualization views                                               |
+| **Boundary conditions**    | <img src="./Figures/boundary_conditions.png" height="48" alt="boundary conditions"/>                       | Toggle coloring of boundaries based on their assigned boundary condition                              |
+| **Diagnostic tools**       | <img src="./Figures/diagnostic_tools.png" height="48" alt="diagnostic tools"/>                             | Geometry quality inspection features                                                                 |
+| **Mesh display**           | <img src="./Figures/mesh_display_solid.png" height="48" alt="mesh display solid"/> <img src="./Figures/mesh_display_edges.png" height="48" alt="mesh display edges"/> | Mesh display options: solid or solid with edges                                                      |
+| **Entity selection mode**  | <img src="./Figures/entity_selection.png" height="48" alt="entity selection"/>                             | Tools for selecting and managing geometry entities                                                   |
+| **Entities visibility**    | <img src="./Figures/entities_visibility.png" height="48" alt="entities visibility"/>                       | Toggle the visibility of entities by clicking the eye icon when hovering over them                   |
+| **Mesh metrics**           | <img src="./Figures/mesh_metrics.png" height="48" alt="mesh metrics"/>                                     | Expand the mesh metrics view by clicking on the icon when in mesh view                               |
+| **Viewpoints**             | <img src="./Figures/viewpoint.png" height="48" alt="viewpoint"/>                                           | Controls for saving and loading specific camera positions                                            |
+| **Length scale indicator** | <img src="./Figures/length_scale.png" height="48" alt="length scale"/>                                     | Visual reference showing model dimensions to help maintain perspective                               |
+| **Rotation cube**          | <img src="./Figures/rotation_cube.png" height="48" alt="rotation cube"/>                                   | Interactive orientation widget for quick view rotation to standard angles                            |
 
 ---
 
 ### 🔍 **Detailed Descriptions**
 
-#### View modes
+#### **View modes**
 
 *Toggle between Geometry/Mesh/Visualization views using top toolbar tabs.*
 
@@ -60,21 +60,21 @@
 
 >**Note:** Each mode provides context-specific tools and options.
 
-#### Boundary conditions
+#### **Boundary conditions**
 
 *Toggle coloring of boundaries based on their assigned boundary condition.*
 
 >**Note:** Helps verify boundary condition assignments before mesh generation.
 
-#### Diagnostic tools
+#### **Diagnostic tools**
 
 *Tools for geometry quality inspection and validation that color areas of geometry depending on their level of confidence.*
 
-#### Mesh display
+#### **Mesh display**
 
 *Control the visualization of mesh elements and their properties. Can be  set as either solid or solid with edges.*
 
-#### Entity selection mode
+#### **Entity selection mode**
 
 *Tools for selecting and managing geometry entities.*
 
@@ -87,15 +87,15 @@
 
 >**Note:** You can use any combination of selection modes.
 
-#### Entities visibility
+#### **Entities visibility**
 
 *Toggle the visibility of entities by clicking the eye icon when hovering over them.*
 
-#### Mesh metrics
+#### **Mesh metrics**
 
 *Quantitative mesh quality assessment tools for analyzing both surface and volume mesh characteristics.*
 
-##### Element types overview
+##### **Element types overview**
 
 The mesh quality visualization provides statistics for different element types commonly found in CFD meshes:
 
@@ -111,27 +111,27 @@ Nodes are present in every mesh and represent the intersection points of mesh el
   - Pyramids: Transition elements between different element types
   - Hexahedrons: Structured volume elements
 
-##### Surface metrics
+##### **Surface metrics**
 
 *Key metrics for assessing surface mesh quality:*
 
-| Metric | Description | Importance |
+| *Metric* | *Description* | *Importance* |
 |--------|-------------|------------|
-| Area | Face area of surface elements | Identifies areas of highly non-uniform mesh resolution |
-| Area Ratio | Ratio between adjacent face areas | Indicates mesh growth rate and smoothness |
-| Aspect Ratio | Ratio between longest and shortest edge | Measures element skewness and potential numerical issues |
-| First Layer Height | Height of first prismatic layer | Critical for boundary layer resolution |
+| **Area** | Face area of surface elements | Identifies areas of highly non-uniform mesh resolution |
+| **Area Ratio** | Ratio between adjacent face areas | Indicates mesh growth rate and smoothness |
+| **Aspect Ratio** | Ratio between longest and shortest edge | Measures element skewness and potential numerical issues |
+| **First Layer Height** | Height of first prismatic layer | Critical for boundary layer resolution |
 
-##### Volume metrics
+##### **Volume metrics**
 
 *Essential metrics for volume mesh quality assessment:*
 
-| Metric | Description | Importance |
+| *Metric* | *Description* | *Importance* |
 |--------|-------------|------------|
-| Aspect Ratio | Element shape quality indicator | Identifies highly stretched or compressed elements |
-| Volume | Element volume measurement | Helps detect very small or large elements that might affect solution stability |
+| **Aspect Ratio** | Element shape quality indicator | Identifies highly stretched or compressed elements |
+| **Volume** | Element volume measurement | Helps detect very small or large elements that might affect solution stability |
 
-#### Viewpoints
+#### **Viewpoints**
 
 *Controls for saving and loading specific camera positions.*
 
@@ -139,7 +139,7 @@ Nodes are present in every mesh and represent the intersection points of mesh el
   - Click the + icon to add a new viewpoint that will be the current camera position
   - Name the viewpoint to be representative of the camera position
 
-#### Length scale indicator
+#### **Length scale indicator**
 
 *Visual reference showing model dimensions to help maintain perspective.*
 
@@ -148,7 +148,7 @@ Nodes are present in every mesh and represent the intersection points of mesh el
   - Unit system consistency
   - Reference dimension display
 
-#### Rotation cube
+#### **Rotation cube**
 
 *Interactive orientation widget for quick view rotation to standard angles.*
 

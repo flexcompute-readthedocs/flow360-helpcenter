@@ -6,9 +6,9 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 
 ---
 
-### 📋 **Main Interface Sections**
+## 📋 **Main Interface Sections**
 
-| **Section** | **Description** |
+| *Section* | *Description* |
 |-------------|-----------------|
 | 1 | [Viewer region](./05.viewer-region.md) |
 | 2 | [Simulation setup](./../../02.simulation-setup/README.md) / [Analysis](./../../03.analysis/README.md) |
@@ -20,11 +20,13 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 
 ---
 
-### 🔍 **Detailed Descriptions**
+## 🔍 **Detailed Descriptions**
 
-#### 1️⃣ Viewer region
+### 1️⃣ **Viewer region**
 
-The central workspace where the geometry, mesh, and simulation results are displayed. This interactive 3D viewport allows you to:
+*The central workspace where the geometry, mesh, and simulation results are displayed.* 
+
+**This interactive 3D viewport allows you to:**
 - Rotate (hold right mouse button), pan (hold left mouse button), and zoom the model (use the scroll)
 - Select and inspect geometric features (right click)
 - Preview created entities such as volumes or slices
@@ -33,34 +35,39 @@ The central workspace where the geometry, mesh, and simulation results are displ
 
 >**Note:** Click right-mouse button while hovering in the model view area to see additional settings.
 
-#### 2️⃣ Simulation setup / Analysis
+#### 2️⃣ **Simulation setup / Analysis**
 
-A comprehensive control panel containing all simulation parameters and settings, organized into collapsible sections:
-- Meshing parameters
-- Reference geometry
-- Operating conditions
-- Physical and numerical models
-- Time stepping configuration
-- User-defined dynamics
-- Output settings
+*A comprehensive control panel containing all simulation parameters and settings.*
 
-#### 3️⃣ Entities browser
+**In this panel you will:**
 
-Dedicated controls for visual representation of the model and results:
+- Type in your meshing parameters
+- Set up the simulation's physics
+- Change the solver numerics
+- Define anticipated outputs
+- Analyze and monitor the solution
+- Visualise the results
+
+#### 3️⃣ **Entities browser**
+
+*Dedicated controls for visual representation of the model and results.*
 - Geometry display options
 - Mesh visualization settings
 - Results visualization tools
 - Display modes and rendering options
 
-#### 4️⃣ Coordinate system
+#### 4️⃣ **Coordinate system**
 
-A persistent coordinate system indicator showing:
+*Persistent coordinate system.*
+
 - X, Y, and Z axes orientation
 - Current view direction
 
-#### 5️⃣ Top navigation bar
+#### 5️⃣ **Top navigation bar**
 
-Primary navigation and tool selection area containing (from left to right):
+*Primary navigation and tool selection area.*
+
+**Actions available through the top bar:**
 - Return to Flow360 dashboard
 - Project tree
 - Information about the current selected asset
@@ -71,17 +78,18 @@ Primary navigation and tool selection area containing (from left to right):
 - Project settings
 - Fork / run case
 
-#### 6️⃣ Bottom status bar
+#### 6️⃣ **Bottom status bar**
 
-Information and status display showing:
+*Information and status display*
+
 - Current operation status
 - Progress indicators
 - Inspector tools
 - Run status information
 
-#### 7️⃣ Viewer bar
+#### 7️⃣ **Viewer bar**
 
-Allows you to switch between different modes as well as choosing selection options.
+*Allows you to switch between different modes as well as choosing selection options.*
 
 The possible view modes depend on the [project creation method](../02.starting-project.md) and are:
 - Geometry: presents the geometry of the simulated object.
