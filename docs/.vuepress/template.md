@@ -1,22 +1,22 @@
-## 📝 **Form Name**
+# Form Name
 
 *A concise description of the purpose of this form goes here.*
 
 ---
 
-### 📋 **Available Options**
+## 📋 **Available Options**
 
-| **Option** | **Description**                  | **Unit** |
+| *Option* | *Description*                  | *Unspecified additional column (added only in special cases)* |
 |------------|----------------------------------|----------|
-| `Option_1` | Brief description of option 1,   | |
-| `Option_2` | Brief description of option 2,   | pressure (e.g., Pa) |
-| `Option_n` | Brief description of option n,   | length (e.g., m) |
+| **Option_1** | Brief description of option 1,   | Additional info for **Option 1** |
+| **Option_2** | Brief description of option 2,   | Additional info for **Option 2**  |
+| **Option_n** | Brief description of option n,   | Additional info for **Option n**  |
 
 ---
 
-### 🔍 **Detailed Descriptions**
+## 🔍 **Detailed Descriptions**
 
-#### `Option_1`
+### **Option_1**
 
 *More detailed explanation or additional context of Option_1.*
 
@@ -24,7 +24,7 @@
 - **Example:** `sample input`  
 - **Notes:** Additional notes or caveats.
 
-#### `Option_2`
+### **Option_2**
 
 *Detailed explanation for Option_2, clarifying possible values or scenarios.*
 
@@ -32,7 +32,7 @@
 - **Example:** `sample input`  
 - **Notes:** Additional notes or caveats.
 
-#### `Option_n`
+### **Option_n**
 
 *Explanation of the last option.*
 
