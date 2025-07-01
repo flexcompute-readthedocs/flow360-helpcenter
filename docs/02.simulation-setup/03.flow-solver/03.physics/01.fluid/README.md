@@ -1,14 +1,10 @@
 # Fluid Model
 
-## Overview
+*The Fluid model represents the primary medium for CFD simulations in Flow360. It integrates several components that together govern the fluid dynamics behavior, including the Navier-Stokes solver, turbulence modeling, transition effects, and initial conditions. The Fluid model is applied to volume entities within your simulation domain.*
 
-The Fluid model represents the primary medium for CFD simulations in Flow360. It integrates several components that together govern the fluid dynamics behavior, including the Navier-Stokes solver, turbulence modeling, transition effects, and initial conditions. The Fluid model is applied to volume entities within your simulation domain.
+> **Note:** The Fluid model itself does not contain material property definitions such as viscosity, thermal conductivity, or gas constant. These properties are instead specified in the **[Operating Condition](../../../01.flow-conditions/01.operating-condition.md)** section of your simulation setup. This separation allows the same Fluid model configuration to be used with different fluid types or conditions.
 
-## Important Note
-
-The Fluid model itself does not contain material property definitions such as viscosity, thermal conductivity, or gas constant. These properties are instead specified in the **Operating Condition** section of your simulation setup. This separation allows the same Fluid model configuration to be used with different fluid types or conditions.
-
-## Major Components
+## **Major Components**
 
 The Fluid model consists of four primary components, each documented in detail in its own section:
 
@@ -20,7 +16,7 @@ The Fluid model consists of four primary components, each documented in detail i
 
 4. [**Initial Condition**](./04.initial-condition.md): Defines the starting flow state for the simulation, which can significantly impact convergence rates and stability, especially for complex flows.
 
-## Configuration Example
+## **Configuration Example**
 
 Below is a representative example of a Fluid model configuration (shown for reference purposes):
 
@@ -47,7 +43,7 @@ Fluid:
     P: "p"
 ```
 
-## Common Applications
+## **Common Applications**
 
 The Fluid model is used in virtually all Flow360 simulations, including:
 
@@ -57,7 +53,7 @@ The Fluid model is used in virtually all Flow360 simulations, including:
 - Propulsion systems (propellers, rotors, jets)
 - Heat transfer applications (when coupled with thermal models)
 
-## Best Practices
+## **Best Practices**
 
 - Match the solver settings to your specific application requirements and flow regime
 - For most aerospace applications, the Spalart-Allmaras turbulence model provides a good balance of accuracy and efficiency

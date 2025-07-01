@@ -13,7 +13,7 @@
 
 ---
 
-### 🔍 **Detailed Subsections**
+## 🔍 **Detailed Subsections**
 
 - **Flow Conditions:**
   - [Operating condition](./01.flow-conditions/01.operating-condition.md): Define physical values of fluid properties

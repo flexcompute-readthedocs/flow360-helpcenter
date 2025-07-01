@@ -1,4 +1,4 @@
-## **Solid Model**
+# Solid Model
 
 ::: warning Volume Mesh Workflow Only
 The Solid model is only available in the volume mesh workflow. It cannot be used with the surface mesh workflow.
@@ -8,71 +8,53 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 
 ---
 
-### 📋 **Available Options**
+## 📋 **Available Parameters**
 
-| **Option** | **Description** | **Unit** |
-|------------|----------------|-----------|
-| `name` | Optional name identifier for the Solid model | |
-| `entities` | List of volume entities where heat transfer equations will be solved | |
-| `material` | Material properties of the solid | thermal conductivity (e.g., W/m·K), density (e.g., kg/m³), specific heat capacity (e.g., J/kg·K) |
-| `heat_equation_solver` | Settings for the heat equation solver. See [Heat Equation Solver](./01.heat-equation-solver.md) documentation for details. | |
-| `volumetric_heat_source` | Heat source per unit volume | power per volume (e.g., W/m³) |
-| `initial_condition` | Initial temperature condition for the heat equation | temperature (e.g., K) |
+| *Parameter* | *Description* |
+|-------------|---------------|
+| **[Material](./02.material.md)** | Material properties of the solid |
+| **[Heat equation solver](./01.heat-equation-solver.md)** | Settings for the heat equation solver |
+| **Volumetric heat source** | Heat source per unit volume |
+| **[Initial condition](./03.initial-condition.md)** | Initial temperature condition for the heat equation |
+| **Assigned zones** | List of volume entities where heat transfer equations will be solved |
 
 ---
 
-### 🔍 **Detailed Descriptions**
+## 🔍 **Detailed Descriptions**
 
-#### `name`
 
-*An optional identifier for the Solid model instance.*
-
-- **Default:** `None`
-- **Example:** `"solid_block"`
-- **Notes:** Used for identification and reference purposes.
-
-#### `entities`
-
-*List of volume entities where the heat transfer equation will be solved.*
-
-- **Default:** Required field
-- **Example:** `[volume_mesh["solid-*"]]`
-- **Notes:** Accepts volume mesh entities or patterns matching multiple volumes.
-
-#### `material`
+### **[Material](./02.material.md)** 
 
 *Material properties of the solid, defining thermal characteristics.*
 
-- **Default:** Required field
-- **Example:** See Python example below
-- **Notes:** Must specify thermal conductivity, density, and specific heat capacity.
+The details of the material setup are outlined [here](./02.material.md).
 
-#### `heat_equation_solver`
+### **[Heat equation solver](./01.heat-equation-solver.md)**
 
 *Configuration for the heat equation solver settings. See [Heat Equation Solver](./01.heat-equation-solver.md) documentation for details.*
 
-- **Default:** See [Heat Equation Solver](./01.heat-equation-solver.md#-available-options) for default values
-- **Example:** See Python example below
-- **Notes:** Controls solver parameters like tolerance and iteration limits.
+The details of the heat equation solver setup are outlined [here](./01.heat-equation-solver.md).
 
-#### `volumetric_heat_source`
+### **Volumetric heat source**
 
 *Specifies the heat source per unit volume in the solid.*
 
 - **Default:** `0 W/m³`
-- **Example:** `1.0 * fl.u.W / fl.u.m**3`
+- **Example:** `1.0  W/m`
 - **Notes:** Can be a constant value or a string expression.
 
-#### `initial_condition`
+###  **[Initial condition](./03.initial-condition.md)**
 
 *Initial temperature condition for the heat equation solver.*
 
-- **Default:** For unsteady: required, For steady: `None`
-- **Example:** `HeatEquationInitialCondition(temperature="1.0")`
-- **Notes:** 
-  - Can be specified using expressions for spatial variation
-  - Required for unsteady simulations
-  - Optional for steady simulations (will use a default uniform temperature field if not specified)
+The details of the initial condition setup are outlined [here](./03.initial-condition.md).
+
+### **Assigned zones**
+
+*List of volume entities where the heat transfer equation will be solved.*
+
+- **Required**
+- **Notes:** Accepts volume mesh entities or patterns matching multiple volumes.
 
 ---
 
