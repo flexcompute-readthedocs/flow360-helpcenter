@@ -1,72 +1,82 @@
-## 📝 **Outputs List**
+# Outputs List
 
 *Control what data is generated during and after simulation runs, including which flow variables are saved, where they are saved, and how frequently they are written to files.*
 
 ---
 
-### 📋 **Available Output Types**
+## 📋 **Available Output Types**
 
-| **Output Type** | **Description** | **Use Case** |
-|-----------------|-----------------|--------------|
-| [`Volume Output`](01.volume-output.md) | Flow field data throughout the computational volume | Visualizing 3D flow structures, vortex development |
-| [`Time Average Volume Output`](02.time-averaging-volume-output.md) | Time-averaged flow field data throughout the volume | Statistical analysis of unsteady flows |
-| [`Surface Output`](03.surface-output.md) | Flow field data on geometry or volume mesh boundaries | Analyzing surface forces, pressure distributions |
-| [`Time Average Surface Output`](04.time-averaging-surface-output.md) | Time-averaged flow field data on surfaces | Statistical analysis of surface phenomena |
-| [`Slice Output`](05.slice-output.md) | Flow field data on user-defined slice planes | Examining flow cross-sections |
-| [`Time Average Slice Output`](06.time-averaging-slice-output.md) | Time-averaged flow field data on slice planes | Statistical analysis on planes |
-| [`Probe Outputs`](07.probe-outputs.md) | Flow field data monitoring during simulation | Tracking convergence and flow properties |
-| [`Time Average Probe Outputs`](08.time-averaged-probe-outputs.md) | Time-averaged monitoring data | Statistical monitoring data |
-| [`Surface Probe Output`](09.surface-probe-outputs.md) | Flow field data at specific points projected onto surfaces | Point-specific surface data |
-| [`Isosurface Output`](11.isosurface-output.md) | Flow field data on surfaces of constant variable value | Visualization of vortices, shock waves |
-| [`Aeroacoustic Output`](12.aeroacoustic-output.md) | Data for aeroacoustic analysis at observer positions | Noise prediction and analysis |
-| [`Streamline output`](./14.streamline-output.md) |  | Visualisation of 3D flow structures |
+| *Output Type* | *Description* | *Use Case* |
+|---------------|---------------|------------|
+| **Volume Output** | Flow field data throughout the computational volume | Visualizing 3D flow structures, vortex development |
+| **Time Average Volume Output** | Time-averaged flow field data throughout the volume | Statistical analysis of unsteady flows |
+| **Surface Output** | Flow field data on geometry or volume mesh boundaries | Analyzing surface forces, pressure distributions |
+| **Time Average Surface Output** | Time-averaged flow field data on surfaces | Statistical analysis of surface phenomena |
+| **Slice Output** | Flow field data on user-defined slice planes | Examining flow cross-sections |
+| **Time Average Slice Output** | Time-averaged flow field data on slice planes | Statistical analysis on planes |
+| **Probe Outputs** | Flow field data monitoring during simulation | Tracking convergence and flow properties |
+| **Time Average Probe Outputs** | Time-averaged monitoring data | Statistical monitoring data |
+| **Surface Probe Output** | Flow field data at specific points projected onto surfaces | Point-specific surface data |
+| **Isosurface Output** | Flow field data on surfaces of constant variable value | Visualization of vortices, shock waves |
+| **Aeroacoustic Output** | Data for aeroacoustic analysis at observer positions | Noise prediction and analysis |
+| **Streamline Output** | Streamline visualization data | Visualization of 3D flow structures |
+
 ---
 
-### **Additional outputs available through Python API**
+## 📋 **Additional Outputs Available Through Python API**
 
-| **Output Type** | **Description** | **Use Case** |
-|-----------------|-----------------|--------------|
-| [`Surface Slice Output`](10.surface-slice-output.md) | Flow field data on slices of surfaces | Cross-sectional analysis of surface phenomena |
+| *Output Type* | *Description* | *Use Case* |
+|---------------|---------------|------------|
+| **[Surface Slice Output](./10.surface-slice-output.md)** | Flow field data on slices of surfaces | Cross-sectional analysis of surface phenomena |
 
-### 🔍 **Common Settings**
+---
 
-#### `Name`
+## 🔍 **Common Settings**
+
+### **Name**
 
 *A descriptive name for the output.*
 
-- **Default:** *Dependent on output type*
-- **Example:** `"Main Wing Surface Output"` 
+- **Default:** Dependent on output type
+- **Example:** `"Main Wing Surface Output"`
+- **Notes:** 
+  - Used for identification and reference purposes.
 
-#### `Output Fields`
+### **Output Fields**
 
 *The flow variables to include in the output.*
 
-- **Default:** *Varies by output type*
+- **Default:** Varies by output type
 - **Example:** `["Cp", "Cf", "Mach"]`
-- **Notes:** See [Output Fields and Nondimensional Values](00.output-fields.md) for details on available fields
+- **Notes:** 
+  - See [Output Fields and Nondimensional Values](00.output-fields.md) for details on available fields.
 
-#### `Frequency`
+### **Frequency**
 
 *How often to write output files (in number of time steps).*
 
 - **Default:** `-1` (output only at the end of simulation)
 - **Example:** `100` (output every 100 time steps)
-- **Notes:** Increase for animations, decrease for storage efficiency
+- **Notes:**
+  - Increase for animations, decrease for storage efficiency.
 
-#### `Frequency Offset`
+### **Frequency Offset**
 
 *The time step at which to start writing output.*
 
 - **Default:** `0` (start at beginning of simulation)
 - **Example:** `1000` (start after 1000 time steps)
+- **Notes:** 
+  - Controls when output generation begins.
 
-#### `Output Format`
+### **Output Format**
 
 *The file format for output data.*
 
 - **Default:** `"paraview"`
 - **Example:** `"both"` (both Paraview and Tecplot)
-- **Notes:** Options include "paraview", "tecplot", or "both"
+- **Notes:** 
+  - Options include "paraview", "tecplot", or "both".
 
 ---
 
@@ -98,7 +108,7 @@
 
 ---
 
-## Output File Formats
+## 📁 **Output File Formats**
 
 Flow360 supports multiple output file formats:
 
@@ -108,6 +118,6 @@ Flow360 supports multiple output file formats:
 
 For more information about output file formats, see the [Output Formats](13.output-formats.md) page.
 
-## Detailed Settings
+## **Detailed Settings**
 
 Each output type has specific configuration options. For detailed documentation on configuring each type of output, refer to the links in the table above. 
