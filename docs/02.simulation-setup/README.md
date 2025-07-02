@@ -4,7 +4,7 @@
 
 ## 📋 **Contents**
 
-| **Section** | **Description** |
+| *Section* | *Description* |
 |-------------|-----------------|
 | [Flow Conditions](./01.flow-conditions/README.md) | Define freestream and operating conditions |
 | [Mesh](./02.mesh/README.md) | Configure mesh generation, rotation regions, and refinements |

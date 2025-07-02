@@ -4,7 +4,7 @@
 
 ## **Contents**
 
-| **Section** | **Contents** |
+| *Section* | *Contents* |
 |-------------|--------------|
 |[Dashboard](01.dashboard.md) | Navigation manual through the Flow360 Dashboard |
 |[Starting a project](./02.starting-project.md) | Guidelines on how to start a project |
