@@ -33,15 +33,6 @@
 
 ## 🔍 **Common Settings**
 
-### **Name**
-
-*A descriptive name for the output.*
-
-- **Default:** Dependent on output type
-- **Example:** `"Main Wing Surface Output"`
-- **Notes:** 
-  - Used for identification and reference purposes.
-
 ### **Output Fields**
 
 *The flow variables to include in the output.*
