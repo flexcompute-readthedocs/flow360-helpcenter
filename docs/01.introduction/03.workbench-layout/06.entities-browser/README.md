@@ -12,8 +12,6 @@
 **"View only" mode**: The Entities browser has limited functionality when the Workbench is in "View only" mode. It can be used to show/hide elements and to browse the available entities and highlight them in the viewer. Creating and updating viewpoints is also supported at any time.  
 
 
----
-
 ## **Project Started from Geometry**
 
 *When starting a project from geometry, the entity hierarchy is organized to facilitate the progression from geometric definition to simulation setup.*
@@ -34,7 +32,6 @@ Below the geometry section, you'll find containers for various simulation compon
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
 - [**Derived**](./07.derived.md) - Automatically generated entities based on your geometry, such as farfield and symmetry planes
 
----
 
 ## **Project Started from Surface Mesh**
 
@@ -51,8 +48,6 @@ Similar to geometry-based projects, with containers for:
 - [**Volumes**](./04.volumes.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
 - [**Points**](./05.points.md) - Zero-dimensional entities used for flow monitoring
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
-
----
 
 ## **Project Started from Volume Mesh**
 
@@ -72,8 +67,6 @@ Similar to geometry-based projects, with containers for:
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
 
 >**Note:** Contrary to starting from geometry and surface mesh, there are no derived entities when project starts from volume mesh.
-
----
 
 ## **Related pages**
 

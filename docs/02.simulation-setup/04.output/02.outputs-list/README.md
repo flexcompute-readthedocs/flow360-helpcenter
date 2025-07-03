@@ -73,10 +73,27 @@
 
 *The file format for output data.*
 
-- **Default:** `"paraview"`
-- **Example:** `"both"` (both Paraview and Tecplot)
+- **Default:** `paraview`
+- **Options:**
+  - `paraview`
+  - `tecplot`
+  - `both`
 - **Notes:** 
-  - Options include "paraview", "tecplot", or "both".
+  - Choose the format that best suits your post-processing workflow.
+
+## 📁 **Output File Formats**
+
+Flow360 supports multiple output file formats:
+
+- **Paraview** (.vtu, .vtp) - For visualization in ParaView
+- **Tecplot** (.szplt) - For visualization in Tecplot
+- **CSV** - For tabular data
+
+For more information about output file formats, see the [Output Formats](13.output-formats.md) page.
+
+## **Detailed Settings**
+
+Each output type has specific configuration options. For detailed documentation on configuring each type of output, refer to the links in the table above. 
 
 ---
 
@@ -108,16 +125,3 @@
 
 ---
 
-## 📁 **Output File Formats**
-
-Flow360 supports multiple output file formats:
-
-- **Paraview** (.vtu, .vtp) - For visualization in ParaView
-- **Tecplot** (.szplt) - For visualization in Tecplot
-- **CSV** - For tabular data
-
-For more information about output file formats, see the [Output Formats](13.output-formats.md) page.
-
-## **Detailed Settings**
-
-Each output type has specific configuration options. For detailed documentation on configuring each type of output, refer to the links in the table above. 

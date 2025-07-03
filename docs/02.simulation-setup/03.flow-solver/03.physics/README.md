@@ -2,12 +2,12 @@
 
 *This section covers the physical models that simulate the 3D flow behavior in Flow360.*
 
-## Available Models
+## **Available Models**
 
 | *Model* | *Description* | *Key Parameters* |
 |------------|----------------------------------|----------|
 | **[Fluid](./01.fluid/README.md)** | Fluid model | [Navier-Stokes Solver](./01.fluid/01.navier-stokes-solver.md), [Turbulence Model](./01.fluid/02.turbulence-model.md), [Transition Model](./01.fluid/03.transition-model.md), [Initial Condition](./01.fluid/04.initial-condition.md) |
-| **[Solid](./02.solid/README.md)** | Solid body model for conjugate heat transfer | [Heat Equation Settings](02.solid/01.heat-equation-solver.md) |
+| **[Solid](./02.solid/README.md)** | Solid body model for conjugate heat transfer | [Heat Equation Settings](02.solid/01.heat-equation-solver.md), [Material](./02.solid/02.material.md), [Initial Condition](./02.solid/03.initial-condition.md) |
 | **[Rotation](./03.rotation.md)** | Handling of rotating components | Rotation Type (MRF/SRF/Physical), Angular Velocity |
 | **[BET Disk](./04.bet-disk.md)** | Blade Element Theory for propeller/rotor modeling | Polars, RPM |
 | **[Actuator Disk](./05.actuator-disk.md)** | Simplified model for propellers and rotors | Thrust Coefficient, Swirl Distribution |
@@ -31,10 +31,12 @@ Click on each model to see detailed documentation including available parameters
 
 ### **[Solid](./02.solid/README.md)**
 
-*Conjugate heat transfer modeling for solid materials enabling accurate thermal analysis of components in contact with fluid flow. Provides comprehensive material property specification, heat equation solver configuration, and thermal boundary condition management for multi-physics simulations.*
+*Conjugate heat transfer modeling for solid materials enabling accurate thermal analysis of components in contact with fluid flow. Provides material property specification, heat equation solver configuration, and thermal boundary condition management for multi-physics simulations.*
 
 **Subsections:**
 - **[Heat Equation Solver](./02.solid/01.heat-equation-solver.md)** - Thermal conduction solver settings and material property configuration
+- **[Material](02.solid/02.material.md)** - Material properties specification
+- **[Initial condition](02.solid/03.initial-condition.md)** - The initial state of solid bodies
 
 ### **[Rotation](./03.rotation.md)**
 
