@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 **Available Output Types**
+## **Available Output Types**
 
 | *Output Type* | *Description* | *Use Case* |
 |---------------|---------------|------------|
@@ -23,7 +23,7 @@
 
 ---
 
-## 📋 **Additional Outputs Available Through Python API**
+## **Additional Outputs Available Through Python API**
 
 | *Output Type* | *Description* | *Use Case* |
 |---------------|---------------|------------|
@@ -31,7 +31,7 @@
 
 ---
 
-## 🔍 **Common Settings**
+## **Common Settings**
 
 ### **Output Fields**
 

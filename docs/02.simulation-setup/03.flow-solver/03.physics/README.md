@@ -17,7 +17,7 @@ Click on each model to see detailed documentation including available parameters
 
 ---
 
-## 📋 🔍 **Detailed Descriptions**
+## **Detailed Descriptions**
 
 ### **[Fluid](./01.fluid/README.md)**
 

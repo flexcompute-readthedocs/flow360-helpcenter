@@ -11,7 +11,7 @@
 
 ---
 
-## 📋 🔍 **Detailed Descriptions**
+## **Detailed Descriptions**
 
 ### **[Reference dimensions](./01.reference-dimensions.md)**
 

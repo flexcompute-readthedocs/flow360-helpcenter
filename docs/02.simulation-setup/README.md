@@ -1,4 +1,4 @@
-# 🛠️ Simulation Setup
+# Simulation Setup
 
 *This section covers all aspects of setting up a simulation in Flow360, including flow conditions, meshing, solver configuration, and output settings.*
 

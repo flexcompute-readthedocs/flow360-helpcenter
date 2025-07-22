@@ -6,7 +6,7 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 
 ---
 
-## 📋 **Main Interface Sections**
+## **Main Interface Sections**
 
 | *Section* | *Description* |
 |-------------|-----------------|
@@ -20,7 +20,7 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 
 ---
 
-## 🔍 **Detailed Descriptions**
+## **Detailed Descriptions**
 
 ### 1️⃣ **Viewer region**
 

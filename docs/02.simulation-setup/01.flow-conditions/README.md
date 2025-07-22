@@ -1,7 +1,7 @@
 # Flow conditions 
 *A section for defining the properties of the freestream.*
 
-## 📋 **Contents** 
+## **Contents** 
 
 | *Settings group* | *Short description* |
 |--------------------|-----------------|
@@ -10,7 +10,7 @@
 
 ---
 
-## 🔍 **Detailed Descriptions**
+## **Detailed Descriptions**
 
 ### **[Operating condition](./01.operating-condition.md)**
 

@@ -1,7 +1,7 @@
 # Flow solver 
 A section for setting the solver numerics and domain boundary conditions.
 
-## 📋 **Contents** 
+## **Contents** 
 
 | *Option* | *Description* |
 |------------|----------------------------------|
@@ -12,7 +12,7 @@ A section for setting the solver numerics and domain boundary conditions.
 
 ---
 
-## 📋 🔍 **Detailed Descriptions**
+## **Detailed Descriptions**
 
 ### **[Boundary conditions](./01.boundary-conditions/README.md)**
 

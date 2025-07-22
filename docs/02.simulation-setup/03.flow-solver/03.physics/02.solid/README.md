@@ -8,7 +8,7 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 
 ---
 
-## 📋 **Available Parameters**
+## **Available Parameters**
 
 | *Parameter* | *Description* |
 |-------------|---------------|
@@ -20,7 +20,7 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 
 ---
 
-## 🔍 **Detailed Descriptions**
+## **Detailed Descriptions**
 
 
 ### **[Material](./02.material.md)** 
