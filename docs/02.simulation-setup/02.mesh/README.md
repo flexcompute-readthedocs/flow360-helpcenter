@@ -23,7 +23,7 @@ A section for defining the meshing settings.
 
 ### **[Refinements](./03.refinements/README.md)**
 
-*Comprehensive local mesh control system for critical regions. Provides six refinement types including surface edge refinement, surface refinement, boundary layer refinement, passive spacing, uniform refinement, and axisymmetric refinement for precise control over mesh resolution in specific regions.*
+*Comprehensive local mesh control system for critical regions. Provides six refinement types.*
 
 **Subsections:**
 - **[Surface Edge Refinement](./03.refinements/01.surface-edge-refinement.md)** - Controls mesh resolution near edges

@@ -14,8 +14,8 @@
 
 ### **[Operating condition](./01.operating-condition.md)**
 
-*Defines the physical values of fluid properties including temperature, pressure, density, viscosity, and other thermodynamic properties. Essential for establishing the baseline fluid state and material characteristics for the simulation.*
+*Defines the physical values of fluid properties including temperature, pressure, density and viscosity. Essential for establishing the baseline fluid state and material characteristics for the simulation.*
 
 ### **[Farfield](./02.farfield.md)**
 
-*Settings for the generation or identification of farfield boundary conditions. Controls how the simulation domain extends to infinity and defines the freestream conditions at the farfield boundaries.*
+*Settings governing the farfield generation or identification.*

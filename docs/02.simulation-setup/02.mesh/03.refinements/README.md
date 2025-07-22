@@ -2,9 +2,9 @@
 
 *This document provides an overview of mesh refinement capabilities in Flow360. Refinements enable precise control over mesh resolution in specific regions of your geometry to better capture flow features or geometric details.*
 
-## 📋 **Available Refinement Types**
+## **Available Refinement Types**
 
-| *Refinement type* | *Short description* |
+| *Refinement type* | *Description* |
 |--------------------|-----------------|
 |[**Surface Edge Refinement**](./01.surface-edge-refinement.md) | Controls mesh resolution near edges |
 |[**Surface Refinement**](./02.surface-refinement.md) | Controls surface mesh cell size |
@@ -13,7 +13,7 @@
 |[**Uniform Refinement**](./05.uniform-refinement.md) | Creates uniform mesh spacing in a region |
 |[**Axisymmetric Refinement**](./06.axisymmetric-refinement.md) | Creates structured-like mesh with cylindrical bias |
 
-## 🔍 **General Guidelines**
+## **General Guidelines**
 
 ### **Refinement Selection**
 

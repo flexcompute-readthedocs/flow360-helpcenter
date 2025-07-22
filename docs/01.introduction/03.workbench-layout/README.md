@@ -16,7 +16,7 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 | 4 | Coordinate system |
 | 5 | [Top navigation bar](./04.top-bar.md) |
 | 6 | [Bottom status bar](./07.status-bar.md) |
-| 7 | Viewer bar | 
+| 7 | [Viewer bar](./05.viewer-region.md) | 
 
 ---
 
@@ -27,8 +27,8 @@ The Flow360 workbench provides an intuitive interface for computational fluid dy
 *The central workspace where the geometry, mesh, and simulation results are displayed.* 
 
 **This interactive 3D viewport allows you to:**
-- Rotate (hold right mouse button), pan (hold left mouse button), and zoom the model (use the scroll)
-- Select and inspect geometric features (right click)
+- Rotate (hold left mouse button), pan (hold right mouse button), and zoom the model (use the scroll)
+- Select and inspect geometric features (left click)
 - Preview created entities such as volumes or slices
 - View mesh details
 - Visualize simulation results and flow fields

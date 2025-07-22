@@ -48,6 +48,7 @@ Similar to geometry-based projects, with containers for:
 - [**Volumes**](./04.volumes.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
 - [**Points**](./05.points.md) - Zero-dimensional entities used for flow monitoring
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
+- [**Derived**](./07.derived.md) - Automatically generated entities based on your geometry, such as farfield
 
 ## **Project Started from Volume Mesh**
 
@@ -57,7 +58,7 @@ Similar to geometry-based projects, with containers for:
 The root entity for mesh-based projects, containing:
 
 - [**Zones**](./03.volume-mesh/01.zones.md) - Mesh zone definitions for specifying different regions with distinct properties or behavior
-- [**Boundaries**](./03.volume-mesh/02.boundaries.md) - surface patches for oundary condition specifications in the simulation domain
+- [**Boundaries**](./03.volume-mesh/02.boundaries.md) - surface patches for boundary condition specifications in the simulation domain
 
 ### **Additional Entities**
 Similar to geometry-based projects, with containers for:

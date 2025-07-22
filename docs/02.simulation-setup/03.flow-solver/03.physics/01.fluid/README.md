@@ -2,7 +2,7 @@
 
 *The Fluid model represents the primary medium for CFD simulations in Flow360. It integrates several components that together govern the fluid dynamics behavior, including the Navier-Stokes solver, turbulence modeling, transition effects, and initial conditions. The Fluid model is applied to volume entities within your simulation domain.*
 
-> **Note:** The Fluid model itself does not contain material property definitions such as viscosity, thermal conductivity, or gas constant. These properties are instead specified in the **[Operating Condition](../../../01.flow-conditions/01.operating-condition.md)** section of your simulation setup. This separation allows the same Fluid model configuration to be used with different fluid types or conditions.
+> **Note:** The Fluid model itself does not contain fluid parameters such as density and temperature. These properties are instead specified in the **[Operating Condition](../../../01.flow-conditions/01.operating-condition.md)** section of your simulation setup. This separation allows the same Fluid model configuration to be used with different conditions.
 
 ## **Major Components**
 
