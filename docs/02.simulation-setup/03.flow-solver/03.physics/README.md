@@ -6,12 +6,12 @@
 
 | *Model* | *Description* | *Key Parameters* |
 |------------|----------------------------------|----------|
-| **[Fluid](./01.fluid/README.md)** | Fluid model | [Navier-Stokes Solver](./01.fluid/01.navier-stokes-solver.md), [Turbulence Model](./01.fluid/02.turbulence-model.md), [Transition Model](./01.fluid/03.transition-model.md), [Initial Condition](./01.fluid/04.initial-condition.md) |
-| **[Solid](./02.solid/README.md)** | Solid body model for conjugate heat transfer | [Heat Equation Settings](02.solid/01.heat-equation-solver.md), [Material](./02.solid/02.material.md), [Initial Condition](./02.solid/03.initial-condition.md) |
-| **[Rotation](./03.rotation.md)** | Handling of rotating components | Rotation Type (MRF/SRF/Physical), Angular Velocity |
-| **[BET Disk](./04.bet-disk.md)** | Blade Element Theory for propeller/rotor modeling | Polars, RPM |
-| **[Actuator Disk](./05.actuator-disk.md)** | Simplified model for propellers and rotors | Thrust Coefficient, Swirl Distribution |
-| **[Porous Medium](./06.porous-medium.md)** | Model for flow through porous regions | Darcy Coefficient, Forchheimer Coefficient |
+| **[Fluid](./01.fluid/README.md)** | Fluid model | [Navier-Stokes solver](./01.fluid/01.navier-stokes-solver.md), [Turbulence model](./01.fluid/02.turbulence-model.md), [Transition model](./01.fluid/03.transition-model.md), [Initial Condition](./01.fluid/04.initial-condition.md) |
+| **[Solid](./02.solid/README.md)** | Solid body model for conjugate heat transfer | [Heat equation settings](02.solid/01.heat-equation-solver.md), [Material](./02.solid/02.material.md), [Initial condition](./02.solid/03.initial-condition.md) |
+| **[Rotation](./03.rotation.md)** | Handling of rotating components | Rotation type (MRF/SRF/Physical), Angular velocity |
+| **[BET disk](./04.bet-disk.md)** | Blade Element Theory for propeller/rotor modeling | Polars, RPM |
+| **[Actuator disk](./05.actuator-disk.md)** | Simplified model for propellers and rotors | Thrust coefficient, Swirl distribution |
+| **[Porous medium](./06.porous-medium.md)** | Model for flow through porous regions | Darcy coefficient, Forchheimer coefficient |
 
 Click on each model to see detailed documentation including available parameters, descriptions, usage tips, and example configurations. 
 
@@ -24,17 +24,17 @@ Click on each model to see detailed documentation including available parameters
 *Modelling of the fluid behaviour in the domain.*
 
 **Subsections:**
-- **[Navier-Stokes Solver](./01.fluid/01.navier-stokes-solver.md)** - Core flow solver configuration
-- **[Turbulence Model](./01.fluid/02.turbulence-model.md)** - Advanced turbulence modeling options including RANS, LES, and hybrid approaches
-- **[Transition Model](./01.fluid/03.transition-model.md)** - Laminar-to-turbulent transition prediction for improved accuracy
-- **[Initial Condition](./01.fluid/04.initial-condition.md)** - Flow field initialization strategies and convergence acceleration
+- **[Navier-Stokes solver](./01.fluid/01.navier-stokes-solver.md)** - Core flow solver configuration
+- **[Turbulence model](./01.fluid/02.turbulence-model.md)** - Advanced turbulence modeling options including RANS, LES, and hybrid approaches
+- **[Transition model](./01.fluid/03.transition-model.md)** - Laminar-to-turbulent transition prediction for improved accuracy
+- **[Initial condition](./01.fluid/04.initial-condition.md)** - Flow field initialization strategies and convergence acceleration
 
 ### **[Solid](./02.solid/README.md)**
 
 *Conjugate heat transfer modeling for solid materials enabling accurate thermal analysis of components in contact with fluid flow. Provides material property specification, heat equation solver configuration, and thermal boundary condition management for multi-physics simulations.*
 
 **Subsections:**
-- **[Heat Equation Solver](./02.solid/01.heat-equation-solver.md)** - Thermal conduction solver settings and material property configuration
+- **[Heat equation solver](./02.solid/01.heat-equation-solver.md)** - Thermal conduction solver settings and material property configuration
 - **[Material](02.solid/02.material.md)** - Material properties specification
 - **[Initial condition](02.solid/03.initial-condition.md)** - The initial state of solid bodies
 
@@ -48,7 +48,7 @@ Click on each model to see detailed documentation including available parameters
 - Interface treatment between rotating and stationary regions
 - Support for complex multi-rotor configurations
 
-### **[BET Disk](./04.bet-disk.md)**
+### **[BET disk](./04.bet-disk.md)**
 
 *Blade Element Theory implementation for high-fidelity propeller and rotor modeling. Enables detailed aerodynamic analysis of rotating blades through sectional force calculations, polar data integration, and performance prediction for aerospace and marine applications.*
 
@@ -58,7 +58,7 @@ Click on each model to see detailed documentation including available parameters
 - Performance prediction including thrust and power
 - Support for complex blade geometries and operating conditions
 
-### **[Actuator Disk](./05.actuator-disk.md)**
+### **[Actuator disk](./05.actuator-disk.md)**
 
 *Simplified propeller and rotor modeling approach using momentum theory. Provides efficient representation of rotating components through thrust coefficient specification and swirl distribution modeling, ideal for preliminary design and optimization studies.*
 
@@ -68,7 +68,7 @@ Click on each model to see detailed documentation including available parameters
 - Efficient computation for design optimization
 - Support for multiple actuator disk configurations
 
-### **[Porous Medium](./06.porous-medium.md)**
+### **[Porous medium](./06.porous-medium.md)**
 
 *Advanced modeling of flow through porous regions including filters, heat exchangers, and porous materials. Implements Darcy-Forchheimer theory with comprehensive coefficient specification for accurate pressure drop and flow distribution prediction.*
 

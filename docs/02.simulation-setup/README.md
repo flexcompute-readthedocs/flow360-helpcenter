@@ -25,7 +25,7 @@
   - [Refinements](./02.mesh/03.refinements/README.md): Local mesh control for critical regions
 
 - **Flow Solver:**
-  - [Boundary Conditions](./03.flow-solver/01.boundary-conditions/README.md): Define domain boundaries
+  - [Boundary conditions](./03.flow-solver/01.boundary-conditions/README.md): Define domain boundaries
   - [Time](./03.flow-solver/02.time.md): Time resolution controls
   - [Physics](./03.flow-solver/03.physics/README.md): Physical models in the simulation
   - [User-defined dynamics](./03.flow-solver/04.user-defined-dynamics.md): Custom dynamics definitions

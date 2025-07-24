@@ -40,9 +40,9 @@ A section for setting the solver numerics and domain boundary conditions.
 - **[Fluid](./03.physics/01.fluid/README.md)** - Core fluid dynamics including Navier-Stokes solver, turbulence models, transition models, and initial conditions
 - **[Solid](./03.physics/02.solid/README.md)** - Conjugate heat transfer in solid materials with material properties and heat equation solver
 - **[Rotation](./03.physics/03.rotation.md)** - Rotating component handling
-- **[BET Disk](./03.physics/04.bet-disk.md)** - Blade Element Theory for propeller/rotor modeling
-- **[Actuator Disk](./03.physics/05.actuator-disk.md)** - Simplified propeller and rotor modeling
-- **[Porous Medium](./03.physics/06.porous-medium.md)** - Flow through porous regions modeling
+- **[BET disk](./03.physics/04.bet-disk.md)** - Blade Element Theory for propeller/rotor modeling
+- **[Actuator disk](./03.physics/05.actuator-disk.md)** - Simplified propeller and rotor modeling
+- **[Porous medium](./03.physics/06.porous-medium.md)** - Flow through porous regions modeling
 
 ### **[User-defined dynamics](./04.user-defined-dynamics.md)**
 

@@ -1,4 +1,4 @@
-# Solid Model
+# Solid model
 
 ::: warning Volume Mesh Workflow Only
 The Solid model is only available in the volume mesh workflow. It cannot be used with the surface mesh workflow.

@@ -1,4 +1,4 @@
-# Fluid Model
+# Fluid model
 
 *The Fluid model represents the primary medium for CFD simulations in Flow360. It integrates several components that together govern the fluid dynamics behavior, including the Navier-Stokes solver, turbulence modeling, transition effects, and initial conditions. The Fluid model is applied to volume entities within your simulation domain.*
 
