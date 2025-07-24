@@ -41,7 +41,7 @@ The details of the heat equation solver setup are outlined [here](./01.heat-equa
 
 - **Default:** `0 W/m³`
 - **Example:** `1.0  W/m`
-- **Notes:** Can be a constant value or a string expression.
+>**Note:** Can be a constant value or a string expression.
 
 ###  **[Initial condition](./03.initial-condition.md)**
 
@@ -54,7 +54,7 @@ The details of the initial condition setup are outlined [here](./03.initial-cond
 *List of volume entities where the heat transfer equation will be solved.*
 
 - **Required**
-- **Notes:** Accepts volume mesh entities or patterns matching multiple volumes.
+> **Note:** Accepts volume mesh entities or patterns matching multiple volumes.
 
 ---
 

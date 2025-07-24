@@ -1,6 +1,6 @@
 # Workbench Layout
 
-The Flow360 workbench provides an intuitive interface for computational fluid dynamics (CFD) simulations. This document describes the key areas of the workbench layout and their functions.
+*The Flow360 workbench provides an intuitive interface for computational fluid dynamics (CFD) simulations. This document describes the key areas of the workbench layout and their functions.*
 
 ![Workbench Layout Overview](../Figures/workbench_arrows.png)
 
