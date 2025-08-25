@@ -33,3 +33,13 @@
 - **Output:**
   - [Reference dimensions](./04.output/01.reference-dimensions.md): Dimensions for force coefficient calculations
   - [Output list](./04.output/02.outputs-list/README.md): All outputs to generate from the simulation
+  
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.flow-conditions/README.md
+./02.mesh/README.md
+./03.flow-solver/README.md
+./04.output/README.md
+```

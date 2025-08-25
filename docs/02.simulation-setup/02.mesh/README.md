@@ -32,3 +32,11 @@ A section for defining the meshing settings.
 - **[Passive Spacing](./03.refinements/04.passive-spacing.md)** - Controls mesh behavior without direct refinement
 - **[Uniform Refinement](./03.refinements/05.uniform-refinement.md)** - Creates uniform mesh spacing in a region
 - **[Axisymmetric Refinement](./03.refinements/06.axisymmetric-refinement.md)** - Creates structured-like mesh with cylindrical bias
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.mesh.md
+./02.rotation-regions.md
+./03.refinements/README.md
+```

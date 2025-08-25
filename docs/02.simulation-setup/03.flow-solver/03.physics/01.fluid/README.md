@@ -59,4 +59,14 @@ The Fluid model is used in virtually all Flow360 simulations, including:
 - For most aerospace applications, the Spalart-Allmaras turbulence model provides a good balance of accuracy and efficiency
 - Consider enabling the transition model for flows at moderate Reynolds numbers where transition location significantly impacts results
 - For challenging simulations, start with more robust settings (lower CFL, higher gradient limiters) and then relax these constraints as the solution develops
-- Remember that fluid properties (viscosity, etc.) must be specified in the Operating Condition section, not in the Fluid model 
+- Remember that fluid properties (viscosity, etc.) must be specified in the Operating Condition section, not in the Fluid model
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.navier-stokes-solver.md
+./02.turbulence-model.md
+./03.transition-model.md
+./04.initial-condition.md
+``` 
+
