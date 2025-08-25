@@ -15,3 +15,10 @@ Flow360 supports unstructured volume meshes with the following element types:
 - Hexahedrons
 - Prisms
 - Pyramids
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.zones.md
+./02.boundaries.md
+```

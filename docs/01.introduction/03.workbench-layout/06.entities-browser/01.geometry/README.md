@@ -109,3 +109,10 @@ When preparing a simulation, keep in mind:
 
 - **Mesh Generation**: The shape of geometry as well as its level of detail influences the quality and efficiency of the resulting mesh
 - **Boundary Conditions and refinements**: Proper grouping of faces and edges makes assigning boundary conditions and local mesh refinements a much easier task.
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.edges.md
+./02.faces.md
+```

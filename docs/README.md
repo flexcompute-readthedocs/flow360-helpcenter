@@ -24,6 +24,7 @@ See full [documentation](https://docs.flexcompute.com/projects/flow360/en/latest
 
 ```{toctree}
 :hidden:
+:maxdepth: 3
 01.introduction/README.md
 02.simulation-setup/README.md
 03.analysis/README.md

@@ -127,3 +127,17 @@ Similar to geometry-based projects, with containers for:
   > While entity definitions can be exported and imported, ensure compatibility between projects, especially regarding coordinate systems and units.
 
 </details>
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.geometry/README.md
+./02.surface-mesh.md
+./03.volume-mesh/README.md
+./04.volumes.md
+./05.points.md
+./06.slices.md
+./07.derived.md
+./08.viewpoints.md
+./09.environment.md
+```
