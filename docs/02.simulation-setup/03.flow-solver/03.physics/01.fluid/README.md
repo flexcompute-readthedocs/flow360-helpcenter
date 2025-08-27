@@ -6,7 +6,7 @@
 
 ## **Major Components**
 
-The Fluid model consists of four primary components, each documented in detail in its own section:
+The Fluid model consists of five primary components, each documented in detail in its own section:
 
 1. [**Navier-Stokes Solver**](./01.navier-stokes-solver.md): Controls the core flow equations that govern momentum, continuity, and energy in the fluid. This component determines how the simulation resolves velocity, pressure, and density fields.
 
@@ -15,6 +15,8 @@ The Fluid model consists of four primary components, each documented in detail i
 3. [**Transition Model**](./03.transition-model.md): Determines how and when flow transitions from laminar to turbulent within the simulation, which is critical for correctly predicting aerodynamic performance, especially at moderate Reynolds numbers.
 
 4. [**Initial Condition**](./04.initial-condition.md): Defines the starting flow state for the simulation, which can significantly impact convergence rates and stability, especially for complex flows.
+
+5. [**Stopping Criterion**](./05.stopping-criterion.md): Allows for automatic simulation termination based on the convergence of a specified monitored field.
 
 ## **Configuration Example**
 
@@ -41,6 +43,13 @@ Fluid:
     V: "v"
     W: "w"
     P: "p"
+
+  Stopping Criterion:
+      Output type: Probe
+                   ProbeOutput1
+      Output field: CL
+      Tolerance: 1e-5
+      Change Window: 50
 ```
 
 ## **Common Applications**
