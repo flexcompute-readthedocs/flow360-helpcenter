@@ -137,7 +137,8 @@ meshing=MeshingParams(
         fl.GeometryRefinement(
             name="fine_features_refinement",
             faces=[wing_surface, fuselage_surface],
-            geometry_accuracy=0.001 * fl.u.m
+            geometry_accuracy=0.001 * fl.u.m,
+            preserve_thin_geometry=True
         )
     ]
 )
