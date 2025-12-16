@@ -12,6 +12,7 @@
 |[**Passive Spacing**](./04.passive-spacing.md) | Controls mesh behavior without direct refinement |
 |[**Uniform Refinement**](./05.uniform-refinement.md) | Creates uniform mesh spacing in a region |
 |[**Axisymmetric Refinement**](./06.axisymmetric-refinement.md) | Creates structured-like mesh with cylindrical bias |
+|[**Geometry Refinement**](./07.geometry-refinement.md) | Controls mesh resolution based on geometric features |
 
 ## **General Guidelines**
 
@@ -21,6 +22,7 @@
    - Use Surface Edge Refinement for leading/trailing edges
    - Apply Surface Refinement for general surface resolution
    - Implement Boundary Layer Refinement for wall regions
+   - Select geometry refinement to accurately capture small features
 
 2. **Off-Body Features**
    - Use Uniform Refinement for wakes and shocks
@@ -87,58 +89,56 @@
 <summary><h3 style="display:inline-block"> 🐍 Python Example Usage</h3></summary>
 
 ```python
-from flow360 import (
-    MeshingParams,
-    SurfaceEdgeRefinement,
-    SurfaceRefinement,
-    BoundaryLayer,
-    PassiveSpacing,
-    UniformRefinement,
-    AxisymmetricRefinement,
-    u
-)
+import flow360 as fl
 
 # Example of combining multiple refinements
 meshing=MeshingParams(
     refinements=[
         # Surface edge refinement for leading edge
-        SurfaceEdgeRefinement(
+        fl.SurfaceEdgeRefinement(
             name="leading_edge",
             edges=[leading_edge],
-            method=HeightBasedRefinement(value=0.001 * u.m)
+            method=fl.HeightBasedRefinement(value=0.001 * fl.u.m)
         ),
         # Surface refinement for general resolution
-        SurfaceRefinement(
+        fl.SurfaceRefinement(
             name="wing_surface",
             faces=[wing_surface],
-            max_edge_length=0.05 * u.m
+            max_edge_length=0.05 * fl.u.m
         ),
         # Boundary layer refinement for wall regions
-        BoundaryLayer(
+        fl.BoundaryLayer(
             name="wing_bl",
             faces=[wing_surface],
-            first_layer_thickness=1e-5 * u.m,
+            first_layer_thickness=1e-5 * fl.u.m,
             growth_rate=1.2
         ),
         # Passive spacing refinement for interface region
-        PassiveSpacing(
+        fl.PassiveSpacing(
             name="interface_region",
             type="projected",
             faces=[interface_surface]
         ),
         # Wake region refinement
-        UniformRefinement(
+        fl.UniformRefinement(
             name="wake_region",
             entities=[wake_box],
-            spacing=0.1 * u.m
+            spacing=0.1 * fl.u.m
         ),
         # Axisymmetric refinement for propeller region
-        AxisymmetricRefinement(
+        fl.AxisymmetricRefinement(
             name="propeller_region",
             entities=[prop_cylinder],
-            spacing_axial=0.02 * u.m,
-            spacing_radial=0.01 * u.m,
-            spacing_circumferential=0.015 * u.m
+            spacing_axial=0.02 * fl.u.m,
+            spacing_radial=0.01 * fl.u.m,
+            spacing_circumferential=0.015 * fl.u.m
+        ),
+        # Geometry refinement for fine features
+        fl.GeometryRefinement(
+            name="fine_features_refinement",
+            faces=[wing_surface, fuselage_surface],
+            geometry_accuracy=0.001 * fl.u.m,
+            preserve_thin_geometry=True
         )
     ]
 )

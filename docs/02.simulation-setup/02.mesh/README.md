@@ -23,7 +23,7 @@ A section for defining the meshing settings.
 
 ### **[Refinements](./03.refinements/README.md)**
 
-*Comprehensive local mesh control system for critical regions. Provides six refinement types.*
+*Comprehensive local mesh control system for critical regions. Provides seven refinement types.*
 
 **Subsections:**
 - **[Surface Edge Refinement](./03.refinements/01.surface-edge-refinement.md)** - Controls mesh resolution near edges
@@ -32,6 +32,7 @@ A section for defining the meshing settings.
 - **[Passive Spacing](./03.refinements/04.passive-spacing.md)** - Controls mesh behavior without direct refinement
 - **[Uniform Refinement](./03.refinements/05.uniform-refinement.md)** - Creates uniform mesh spacing in a region
 - **[Axisymmetric Refinement](./03.refinements/06.axisymmetric-refinement.md)** - Creates structured-like mesh with cylindrical bias
+- **[Geometry Refinement](./03.refinements/07.geometry-refinement.md)** - Controls mesh resolution based on geometric features
 
 ```{toctree}
 :hidden:
@@ -40,3 +41,4 @@ A section for defining the meshing settings.
 ./02.rotation-regions.md
 ./03.refinements/README.md
 ```
+
