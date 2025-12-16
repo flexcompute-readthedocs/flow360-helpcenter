@@ -13,7 +13,7 @@
 | **[Actuator disk](./05.actuator-disk.md)** | Simplified model for propellers and rotors | Thrust coefficient, Swirl distribution |
 | **[Porous medium](./06.porous-medium.md)** | Model for flow through porous regions | Darcy coefficient, Forchheimer coefficient |
 
-Click on each model to see detailed documentation including available parameters, descriptions, usage tips, and example configurations. 
+Click on each model to see detailed documentation including available parameters, descriptions, usage tips, and example configurations.
 
 ---
 
@@ -72,3 +72,13 @@ Click on each model to see detailed documentation including available parameters
 
 *Advanced modeling of flow through porous regions including filters, heat exchangers, and porous materials. Implements Darcy-Forchheimer theory with comprehensive coefficient specification for accurate pressure drop and flow distribution prediction.*
 
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.fluid/README.md
+./02.solid/README.md
+./03.rotation.md
+./04.bet-disk.md
+./05.actuator-disk.md
+./06.porous-medium.md
+``` 

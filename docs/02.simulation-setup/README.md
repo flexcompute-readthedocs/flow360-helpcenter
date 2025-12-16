@@ -2,7 +2,7 @@
 
 *This section covers all aspects of setting up a simulation in Flow360, including flow conditions, meshing, solver configuration, and output settings.*
 
-## 📋 **Contents**
+## **Contents**
 
 | *Section* | *Description* |
 |-------------|-----------------|
@@ -13,7 +13,7 @@
 
 ---
 
-## 🔍 **Detailed Subsections**
+## **Detailed Subsections**
 
 - **Flow Conditions:**
   - [Operating condition](./01.flow-conditions/01.operating-condition.md): Define physical values of fluid properties
@@ -33,3 +33,13 @@
 - **Output:**
   - [Reference dimensions](./04.output/01.reference-dimensions.md): Dimensions for force coefficient calculations
   - [Output list](./04.output/02.outputs-list/README.md): All outputs to generate from the simulation
+  
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.flow-conditions/README.md
+./02.mesh/README.md
+./03.flow-solver/README.md
+./04.output/README.md
+```

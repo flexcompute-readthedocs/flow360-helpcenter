@@ -6,7 +6,7 @@
 
 | *Section* | *Contents* |
 |-------------|--------------|
-|[Dashboard](01.dashboard.md) | Navigation manual through the Flow360 Dashboard |
+|[Dashboard](./01.dashboard.md) | Navigation manual through the Flow360 Dashboard |
 |[Starting a project](./02.starting-project.md) | Guidelines on how to start a project |
 |[Workbench layout](./03.workbench-layout/README.md) | The layout of the project workbench |
 |[General workflow](./04.general-workflow.md)| The example of a general workflow in the application |
@@ -74,3 +74,13 @@
 - **Structure:** Flexible hierarchy supporting geometry-first, surface-mesh-first, and volume-mesh-first workflows.
 - **Branching:** Supports multiple branches at each level for mesh sensitivity, parameter studies, and continuation runs (forks).
 - **Component Actions:** Open in workbench, create new run, interpolate, rename, view details, expand/collapse, delete.
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.dashboard.md
+./02.starting-project.md
+./03.workbench-layout/README.md
+./04.general-workflow.md
+./05.project-tree.md
+```

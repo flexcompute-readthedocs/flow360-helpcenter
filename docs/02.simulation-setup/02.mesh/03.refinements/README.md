@@ -144,3 +144,15 @@ meshing=MeshingParams(
 )
 ```
 </details> 
+
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.surface-edge-refinement.md
+./02.surface-refinement.md
+./03.boundary-layer-refinement.md
+./04.passive-spacing.md
+./05.uniform-refinement.md
+./06.axisymmetric-refinement.md
+```

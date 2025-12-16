@@ -18,4 +18,17 @@ Boundary conditions specify how the fluid behaves at the boundaries of the simul
 
 Additionally, [Turbulence Quantities](./08.turbulence-quantities.md) are used to specify turbulence parameters at all types of boundaries, such as Turbulence Intensity, Eddy Viscosity Ratio, Length Scale, etc.
 
-Click on each boundary condition type to see detailed documentation including available parameters, descriptions, usage tips, and example configurations. 
+Click on each boundary condition type to see detailed documentation including available parameters, descriptions, usage tips, and example configurations.
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.wall.md
+./02.freestream.md
+./03.inflow.md
+./04.outflow.md
+./05.periodic.md
+./06.symmetry.md
+./07.slip-wall.md
+./08.turbulence-quantities.md
+``` 

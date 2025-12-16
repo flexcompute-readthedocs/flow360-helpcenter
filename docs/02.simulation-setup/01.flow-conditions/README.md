@@ -19,3 +19,10 @@
 ### **[Farfield](./02.farfield.md)**
 
 *Settings governing the farfield generation or identification.*
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.operating-condition.md
+./02.farfield.md
+```

@@ -53,4 +53,12 @@ The Solid model is used in conjugate heat transfer simulations, including:
 - Ensure all material properties are specified in consistent units.
 - When using patterns in entities, verify all matched volumes are intended for heat transfer simulation.
 - Consider mesh resolution near areas with high temperature gradients.
-- For conjugate heat transfer, ensure proper interface matching with fluid regions. 
+- For conjugate heat transfer, ensure proper interface matching with fluid regions.
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.heat-equation-solver.md
+./02.material.md
+./03.initial-condition.md
+``` 

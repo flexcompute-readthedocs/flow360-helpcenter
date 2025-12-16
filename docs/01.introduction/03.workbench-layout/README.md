@@ -130,3 +130,12 @@ The selection methods can be checked and unchecked and allow for the selection o
   > The bottom status bar (Section 6) shows current simulation status and progress.
 
 </details>
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./04.top-bar.md
+./05.viewer-region.md
+./06.entities-browser/README.md
+./07.status-bar.md
+```

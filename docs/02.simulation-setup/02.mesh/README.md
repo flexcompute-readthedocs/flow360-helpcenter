@@ -33,3 +33,12 @@ A section for defining the meshing settings.
 - **[Uniform Refinement](./03.refinements/05.uniform-refinement.md)** - Creates uniform mesh spacing in a region
 - **[Axisymmetric Refinement](./03.refinements/06.axisymmetric-refinement.md)** - Creates structured-like mesh with cylindrical bias
 - **[Geometry Refinement](./03.refinements/07.geometry-refinement.md)** - Controls mesh resolution based on geometric features
+
+```{toctree}
+:hidden:
+:maxdepth: 3
+./01.mesh.md
+./02.rotation-regions.md
+./03.refinements/README.md
+```
+
