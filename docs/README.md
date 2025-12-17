@@ -6,7 +6,7 @@ Content:
     -   [Starting a Project](./01.introduction/02.starting-project.md)
     -   [Workbench Layout](./01.introduction/03.workbench-layout/README.md)
     -   [General Workflow](./01.introduction/04.general-workflow.md)
-    -   [Project Tree](./01.introduction/05.project-tree/README.md)
+    -   [Project Tree](./01.introduction/05.project-tree.md)
 -   [Simulation Setup](./02.simulation-setup/README.md)
     -   [Flow conditions](./02.simulation-setup/01.flow-conditions/README.md)
     -   [Mesh](./02.simulation-setup/02.mesh/README.md)
