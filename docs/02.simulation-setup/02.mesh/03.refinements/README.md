@@ -155,4 +155,5 @@ meshing=MeshingParams(
 ./04.passive-spacing.md
 ./05.uniform-refinement.md
 ./06.axisymmetric-refinement.md
+./07.geometry-refinement.md
 ```

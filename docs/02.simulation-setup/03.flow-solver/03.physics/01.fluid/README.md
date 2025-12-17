@@ -16,8 +16,6 @@ The Fluid model consists of five primary components, each documented in detail i
 
 4. [**Initial Condition**](./04.initial-condition.md): Defines the starting flow state for the simulation, which can significantly impact convergence rates and stability, especially for complex flows.
 
-5. [**Stopping Criterion**](./05.stopping-criterion.md): Allows for automatic simulation termination based on the convergence of a specified monitored field.
-
 ## **Configuration Example**
 
 Below is a representative example of a Fluid model configuration (shown for reference purposes):

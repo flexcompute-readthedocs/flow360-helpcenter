@@ -169,11 +169,13 @@ User defined expressions with dimensions. By default, the following expressions 
 ./05.slice-output.md
 ./06.time-averaging-slice-output.md
 ./07.probe-outputs.md
-./08.Time-averaging-probe-outputs.md
+./08.time-averaging-probe-outputs.md
 ./09.surface-probe-outputs.md
 ./10.surface-slice-output.md
 ./11.isosurface-output.md
 ./12.time-averaging-isosurface-output.md
 ./13.aeroacoustic-output.md
 ./15.streamline-output.md
+./00.output-fields.md
+./14.output-formats.md
 ```
