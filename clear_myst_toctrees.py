@@ -2,6 +2,7 @@
 """
 Script to remove {toctree} sections from all Markdown files in the docs folder.
 This script recursively searches for .md files and removes any MyST toctree directives.
+It can also remove MyST "target" labels used for stable references, e.g. `(my-label)=`.
 """
 
 import os
@@ -26,8 +27,24 @@ def remove_toctree_sections(content):
     
     # Remove all toctree sections
     cleaned_content = re.sub(toctree_pattern, '', content, flags=re.DOTALL)
+
+    # Pattern to match MyST target labels used for stable references.
+    # Matches lines like: (reference)=
+    # See: https://myst-parser.readthedocs.io/en/latest/syntax/cross-referencing.html
+    target_label_pattern = r'(?m)^[ \t]*\([A-Za-z0-9_.:-]+\)=\s*(?:\r?\n)?'
+
+    # Remove all target-label lines
+    cleaned_content = re.sub(target_label_pattern, '', cleaned_content)
     
     return cleaned_content
+
+
+def remove_myst_refs(content):
+    """
+    Remove MyST target labels used for stable references, e.g. `(my-label)=`.
+    """
+    target_label_pattern = r'(?m)^[ \t]*\([A-Za-z0-9_.:-]+\)=\s*(?:\r?\n)?'
+    return re.sub(target_label_pattern, '', content)
 
 def process_markdown_files(docs_folder):
     """
