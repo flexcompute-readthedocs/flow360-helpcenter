@@ -15,7 +15,7 @@
 | **[Slice Output](./05.slice-output.md)** | Flow field data on user-defined slice planes | Examining flow cross-sections |
 | **[Time-averaging Slice Output](./06.time-averaging-slice-output.md)** | Time-averaged flow field data on slice planes | Statistical analysis on planes |
 | **[Probe Outputs](./07.probe-outputs.md)** | Flow field data monitoring during simulation | Tracking convergence and flow properties |
-| **[Time-averaging Probe Outputs](./08.Time-averaging-probe-outputs.md)** | Time-averaged monitoring data | Statistical monitoring data |
+| **[Time-averaging Probe Outputs](./08.time-averaging-probe-outputs.md)** | Time-averaged monitoring data | Statistical monitoring data |
 | **[Surface Probe Output](./09.surface-probe-outputs.md)** | Flow field data at specific points projected onto surfaces | Point-specific surface data |
 | **[Isosurface Output](./11.isosurface-output.md)** | Flow field data on surfaces of constant variable value | Visualization of vortices, shock waves |
 | **[Time-averaging Isosurface Output](./12.time-averaging-isosurface-output.md)** | Time-averaged flow field data on surfaces of constant variable value | Statistical analysis of vortices, shock waves |
@@ -77,7 +77,7 @@ Flow360 supports multiple output file formats:
 - **Tecplot** (.szplt) - For visualization in Tecplot
 - **CSV** - For tabular data
 
-For more information about output file formats, see the [Output Formats](13.output-formats.md) page.
+For more information about output file formats, see the [Output Formats](14.output-formats.md) page.
 
 ## **Detailed Settings**
 
