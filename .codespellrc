@@ -3,5 +3,5 @@ skip = .git,*.pdf,*.png,*.jpg,*.jpeg,*.gif,*.svg,*.bmp,*.tiff,*.pyc,*.js,*.lock,
 check-filenames = true
 quiet-level = 2
 ignore-words-list = flexcompute,flow360,CL,CD,CMy,CFD,API,CFx,CFz,CFy,TE,LE,FoM
-ignore-regex = [a-f0-9]{40}
+ignore-regex = [a-f0-9]{40}|https?://[^\s\]\"]+|www\.[^\s\]\"]+
 builtin = clear,rare,informal 
