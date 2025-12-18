@@ -1,3 +1,7 @@
+---
+orphan: true
+---
+
 # Actual README for the helpcenter repo
 
 ## Actions performed before deployment
