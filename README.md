@@ -6,7 +6,7 @@ orphan: true
 
 ## Actions performed before deployment
 
-To comply with bothe vuepress and myst + sphinx renderers, some specific macros are removed using the `clear_myst_toctrees.py` script. 
+To comply with both vuepress and myst + sphinx renderers, some specific macros are removed using the `clear_myst_toctrees.py` script. 
 Those include:
 * actual toctrees looking like:
 ```md
