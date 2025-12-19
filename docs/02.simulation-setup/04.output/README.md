@@ -29,7 +29,7 @@
 - **[Slice Output](./02.outputs-list/05.slice-output.md)** - Flow field data on user-defined slice planes
 - **[Time-averaging Slice Output](./02.outputs-list/06.time-averaging-slice-output.md)** - Time-averaged flow field data on slice planes
 - **[Probe Outputs](./02.outputs-list/07.probe-outputs.md)** - Flow field data monitoring during simulation
-- **[Time-averaging Probe Outputs](./02.outputs-list/08.Time-averaging-probe-outputs.md)** - Time-averaged monitoring data
+- **[Time-averaging Probe Outputs](./02.outputs-list/08.time-averaging-probe-outputs.md)** - Time-averaged monitoring data
 - **[Surface Probe Output](./02.outputs-list/09.surface-probe-outputs.md)** - Flow field data at specific points projected onto surfaces
 - **[Surface Slice Output](./02.outputs-list/10.surface-slice-output.md)** - Flow field data on slices of surfaces
 - **[Isosurface Output](./02.outputs-list/11.isosurface-output.md)** - Flow field data on surfaces of constant variable value

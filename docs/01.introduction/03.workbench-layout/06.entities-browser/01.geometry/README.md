@@ -77,7 +77,7 @@ As described in the Views section, you can control how edges and faces are group
 - Simplified selection of related entities
 
 ### **Visualization**
-*Geometric entities are visualized in real-time. You can toggle on/off the visiblity of grouped edges and faces.*
+*Geometric entities are visualized in real-time. You can toggle on/off the visibility of grouped edges and faces.*
 
 ### **Statistics**
 To view detailed statistics about your geometry, click the **Geometry Stats** button located to the right of the "Geometry" group heading. This opens a dialog displaying comprehensive statistics for the geometry in your project, including:
