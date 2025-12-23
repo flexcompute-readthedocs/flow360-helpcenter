@@ -1,4 +1,4 @@
-# Flow360 GUI Documentation
+# GUI
 
 Content:
 -   [Introduction](./01.introduction/README.md)
