@@ -16,7 +16,7 @@
 ## **Detailed Subsections**
 
 - **Flow Conditions:**
-  - [Operating condition](./01.flow-conditions/01.operating-condition.md): Define physical values of fluid properties
+  - [Operating condition](./01.flow-conditions/README.md): Define physical values of fluid properties
 
 - **Mesh:**
   - [Farfield](./02.mesh/01.farfield.md): Outer boundaries and domain configuration
