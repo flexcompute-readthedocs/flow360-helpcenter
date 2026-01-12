@@ -27,7 +27,7 @@ The root entity that contains all geometric elements. Under geometry, you'll fin
 ### **Additional Entities**
 Below the geometry section, you'll find containers for various simulation components:
 
-- [**Volumes**](./04.volumes.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
+- [**Volumes**](./04.volumes/README.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
 - [**Points**](./05.points.md) - Zero-dimensional entities used for flow monitoring
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
 - [**Derived**](./07.derived.md) - Automatically generated entities based on your geometry, such as farfield and symmetry planes
@@ -45,7 +45,7 @@ The root entity for surface-mesh-based projects, containing:
 ### **Additional Entities**
 Similar to geometry-based projects, with containers for:
 
-- [**Volumes**](./04.volumes.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
+- [**Volumes**](./04.volumes/README.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
 - [**Points**](./05.points.md) - Zero-dimensional entities used for flow monitoring
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
 - [**Derived**](./07.derived.md) - Automatically generated entities based on your geometry, such as farfield
@@ -63,7 +63,7 @@ The root entity for mesh-based projects, containing:
 ### **Additional Entities**
 Similar to geometry-based projects, with containers for:
 
-- [**Volumes**](./04.volumes.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
+- [**Volumes**](./04.volumes/README.md) - Three-dimensional regions used for mesh refinement, zone definition, and flow field analysis
 - [**Points**](./05.points.md) - Zero-dimensional entities used for flow monitoring
 - [**Slices**](./06.slices.md) - Two-dimensional cross-sections used for flow visualization
 
@@ -74,7 +74,7 @@ Similar to geometry-based projects, with containers for:
 - [Geometry](./01.geometry/README.md)
 - [Surface Mesh](./02.surface-mesh.md)
 - [Volume Mesh](./03.volume-mesh/README.md)
-- [Volumes](./04.volumes.md)
+- [Volumes](./04.volumes/README.md)
 - [Points](./05.points.md)
 - [Slices](./06.slices.md)
 - [Derived](./07.derived.md)
@@ -134,7 +134,7 @@ Similar to geometry-based projects, with containers for:
 ./01.geometry/README.md
 ./02.surface-mesh.md
 ./03.volume-mesh/README.md
-./04.volumes.md
+./04.volumes/README.md
 ./05.points.md
 ./06.slices.md
 ./07.derived.md

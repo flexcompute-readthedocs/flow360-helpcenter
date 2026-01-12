@@ -16,13 +16,15 @@
 ## **Detailed Subsections**
 
 - **Flow Conditions:**
-  - [Operating condition](./01.flow-conditions/01.operating-condition.md): Define physical values of fluid properties
-  - [Farfield](./01.flow-conditions/02.farfield.md): Configure farfield boundary settings
+  - [Operating condition](./01.flow-conditions/README.md): Define physical values of fluid properties
 
 - **Mesh:**
-  - [Mesh (meshing defaults)](./02.mesh/01.mesh.md): Control parameters for mesh generation
-  - [Rotation regions](./02.mesh/02.rotation-regions.md): Specialized regions for rotating features
-  - [Refinements](./02.mesh/03.refinements/README.md): Local mesh control for critical regions
+  - [Farfield](./02.mesh/01.farfield.md): Outer boundaries and domain configuration
+  - [Mesh parameters](./02.mesh/02.mesh-parameters.md): Control parameters for mesh generation
+  - [Rotation zones](./02.mesh/03.rotation-zones.md): Specialized regions for rotating features
+  - [Custom zones](./02.mesh/04.custom-zones.md): User-defined volume zones
+  - [Volume mesh slices](./02.mesh/05.volume-mesh-slices.md): Slice outputs from the volume mesh
+  - [Refinements](./02.mesh/06.refinements/README.md): Local mesh control for critical regions
 
 - **Flow Solver:**
   - [Boundary conditions](./03.flow-solver/01.boundary-conditions/README.md): Define domain boundaries
