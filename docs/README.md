@@ -19,7 +19,7 @@ Content:
     -   [Visualization](./03.analysis/04.visualization.md)
     -   [Aeroacoustic](./03.analysis/05.aeroacoustic.md)
 
-See full [documentation](https://docs.flexcompute.com/projects/flow360/en/latest/)
+See full [documentation](https://docs.flexcompute.com/projects/flow360/en/stable/)
 
 
 ```{toctree}
