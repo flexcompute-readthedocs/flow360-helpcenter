@@ -35,9 +35,11 @@
 - **[Isosurface Output](./02.outputs-list/11.isosurface-output.md)** - Flow field data on surfaces of constant variable value
 - **[Time-averaging Isosurface Output](./02.outputs-list/12.time-averaging-isosurface-output.md)** - Time-averaged flow field data on surfaces of constant variable value
 - **[Aeroacoustic Output](./02.outputs-list/13.aeroacoustic-output.md)** - Data for aeroacoustic analysis at observer positions
-- **[Force Output](./02.outputs-list/14.force-output.md)** - Force and moment coefficient outputs with optional statistics
-- **[Streamline Output](./02.outputs-list/15.streamline-output.md)** - Visualization of 3D flow structures
-- **[Output Formats](./02.outputs-list/16.output-formats.md)** - File format specifications for output data
+- **[Streamline Output](./02.outputs-list/14.streamline-output.md)** - Visualization of 3D flow structures
+- **[Force Output](./02.outputs-list/15.force-output.md)** - Force and moment coefficient outputs with optional statistics
+- **[Force Distribution Output](./02.outputs-list/16.force-distribution-output.md)** - Custom force and moment distribution along a specified direction
+- **[Time-averaging Force Distribution Output](./02.outputs-list/17.time-averaging-force-distribution-output.md)** - Time-averaged custom force and moment distribution
+- **[Output Formats](./02.outputs-list/18.output-formats.md)** - File format specifications for output data
 
 ```{toctree}
 :hidden:
