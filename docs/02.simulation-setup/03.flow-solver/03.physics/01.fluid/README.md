@@ -47,9 +47,8 @@ Fluid:
   Stopping Criteria:
       - Name: "Lift convergence"
         Output type: Force
-        Output name: Force output1
         Output field: CL
-        Tolerance: 1e-5
+        Tolerance: 0.01
         Tolerance window size: 100
 ```
 
