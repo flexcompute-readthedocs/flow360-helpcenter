@@ -21,6 +21,7 @@
 | **[Time-averaging Isosurface Output](./12.time-averaging-isosurface-output.md)** | Time-averaged flow field data on surfaces of constant variable value | Statistical analysis of vortices, shock waves |
 | **[Aeroacoustic Output](./13.aeroacoustic-output.md)** | Data for aeroacoustic analysis at observer positions | Noise prediction and analysis |
 | **[Streamline Output](./15.streamline-output.md)** | Streamline visualization data | Visualization of 3D flow structures |
+| **[Time-averaging Streamline Output](./16.time-averaging-streamline-output.md)** | Time-averaged streamline visualization data | Statistical analysis of flow structures |
 
 ---
 
@@ -176,6 +177,7 @@ User defined expressions with dimensions. By default, the following expressions 
 ./12.time-averaging-isosurface-output.md
 ./13.aeroacoustic-output.md
 ./15.streamline-output.md
+./16.time-averaging-streamline-output.md
 ./00.output-fields.md
 ./14.output-formats.md
 ```
