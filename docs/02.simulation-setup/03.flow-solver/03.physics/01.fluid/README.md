@@ -16,6 +16,8 @@ The Fluid model consists of five primary components, each documented in detail i
 
 4. [**Initial Condition**](./04.initial-condition.md): Defines the starting flow state for the simulation, which can significantly impact convergence rates and stability, especially for complex flows.
 
+5. [**Stopping Criteria**](./05.stopping-criteria.md): Allows automatic termination of the simulation when monitored output fields (forces, probe values, or surface probe data) reach specified tolerance thresholds, providing efficient convergence control.
+
 ## **Configuration Example**
 
 Below is a representative example of a Fluid model configuration (shown for reference purposes):
@@ -42,12 +44,12 @@ Fluid:
     W: "w"
     P: "p"
 
-  Stopping Criterion:
-      Output type: Probe
-                   ProbeOutput1
-      Output field: CL
-      Tolerance: 1e-5
-      Change Window: 50
+  Stopping Criteria:
+      - Name: "Lift convergence"
+        Output type: Force
+        Output field: CL
+        Tolerance: 0.01
+        Tolerance window size: 100
 ```
 
 ## **Common Applications**
@@ -75,5 +77,6 @@ The Fluid model is used in virtually all Flow360 simulations, including:
 ./02.turbulence-model.md
 ./03.transition-model.md
 ./04.initial-condition.md
+./05.stopping-criteria.md
 ``` 
 
