@@ -12,7 +12,7 @@
 |-------------|-----------------|
 | 1 | [Viewer region](./05.viewer-region.md) |
 | 2 | [Simulation setup](./../../02.simulation-setup/README.md) / [Analysis](./../../03.analysis/README.md) |
-| 3 | [Entities browser](./06.entities-browser/README.md) |
+| 3 | [Entities browser](../../04.entities-browser/README.md) |
 | 4 | Coordinate system |
 | 5 | [Top navigation bar](./04.top-bar.md) |
 | 6 | [Bottom status bar](./07.status-bar.md) |
@@ -136,6 +136,5 @@ The selection methods can be checked and unchecked and allow for the selection o
 :maxdepth: 3
 ./04.top-bar.md
 ./05.viewer-region.md
-./06.entities-browser/README.md
 ./07.status-bar.md
 ```

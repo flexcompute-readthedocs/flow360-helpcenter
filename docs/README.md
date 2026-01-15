@@ -18,6 +18,19 @@ Content:
     -   [Monitor](./03.analysis/03.monitor.md)
     -   [Visualization](./03.analysis/04.visualization.md)
     -   [Aeroacoustic](./03.analysis/05.aeroacoustic.md)
+-   [Entities Browser](./04.entities-browser/README.md)
+    -   [Geometry](./04.entities-browser/01.geometry/README.md)
+    -   [Surface Mesh](./04.entities-browser/02.surface-mesh.md)
+    -   [Volume Mesh](./04.entities-browser/03.volume-mesh/README.md)
+    -   [Volumes](./04.entities-browser/04.volumes/README.md)
+    -   [Points](./04.entities-browser/05.points.md)
+    -   [Slices](./04.entities-browser/06.slices.md)
+    -   [Sample Surfaces](./04.entities-browser/10.sample-surfaces.md)
+    -   [Derived](./04.entities-browser/07.derived.md)
+    -   [Viewpoints](./04.entities-browser/08.viewpoints.md)
+    -   [Coordinate Systems](./04.entities-browser/11.coordinate-systems.md)
+    -   [Environment](./04.entities-browser/09.environment.md)
+    -   [Entity Tags](./04.entities-browser/12.entity-tags.md)
 
 See full [documentation](https://docs.flexcompute.com/projects/flow360/en/stable/)
 
@@ -28,4 +41,5 @@ See full [documentation](https://docs.flexcompute.com/projects/flow360/en/stable
 01.introduction/README.md
 02.simulation-setup/README.md
 03.analysis/README.md
+04.entities-browser/README.md
 ```

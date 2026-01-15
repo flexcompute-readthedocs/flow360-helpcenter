@@ -30,20 +30,18 @@ In this view, entities are organized by their functional groups:
 
 - **Body Groups** - Shows the grouping of bodies according to their association with the imported geometry file (CAD or mesh).
   - **Display and highlighting** - Hover the mouse over any body group to highlight all faces in that group.
-  - **Renaming body groups** - Use the menu next to the body group to change its name from the default (typically derived from the file name).
-  - **Positioning body groups** - Use the menu next to the body group to open a dialog for adjusting the position of all bodies (and their faces) in the group:
-    - **Center of scaling and rotation** - Set the center point for scaling and rotation operations if needed.
-    - **Scaling** - Scale all geometry in the body group by a specified factor about the center point.
-      - Check "Scale uniformly" to scale equally in all directions, or uncheck to specify different scale factors for X, Y, and Z.
-      - To revert to original scale, set all scale factors to 1.
-    - **Rotation** - Rotate the body group by specifying a rotation axis direction and angle.
-      - Rotation is applied after scaling.
-      - To undo rotation, set the angle to zero.
-    - **Translation** - Move the body group by specifying X, Y, and Z distances.
-      - Translation is applied after scaling and rotation.
-  - **Coloring body groups** - Use the menu to change the color of all faces in the body group.
-    - This color serves as the default for all faces in the group.
-    - Individual face colors can override the body group color by setting colors on specific faces.
+  - **Actions menu** - Click on an actions menu next to body group to perform actions on the body group.
+    - **Mirror** - Create a mirrored copy of the body group about a symmetry plane:
+      - **Group Name** - Name for the mirrored body group (defaults to `<mirror>` prefix)
+      - **Normal** - The normal direction (X, Y, Z) of the mirror plane
+      - **Origin** - The origin point (X, Y, Z) of the mirror plane
+  - **Properties menu** - Click on a body within a group to view and edit its properties:
+    - **Name** - The name of the body (derived from the source file by default).
+    - **Tag** - Assign an entity tag to the body for organization.
+    - **Mesh exterior** - When checked, the mesh will be generated on the exterior of this body. Useful for controlling which side of the geometry is meshed.
+    - **Style** - Choose between **Color** or **Material** rendering:
+      - **Color** - Set a solid color using the color picker or hex code.
+      - **Material** - Apply a material appearance for realistic visualization.
 
 #### **Tree View**
 In this view, entities are organized in a hierarchical structure:
@@ -52,11 +50,7 @@ In this view, entities are organized in a hierarchical structure:
   - **Edges** - Shows the edges associated with each body.
   - **Faces** - Shows the faces belonging to each body.
 
-#### **List View**
-In this view, entities are organized in simple lists:
 
-- **Edges** - Shows a flat list of all edges in the geometry.
-- **Faces** - Shows a flat list of all faces in the geometry.
 
 ### **Selection**
 *Allows for interactive selection of geometric entities.*
