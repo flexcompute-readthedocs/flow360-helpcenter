@@ -17,13 +17,13 @@
 
 The primary asset defines the starting point of your simulation workflow. Only one primary asset type is available per project, depending on how the project was created.
 
-### [**Geometry**](./01.geometry/README.md)
+### ![](./Figures/geometry.svg) [**Geometry**](./01.geometry/README.md)
 The root entity for CAD-based projects. Contains all geometric elements including edges, faces, and body groups. Geometry projects progress through surface meshing and volume meshing before simulation.
 
-### [**Surface Mesh**](./02.surface-mesh.md)
+### ![](./Figures/surface-mesh.svg) [**Surface Mesh**](./02.surface-mesh.md)
 The root entity for surface-mesh-based projects. Contains boundary definitions for specifying boundary conditions. Surface mesh projects require volume meshing before simulation.
 
-### [**Volume Mesh**](./03.volume-mesh/README.md)
+### ![](./Figures/volume-mesh.svg) [**Volume Mesh**](./03.volume-mesh/README.md)
 The root entity for volume-mesh-based projects. Contains zones and boundaries ready for simulation setup. Volume mesh projects can proceed directly to solver configuration.
 
 
