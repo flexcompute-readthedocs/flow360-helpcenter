@@ -31,6 +31,12 @@ Content:
     -   [Coordinate Systems](./04.entities-browser/11.coordinate-systems.md)
     -   [Environment](./04.entities-browser/09.environment.md)
     -   [Entity Tags](./04.entities-browser/12.entity-tags.md)
+-   [Tools](./05.tools/README.md)
+    -   [Probing](./05.tools/01.probing.md)
+    -   [Variable Settings](./05.tools/02.variable-settings.md)
+    -   [Surface Mesh Diagnostics](./05.tools/03.surface-mesh-diagnostics.md)
+    -   [Volume Mesh Diagnostics](./05.tools/04.volume-mesh-diagnostics.md)
+    -   [Mesh Statistics Panel](./05.tools/05.mesh-statistics-panel.md)
 
 See full [documentation](https://docs.flexcompute.com/projects/flow360/en/stable/)
 
@@ -42,4 +48,5 @@ See full [documentation](https://docs.flexcompute.com/projects/flow360/en/stable
 02.simulation-setup/README.md
 03.analysis/README.md
 04.entities-browser/README.md
+05.tools/README.md
 ```
