@@ -12,6 +12,7 @@
 |[General workflow](./04.general-workflow.md)| The example of a general workflow in the application |
 |[Project tree](./05.project-tree.md)| Description of the project tree and the concept of a project |
 |[Keyboard shortcuts](./06.shortcuts.md)| Available keyboard shortcuts in the Flow360 WebUI |
+|[Project settings](./07.project-settings.md)| Configuration and metadata for projects and simulation runs |
 
 ---
 ## **Detailed Descriptions**
@@ -76,6 +77,18 @@
 - **Branching:** Supports multiple branches at each level for mesh sensitivity, parameter studies, and continuation runs (forks).
 - **Component Actions:** Open in workbench, create new run, interpolate, rename, view details, expand/collapse, delete.
 
+---
+
+### **Project Settings**
+
+*The Project Settings panel provides access to project-level configuration, run settings, and project metadata. This panel allows you to manage project properties, configure units, and view project statistics.*
+
+- **Run Settings:** Configuration options for the current simulation run, including units system, mesher options, solver version, and run statistics.
+- **Project Details:** Project-level metadata including project name, ID, folder location, tags, description, and project cost.
+- **Units Management:** Change all units in the setting system at once through the units system configuration.
+- **Mesher Options:** Toggle between standard and AI-powered surface meshing, and enable beta mesher features.
+- **Statistics:** View detailed timing information, FlexCredit costs, and status for runs and projects.
+
 ```{toctree}
 :hidden:
 :maxdepth: 3
@@ -85,4 +98,5 @@
 ./04.general-workflow.md
 ./05.project-tree.md
 ./06.shortcuts.md
+./07.project-settings.md
 ```
