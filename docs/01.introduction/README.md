@@ -11,6 +11,7 @@
 |[Workbench layout](./03.workbench-layout/README.md) | The layout of the project workbench |
 |[General workflow](./04.general-workflow.md)| The example of a general workflow in the application |
 |[Project tree](./05.project-tree.md)| Description of the project tree and the concept of a project |
+|[Keyboard shortcuts](./06.shortcuts.md)| Available keyboard shortcuts in the Flow360 WebUI |
 
 ---
 ## **Detailed Descriptions**
@@ -83,4 +84,5 @@
 ./03.workbench-layout/README.md
 ./04.general-workflow.md
 ./05.project-tree.md
+./06.shortcuts.md
 ```
