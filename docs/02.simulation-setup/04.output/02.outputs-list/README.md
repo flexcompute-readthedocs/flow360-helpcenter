@@ -36,102 +36,13 @@
 
 ---
 
-## **Common Settings**
+## **Reference Documentation**
 
-### **Output Fields**
+- **[Available Output Fields](00.output-fields.md)** - Complete list of flow variables by output type
+- **[Scaling Values and Nondimensionalization](00.scaling-values.md)** - Reference values for converting to physical units
+- **[Output Formats](19.output-formats.md)** - Supported file formats (ParaView, Tecplot, CSV)
 
-*The flow variables to include in the output.*
-
-- **Default:** Varies by output type
-- **Example:** `["Cp", "Cf", "Mach"]`
->**Note:** See [Output Fields and Nondimensional Values](00.output-fields.md) for details on available fields.
-
-### **Frequency**
-
-*How often to write output files (in number of time steps).*
-
-- **Default:** `-1` (output only at the end of simulation)
-- **Example:** `100` (output every 100 time steps)
->**Note:** Increase for animations, decrease for storage efficiency.
-
-### **Frequency Offset**
-
-*The time step at which to start writing output.*
-
-- **Default:** `0` (start at beginning of simulation)
-- **Example:** `1000` (start after 1000 time steps)
->**Note:** Controls when output generation begins.
-
-### **Output Format**
-
-*The file format for output data.*
-
-- **Default:** `paraview`
-- **Options:**
-  - `paraview`
-  - `tecplot`
-  - `both`
->**Note:** Choose the format that best suits your post-processing workflow.
-
-## 📁 **Output File Formats**
-
-Flow360 supports multiple output file formats:
-
-- **Paraview** (.vtu, .vtp) - For visualization in ParaView
-- **Tecplot** (.szplt) - For visualization in Tecplot
-- **CSV** - For tabular data
-
-For more information about output file formats, see the [Output Formats](19.output-formats.md) page.
-
-## **Detailed Settings**
-
-Each output type has specific configuration options. For detailed documentation on configuring each type of output, refer to the links in the table above. 
-
----
-
-## Available Output Fields
-
-### **Universal Variables** (non-dimensional)
-
-- `Cp` - Coefficient of pressure
-- `Cpt` - Coefficient of total pressure
-- `gradW` - Gradient of primitive solution
-- `kOmega` - k and omega
-- `Mach` - Mach number
-- `mut` - Turbulent viscosity
-- `mutRatio` - Turbulent viscosity and freestream dynamic viscosity ratio
-- `nuHat` - Spalart-Almaras variable
-- `primitiveVars` - Density, velocities (u,v,w), and pressure
-- `qcriterion` - Q criterion for vortex identification
-- `residualNavierStokes` - N-S residual
-- `residualTransition` - Transition residual
-- `residualTurbulence` - Turbulence residual
-- `s` - Entropy
-- `solutionNavierStokes` - N-S solution
-- `solutionTransition` - Transition solution
-- `solutionTurbulence` - Turbulence solution
-- `T` - Temperature
-- `velocity` - Velocity vector
-- `velocity_magnitude` - Magnitude of velocity vector
-- `pressure` - Pressure
-- `vorticity` - Vorticity
-- `vorticityMagnitude` - Vorticity Magnitude
-- `wallDistance` - Wall distance
-- `numericalDissipationFactor` - NumericalDissipationFactor sensor
-- `residualHeatSolver` - Heat equation residual
-- `VelocityRelative` - Velocity with respect to non-inertial frame
-- `lowMachPreconditionerSensor` - Low-Mach preconditioner factor
-
-### **Custom Variables**
-
-User defined expressions with dimensions. By default, the following expressions are available:
-
-| Variable Name                         | Expression                                      |
-|--------------------------------------|-------------------------------------------------|
-| `velocity_with_units`                | `solution.velocity`                             |
-| `velocity_magnitude_with_units`      | `math.magnitude(solution.velocity)`             |
-| `pressure_with_units`                | `solution.pressure`                             |
-| `wall_shear_stress_magnitude_with_units` | `solution.wall_shear_stress_magnitude`     |
+For configuration details specific to each output type, see the individual output pages linked in the table above.
 
 ---
 
@@ -166,6 +77,8 @@ User defined expressions with dimensions. By default, the following expressions 
 ```{toctree}
 :hidden:
 :maxdepth: 3
+./00.output-fields.md
+./00.scaling-values.md
 ./01.volume-output.md
 ./02.time-averaging-volume-output.md
 ./03.surface-output.md
@@ -184,6 +97,5 @@ User defined expressions with dimensions. By default, the following expressions 
 ./16.force-output.md
 ./17.force-distribution-output.md
 ./18.time-averaging-force-distribution-output.md
-./00.output-fields.md
 ./19.output-formats.md
 ```

@@ -35,6 +35,8 @@
 - **Output:**
   - [Reference dimensions](./04.output/01.reference-dimensions.md): Dimensions for force coefficient calculations
   - [Output list](./04.output/02.outputs-list/README.md): All outputs to generate from the simulation
+  - [Available Output Fields](./04.output/02.outputs-list/00.output-fields.md): Complete reference of flow variables by output type
+  - [Scaling Values](./04.output/02.outputs-list/00.scaling-values.md): Reference values for nondimensionalization
   
 
 ```{toctree}
