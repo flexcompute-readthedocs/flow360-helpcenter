@@ -6,7 +6,7 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 
 *The Solid model is used for setting up conjugate heat transfer volume models that contain all the common fields every heat transfer zone should have. This model is essential for simulating heat transfer in solid materials within the Flow360 simulation environment.*
 
-## **Major Components**
+## Major Components
 
 1.  **[Heat equation solver](./01.heat-equation-solver.md)**: Controls settings for the heat equation solver, including tolerances and iteration limits.
 2.  **[Material](./02.material.md)**: Defines material properties of the solid, such as thermal conductivity, density, and specific heat capacity.
@@ -14,7 +14,7 @@ The Solid model is only available in the volume mesh workflow. It cannot be used
 4.  **[Initial condition](./03.initial-condition.md)**: Sets initial temperature field for the heat equation.
 5.  **Assigned zones**: A list of volume zones where the heat transfer equations will be solved.
 
-## **Configuration Example**
+## Configuration Example
 
 Below is a representative example of a Solid model configuration (shown for reference purposes):
 
@@ -38,7 +38,7 @@ Solid:
   Assigned zones: ["solid-*"]
 ```
 
-## **Common Applications**
+## Common Applications
 
 The Solid model is used in conjugate heat transfer simulations, including:
 
@@ -48,7 +48,7 @@ The Solid model is used in conjugate heat transfer simulations, including:
 - Building insulation and thermal management
 - Aerospace applications (re-entry vehicle heat shields, turbine blade cooling)
 
-## **Best Practices**
+## Best Practices
 
 - Ensure all material properties are specified in consistent units.
 - When using patterns in entities, verify all matched volumes are intended for heat transfer simulation.

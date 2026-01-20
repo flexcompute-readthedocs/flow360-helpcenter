@@ -1,7 +1,7 @@
 # Mesh 
 A section for defining the meshing settings.
 
-## **Contents** 
+## Contents
 
 | *Settings group* | *Description* |
 |--------------------|-----------------|
@@ -14,29 +14,29 @@ A section for defining the meshing settings.
 
 ---
 
-## **Detailed Descriptions**
+## Detailed Descriptions
 
-### **[Farfield](./01.farfield.md)**
+### [Farfield](./01.farfield.md)
 
 *Defines the outer boundaries of your computational domain. Includes automated farfield, user-defined farfield, and wind tunnel configurations with various floor types.*
 
-### **[Mesh (meshing defaults)](./02.mesh-parameters.md)**
+### [Mesh (meshing defaults)](./02.mesh-parameters.md)
 
 *Fundamental control parameters for mesh generation affecting both surface and volume mesh characteristics. Provides global defaults for element size progression, boundary layer characteristics, surface mesh properties, and overall mesh quality control.*
 
-### **[Rotation zones](./03.rotation-zones.md)**
+### [Rotation zones](./03.rotation-zones.md)
 
 *Specialized cylindrical volume zones designed for regions containing rotating components. Ensures proper mesh refinement and enables accurate simulation of rotating machinery with concentric mesh structure ideal for rotating components.*
 
-### **[Custom zones](./04.custom-zones.md)**
+### [Custom zones](./04.custom-zones.md)
 
 *User-defined volume zones created from custom volumes or seedpoint volumes for specialized meshing regions.*
 
-### **[Volume mesh slices](./05.volume-mesh-slices.md)**
+### [Volume mesh slices](./05.volume-mesh-slices.md)
 
 *Configuration for extracting slice outputs from the generated volume mesh.*
 
-### **[Refinements](./06.refinements/README.md)**
+### [Refinements](./06.refinements/README.md)
 
 *Comprehensive local mesh control system for critical regions. Provides seven refinement types.*
 

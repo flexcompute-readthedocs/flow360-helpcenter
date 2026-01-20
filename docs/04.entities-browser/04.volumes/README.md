@@ -2,7 +2,7 @@
 
 *Volume entities in Flow360 are used to define regions for volume zones, local refinements, and 3D physics models. Flow360 provides four volume primitives that can be used individually or combined to create complex geometric configurations.*
 
-## **Contents**
+## Contents
 
 | *Volume Type* | *Description* |
 |---------------|---------------|

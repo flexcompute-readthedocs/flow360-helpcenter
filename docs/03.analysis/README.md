@@ -4,7 +4,7 @@
 
 ---
 
-## **Available Options**
+## Available Options
 
 | *Option* | *Description* | *Purpose* |
 |------------|-----------------|-------------|
@@ -16,9 +16,9 @@
 
 ---
 
-## **Detailed Descriptions**
+## Detailed Descriptions
 
-### **Dashboard**
+### Dashboard
 
 *The Dashboard provides an interactive overview of your simulation's progress and key performance metrics.*
 
@@ -28,7 +28,7 @@
 - Simulation status overview
 - Resource utilization metrics
 
-### **Convergence**
+### Convergence
 
 *Convergence analysis tools help assess the quality and stability of your simulation results.*
 
@@ -39,7 +39,7 @@
 - State variable bounds
 - Maximum residual location tracking
 
-### **Monitor**
+### Monitor
 
 *Monitors enable detailed tracking of flow field variables at specific locations during simulation.*
 
@@ -52,7 +52,7 @@
 - Actuator Disk metrics
 
 
-### **Visualization**
+### Visualization
 
 *Advanced visualization tools for analyzing flow field data and patterns.*
 
@@ -64,7 +64,7 @@
 - Isosurface generation
 - Streamline visualization
 
-### **Aeroacoustic**
+### Aeroacoustic
 
 *Specialized tools for acoustic analysis and noise prediction.*
 
