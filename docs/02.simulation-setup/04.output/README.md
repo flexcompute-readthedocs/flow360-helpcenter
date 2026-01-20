@@ -21,4 +21,3 @@
 ./02.outputs-list/00.output-fields.md
 ./02.outputs-list/00.scaling-values.md
 ``` 
-
