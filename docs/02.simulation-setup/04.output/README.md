@@ -32,6 +32,7 @@
 - **[Time-averaging Probe Outputs](./02.outputs-list/08.time-averaging-probe-outputs.md)** - Time-averaged monitoring data
 - **[Surface Probe Output](./02.outputs-list/09.surface-probe-outputs.md)** - Flow field data at specific points projected onto surfaces
 - **[Surface Slice Output](./02.outputs-list/10.surface-slice-output.md)** - Flow field data on slices of surfaces
+- **[Surface Integral Output](./02.outputs-list/20.surface-integral-output.md)** - Surface integral of custom user variables on selected surfaces
 - **[Isosurface Output](./02.outputs-list/11.isosurface-output.md)** - Flow field data on surfaces of constant variable value
 - **[Time-averaging Isosurface Output](./02.outputs-list/12.time-averaging-isosurface-output.md)** - Time-averaged flow field data on surfaces of constant variable value
 - **[Aeroacoustic Output](./02.outputs-list/13.aeroacoustic-output.md)** - Data for aeroacoustic analysis at observer positions

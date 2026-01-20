@@ -17,6 +17,7 @@
 | **[Probe Outputs](./07.probe-outputs.md)** | Flow field data monitoring during simulation | Tracking convergence and flow properties |
 | **[Time-averaging Probe Outputs](./08.time-averaging-probe-outputs.md)** | Time-averaged monitoring data | Statistical monitoring data |
 | **[Surface Probe Output](./09.surface-probe-outputs.md)** | Flow field data at specific points projected onto surfaces | Point-specific surface data |
+| **[Surface Integral Output](./20.surface-integral-output.md)** | Surface integral of custom user variables on selected surfaces | Integrated forces, torques, and custom derived quantities |
 | **[Isosurface Output](./11.isosurface-output.md)** | Flow field data on surfaces of constant variable value | Visualization of vortices, shock waves |
 | **[Time-averaging Isosurface Output](./12.time-averaging-isosurface-output.md)** | Time-averaged flow field data on surfaces of constant variable value | Statistical analysis of vortices, shock waves |
 | **[Aeroacoustic Output](./13.aeroacoustic-output.md)** | Data for aeroacoustic analysis at observer positions | Noise prediction and analysis |
@@ -124,7 +125,7 @@ Each output type has specific configuration options. For detailed documentation 
 
 ### **Custom Variables**
 
-User defined expressions with dimensions. By default, the following expressions are available:
+User defined expressions with dimensions. Create and manage these in [Variable Settings](../../../05.tools/02.variable-settings.md). By default, the following expressions are available:
 
 | Variable Name                         | Expression                                      |
 |--------------------------------------|-------------------------------------------------|
@@ -176,6 +177,7 @@ User defined expressions with dimensions. By default, the following expressions 
 ./08.time-averaging-probe-outputs.md
 ./09.surface-probe-outputs.md
 ./10.surface-slice-output.md
+./20.surface-integral-output.md
 ./11.isosurface-output.md
 ./12.time-averaging-isosurface-output.md
 ./13.aeroacoustic-output.md
