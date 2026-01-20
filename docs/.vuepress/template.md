@@ -20,7 +20,7 @@ orphan: true
 
 ## 🔍 **Detailed Descriptions**
 
-### **Option_1**
+### Option_1
 
 *More detailed explanation or additional context of Option_1.*
 
@@ -28,7 +28,7 @@ orphan: true
 - **Example:** `sample input`  
 - **Notes:** Additional notes or caveats.
 
-### **Option_2**
+### Option_2
 
 *Detailed explanation for Option_2, clarifying possible values or scenarios.*
 
@@ -36,7 +36,7 @@ orphan: true
 - **Example:** `sample input`  
 - **Notes:** Additional notes or caveats.
 
-### **Option_n**
+### Option_n
 
 *Explanation of the last option.*
 

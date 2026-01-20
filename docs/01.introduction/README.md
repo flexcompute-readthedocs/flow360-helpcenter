@@ -2,7 +2,7 @@
 
 *An introduction to the basic features of the Flow360 WebUI including navigation and key concepts.*
 
-## **Contents**
+## Contents
 
 | *Section* | *Contents* |
 |-------------|--------------|
@@ -15,9 +15,9 @@
 |[Project settings](./07.project-settings.md)| Configuration and metadata for projects and simulation runs |
 
 ---
-## **Detailed Descriptions**
+## Detailed Descriptions
 
-### **Dashboard**
+### Dashboard
 
 *The Dashboard serves as the central hub for managing and monitoring your CFD projects in Flow360. It provides an intuitive overview of your simulations, resources, and project status.*
 
@@ -28,7 +28,7 @@
 
 ---
 
-### **Starting a Project**
+### Starting a Project
 
 *This section guides you through creating a new project in Flow360, whether starting from geometry, surface mesh, or volume mesh.*
 
@@ -42,7 +42,7 @@
 
 ---
 
-### **Workbench Layout**
+### Workbench Layout
 
 *The Flow360 workbench provides an interface for CFD simulations, with defined regions for setup, visualization, and analysis.*
 
@@ -56,7 +56,7 @@
 
 ---
 
-### **General Workflow**
+### General Workflow
 
 *This section outlines the systematic approach to setting up and running CFD simulations using the Flow360 GUI.*
 
@@ -68,7 +68,7 @@
 
 ---
 
-### **Project Tree**
+### Project Tree
 
 *The project tree is a hierarchical visualization of your CFD workflow, from geometry to results. It helps track progress and navigate between stages.*
 
@@ -79,7 +79,7 @@
 
 ---
 
-### **Project Settings**
+### Project Settings
 
 *The Project Settings panel provides access to project-level configuration, run settings, and project metadata. This panel allows you to manage project properties, configure units, and view project statistics.*
 

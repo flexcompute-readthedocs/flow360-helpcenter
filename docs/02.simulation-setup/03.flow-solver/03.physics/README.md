@@ -2,7 +2,7 @@
 
 *This section covers the physical models that simulate the 3D flow behavior in Flow360.*
 
-## **Available Models**
+## Available Models
 
 | *Model* | *Description* | *Key Parameters* |
 |------------|----------------------------------|----------|
@@ -17,9 +17,9 @@ Click on each model to see detailed documentation including available parameters
 
 ---
 
-## **Detailed Descriptions**
+## Detailed Descriptions
 
-### **[Fluid](./01.fluid/README.md)**
+### [Fluid](./01.fluid/README.md)
 
 *Modelling of the fluid behaviour in the domain.*
 
@@ -29,7 +29,7 @@ Click on each model to see detailed documentation including available parameters
 - **[Transition model](./01.fluid/03.transition-model.md)** - Laminar-to-turbulent transition prediction for improved accuracy
 - **[Initial condition](./01.fluid/04.initial-condition.md)** - Flow field initialization strategies and convergence acceleration
 
-### **[Solid](./02.solid/README.md)**
+### [Solid](./02.solid/README.md)
 
 *Conjugate heat transfer modeling for solid materials enabling accurate thermal analysis of components in contact with fluid flow. Provides material property specification, heat equation solver configuration, and thermal boundary condition management for multi-physics simulations.*
 
@@ -38,7 +38,7 @@ Click on each model to see detailed documentation including available parameters
 - **[Material](02.solid/02.material.md)** - Material properties specification
 - **[Initial condition](02.solid/03.initial-condition.md)** - The initial state of solid bodies
 
-### **[Rotation](./03.rotation.md)**
+### [Rotation](./03.rotation.md)
 
 *Advanced rotating component handling with multiple approaches for modeling rotating machinery, propellers, and turbines. Supports Moving Reference Frame (MRF), Sliding Reference Frame (SRF), and physical rotation methods with comprehensive angular velocity specification and interface treatment.*
 
@@ -48,7 +48,7 @@ Click on each model to see detailed documentation including available parameters
 - Interface treatment between rotating and stationary regions
 - Support for complex multi-rotor configurations
 
-### **[BET disk](./04.bet-disk.md)**
+### [BET disk](./04.bet-disk.md)
 
 *Blade Element Theory implementation for high-fidelity propeller and rotor modeling. Enables detailed aerodynamic analysis of rotating blades through sectional force calculations, polar data integration, and performance prediction for aerospace and marine applications.*
 
@@ -58,7 +58,7 @@ Click on each model to see detailed documentation including available parameters
 - Performance prediction including thrust and power
 - Support for complex blade geometries and operating conditions
 
-### **[Actuator disk](./05.actuator-disk.md)**
+### [Actuator disk](./05.actuator-disk.md)
 
 *Simplified propeller and rotor modeling approach using momentum theory. Provides efficient representation of rotating components through thrust coefficient specification and swirl distribution modeling, ideal for preliminary design and optimization studies.*
 
@@ -68,7 +68,7 @@ Click on each model to see detailed documentation including available parameters
 - Efficient computation for design optimization
 - Support for multiple actuator disk configurations
 
-### **[Porous medium](./06.porous-medium.md)**
+### [Porous medium](./06.porous-medium.md)
 
 *Advanced modeling of flow through porous regions including filters, heat exchangers, and porous materials. Implements Darcy-Forchheimer theory with comprehensive coefficient specification for accurate pressure drop and flow distribution prediction.*
 

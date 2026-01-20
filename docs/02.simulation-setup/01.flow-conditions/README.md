@@ -3,9 +3,9 @@
 *Operating condition window allows to specify the properties of the fluid that is simulated as well as its velocity in relation to the analyzed object. The values defined are also used for the calculations of force coefficients. You can choose between two types of a fluid: gas and liquid.*
 
 ---
-## **Available Options**
+## Available Options
 
-### **Gas**
+### Gas
 The simulated fluid is considered an ideal gas.
 
 | *Option* | *Description* | *Applicable* |
@@ -25,7 +25,7 @@ The simulated fluid is considered an ideal gas.
 
 ---
 
-### **Liquid**
+### Liquid
 
 The simulated fluid is considered a liquid.
 
@@ -39,13 +39,13 @@ The simulated fluid is considered a liquid.
 | **Dynamic viscosity** | Liquid dynamic viscosity | always |
 ---
 
-## **Detailed descriptions**
+## Detailed descriptions
 
-### **Type**
+### Type
 
 *Choose a method of defining the freestream velocity.*
 
-### **Velocity magnitude**
+### Velocity magnitude
 
 *Define the freestream velocity using direct velocity magnitude.*
 
@@ -53,7 +53,7 @@ The simulated fluid is considered a liquid.
 - **Example:** `100 m/s`
 >**Note:** For hover or static conditions, you can set this to zero but must provide a reference velocity for coefficient calculations.
 
-### **Reference velocity magnitude**
+### Reference velocity magnitude
 
 *Optional reference velocity used for calculating force and moment coefficients. Required when freestream velocity is zero.*
 
@@ -61,7 +61,7 @@ The simulated fluid is considered a liquid.
 - **Example:** `100 m/s`
 >**Note:** Particularly important for static/hover cases or when you want coefficients referenced to a different velocity than freestream.
 
-### **Mach**
+### Mach
 
 *Define the freestream Mach number.*
 
@@ -69,7 +69,7 @@ The simulated fluid is considered a liquid.
 - **Example:** `0.8`
 >**Note:** For hover or static conditions, you can set this to zero but must provide a reference velocity for coefficient calculations.
 
-### **Reference Mach**
+### Reference Mach
 
 *Optional reference velocity used for calculating force and moment coefficients. Required when freestream velocity is zero.*
 
@@ -77,7 +77,7 @@ The simulated fluid is considered a liquid.
 - **Example:** `0.8`
 >**Note:** Particularly important for static/hover cases or when you want coefficients referenced to a different velocity than freestream.
 
-### **Alpha angle**
+### Alpha angle
 
 *The angle of attack defining the orientation of the freestream flow relative to the model. Positive values typically indicate nose-up orientation.*
 
@@ -93,7 +93,7 @@ The simulated fluid is considered a liquid.
 >   - $U_∞$ is the x-component of velocity in the global coordinate system
 >   - $W_∞$ is the z-component of velocity in the global coordinate system
 
-### **Beta angle**
+### Beta angle
 
 *The sideslip angle defining the orientation of the freestream flow relative to the model. Positive values typically indicate flow from the right.*
 
@@ -111,34 +111,34 @@ The simulated fluid is considered a liquid.
 >    - $V_∞$ is the y-component of velocity in the global coordinate system
 >    - $W_∞$ is the z-component of velocity in the global coordinate system
 
-### **Thermal state**
+### Thermal state
 
 *Choose a method of defining the gas physical properties.*
 
 >**Note:** Fluid material is fixed as Air in the GUI.
 
-### **Density**
+### Density
 
 *Defines the fluid density.*
 
  - **Required**
  - **Example:** `1.0 kg/m³`
 
-### **Temperature**
+### Temperature
 
 *Defines the fluid temperature.*
 
  - **Required**
  - **Example:** `250K`
 
-### **Altitude**
+### Altitude
 
 *Defines the altitude for which the air properties are set according to the US Standard Atmosphere.*
 
  - **Required**
  - **Example:** `10000 m` 
 
-### **Temperature offset**
+### Temperature offset
 
 *An offset from the temperature taken from the standard atmosphere.*
 
@@ -146,7 +146,7 @@ The simulated fluid is considered a liquid.
  - **Example:** `-10 K`
 >**Note:** If the altitude is set to `10000 m`, the temperature is `223.3 K` according to the US standard atmosphere. With the temperature offset of `-10 K`, the effective freestream temperature will be `213.3 K`.
 
-### **Dynamic visosity**
+### Dynamic visosity
 
 *The dynamic viscosity of a liquid.*
 

@@ -2,7 +2,7 @@
 
 *This document provides an overview of mesh refinement capabilities in Flow360. Refinements enable precise control over mesh resolution in specific regions of your geometry to better capture flow features or geometric details.*
 
-## **Available Refinement Types**
+## Available Refinement Types
 
 | *Refinement type* | *Description* |
 |--------------------|-----------------|
@@ -14,9 +14,9 @@
 |[**Axisymmetric Refinement**](./06.axisymmetric-refinement.md) | Creates structured-like mesh with cylindrical bias |
 |[**Geometry Refinement**](./07.geometry-refinement.md) | Controls mesh resolution based on geometric features |
 
-## **General Guidelines**
+## General Guidelines
 
-### **Refinement Selection**
+### Refinement Selection
 
 1. **Surface Features**
    - Use Surface Edge Refinement for leading/trailing edges
@@ -29,7 +29,7 @@
    - Apply Axisymmetric Refinement for rotating machinery
    - Consider Passive Spacing for interface regions
 
-### **Best Practices**
+### Best Practices
 
 - Start with coarser refinements and gradually increase resolution where needed
 - Ensure smooth transitions between regions of different refinement levels
@@ -37,7 +37,7 @@
 - Balance resolution requirements with computational cost
 - Account for flow regime and Reynolds number effects
 
-### **Common Applications**
+### Common Applications
 
 1. **Aerodynamic Simulations**
    - Surface Edge Refinement for leading edges

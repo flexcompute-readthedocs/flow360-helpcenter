@@ -2,7 +2,7 @@
 
 *This section covers all aspects of setting up a simulation in Flow360, including flow conditions, meshing, solver configuration, and output settings.*
 
-## **Contents**
+## Contents
 
 | *Section* | *Description* |
 |-------------|-----------------|
@@ -13,7 +13,7 @@
 
 ---
 
-## **Detailed Subsections**
+## Detailed Subsections
 
 - **Flow Conditions:**
   - [Operating condition](./01.flow-conditions/README.md): Define physical values of fluid properties

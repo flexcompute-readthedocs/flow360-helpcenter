@@ -6,7 +6,7 @@
 
 ---
 
-## **Main Interface Sections**
+## Main Interface Sections
 
 | *Section* | *Description* |
 |-------------|-----------------|
@@ -20,7 +20,7 @@
 
 ---
 
-## **Detailed Descriptions**
+## Detailed Descriptions
 
 ### 1️⃣ **Viewer region**
 

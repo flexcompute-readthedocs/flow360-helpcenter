@@ -2,7 +2,7 @@
 
 *Configure simulation outputs including which flow variables to save, where to save them, output formats, and reference dimensions for coefficient calculations.*
 
-## **Contents**
+## Contents
 
 | *Settings group* | *Description* |
 |--------------------|-----------------------|

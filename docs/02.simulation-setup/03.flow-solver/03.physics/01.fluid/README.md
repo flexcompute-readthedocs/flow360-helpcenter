@@ -4,7 +4,7 @@
 
 > **Note:** The Fluid model itself does not contain fluid parameters such as density and temperature. These properties are instead specified in the **[Operating Condition](../../../01.flow-conditions/README.md)** section of your simulation setup. This separation allows the same Fluid model configuration to be used with different conditions.
 
-## **Major Components**
+## Major Components
 
 The Fluid model consists of five primary components, each documented in detail in its own section:
 
@@ -18,7 +18,7 @@ The Fluid model consists of five primary components, each documented in detail i
 
 5. [**Stopping Criteria**](./05.stopping-criteria.md): Allows automatic termination of the simulation when monitored output fields (forces, probe values, or surface probe data) reach specified tolerance thresholds, providing efficient convergence control.
 
-## **Configuration Example**
+## Configuration Example
 
 Below is a representative example of a Fluid model configuration (shown for reference purposes):
 
@@ -52,7 +52,7 @@ Fluid:
         Tolerance window size: 100
 ```
 
-## **Common Applications**
+## Common Applications
 
 The Fluid model is used in virtually all Flow360 simulations, including:
 
@@ -62,7 +62,7 @@ The Fluid model is used in virtually all Flow360 simulations, including:
 - Propulsion systems (propellers, rotors, jets)
 - Heat transfer applications (when coupled with thermal models)
 
-## **Best Practices**
+## Best Practices
 
 - Match the solver settings to your specific application requirements and flow regime
 - For most aerospace applications, the Spalart-Allmaras turbulence model provides a good balance of accuracy and efficiency

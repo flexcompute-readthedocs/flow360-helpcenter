@@ -4,7 +4,7 @@
 
 ---
 
-## **Available Output Types**
+## Available Output Types
 
 | *Output Type* | *Description* | *Use Case* |
 |---------------|---------------|------------|
@@ -29,7 +29,7 @@
 
 ---
 
-## **Additional Outputs Available Through Python API**
+## Additional Outputs Available Through Python API
 
 | *Output Type* | *Description* | *Use Case* |
 |---------------|---------------|------------|
@@ -37,7 +37,7 @@
 
 ---
 
-## **Reference Documentation**
+## Reference Documentation
 
 - **[Available Output Fields](00.output-fields.md)** - Complete list of flow variables by output type
 - **[Scaling Values and Nondimensionalization](00.scaling-values.md)** - Reference values for converting to physical units
