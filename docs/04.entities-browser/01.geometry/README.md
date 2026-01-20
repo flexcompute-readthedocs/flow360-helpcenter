@@ -7,10 +7,10 @@
 
 In Flow360 you can do the following with geometry:
 
-### **Views**
+### Views
 Flow360 provides three different ways to view and organize geometric entities using the view buttons at the top of the Geometry group:
 
-#### **Grouping View**
+#### Grouping View
 In this view, entities are organized by their functional groups:
 
 - **Edges grouping** - Controls how edges are grouped based on tags/names from the imported geometry.
@@ -43,7 +43,7 @@ In this view, entities are organized by their functional groups:
       - **Color** - Set a solid color using the color picker or hex code.
       - **Material** - Apply a material appearance for realistic visualization.
 
-#### **Tree View**
+#### Tree View
 In this view, entities are organized in a hierarchical structure:
 
 - **Bodies** - Shows all bodies available in the geometry.
@@ -52,7 +52,7 @@ In this view, entities are organized in a hierarchical structure:
 
 
 
-### **Selection**
+### Selection
 *Allows for interactive selection of geometric entities.*
 
 There are 4 entity selection modes that define whether a given entity can be selected or not:
@@ -61,7 +61,7 @@ There are 4 entity selection modes that define whether a given entity can be sel
 - Select face
 - Select volume
 
-### **Grouping**
+### Grouping
 *Grouping is based on geometric attributes and allows for organizing multiple elements into a single group for easier handling and assignment.*
 
 As described in the Views section, you can control how edges and faces are grouped using the "Edges grouping" and "Faces grouping" options in the Grouping view. Proper grouping of geometric entities facilitates:
@@ -70,17 +70,17 @@ As described in the Views section, you can control how edges and faces are group
 - Organized visualization of complex geometries
 - Simplified selection of related entities
 
-### **Visualization**
+### Visualization
 *Geometric entities are visualized in real-time. You can toggle on/off the visibility of grouped edges and faces.*
 
-### **Statistics**
+### Statistics
 To view detailed statistics about your geometry, click the **Geometry Stats** button located to the right of the "Geometry" group heading. This opens a dialog displaying comprehensive statistics for the geometry in your project, including:
 - Number of faces and edges
 - Surface area calculations
 - Other relevant geometric metrics
 
 
-## **Geometric Entities**
+## Geometric Entities
 
 Flow360 recognizes two primary types of geometric entities:
 
@@ -97,7 +97,7 @@ Faces are surfaces that constitute the boundaries of the computational domain. T
 - Organizing geometric features into logical groups
 
 
-## **Geometric Considerations**
+## Geometric Considerations
 
 When preparing a simulation, keep in mind:
 

@@ -1,7 +1,7 @@
 # Flow solver 
 A section for setting the solver numerics and domain boundary conditions.
 
-## **Contents** 
+## Contents
 
 | *Option* | *Description* |
 |------------|----------------------------------|
@@ -12,9 +12,9 @@ A section for setting the solver numerics and domain boundary conditions.
 
 ---
 
-## **Detailed Descriptions**
+## Detailed Descriptions
 
-### **[Boundary conditions](./01.boundary-conditions/README.md)**
+### [Boundary conditions](./01.boundary-conditions/README.md)
 
 *Comprehensive set of boundary conditions including walls, freestream, inflow/outflow, periodic, symmetry, and slip wall conditions. Defines how fluid behaves at domain boundaries with support for wall motion, thermal conditions, turbulence quantities, and various flow specifications.*
 
@@ -28,11 +28,11 @@ A section for setting the solver numerics and domain boundary conditions.
 - **[Slip Wall](./01.boundary-conditions/07.slip-wall.md)** - Zero normal velocity walls allowing tangential flow
 - **[Turbulence Quantities](./01.boundary-conditions/08.turbulence-quantities.md)** - Turbulence parameter specifications for all boundary types
 
-### **[Time](./02.time.md)**
+### [Time](./02.time.md)
 
 *Advanced time stepping configuration for both steady and unsteady simulations. Controls simulation type (steady/unsteady), CFL management (Adaptive/Ramp), convergence parameters, physical time steps, pseudo-steps, and temporal accuracy. Includes detailed guidelines for time step selection based on vortex shedding frequencies and rotational motion.*
 
-### **[Physics](./03.physics/README.md)**
+### [Physics](./03.physics/README.md)
 
 *Complete physical modeling framework encompassing fluid dynamics (Navier-Stokes solver, turbulence models, transition models, initial conditions), heat transfer (conjugate heat transfer in solids), and special models (rotation, BET disk, actuator disk, porous media). Provides comprehensive parameter control for accurate 3D flow simulation.*
 
@@ -44,7 +44,7 @@ A section for setting the solver numerics and domain boundary conditions.
 - **[Actuator disk](./03.physics/05.actuator-disk.md)** - Simplified propeller and rotor modeling
 - **[Porous medium](./03.physics/06.porous-medium.md)** - Flow through porous regions modeling
 
-### **[User-defined dynamics](./04.user-defined-dynamics.md)**
+### [User-defined dynamics](./04.user-defined-dynamics.md)
 
 *Advanced capability for implementing custom time-dependent motion of simulation components. Enables complex trajectories, rotations, and dynamic interactions between aerodynamic forces and component movement. Currently optimized for Python API implementation with enhanced debugging and flexibility for sophisticated dynamic scenarios.*
 

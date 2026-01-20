@@ -1,52 +1,23 @@
 # Output
 
-*A section responsible for the definitions of simulation outputs.*
+*Configure simulation outputs including which flow variables to save, where to save them, output formats, and reference dimensions for coefficient calculations.*
 
-## **Contents**
+## Contents
 
 | *Settings group* | *Description* |
 |--------------------|-----------------------|
-| [**Reference dimensions**](./01.reference-dimensions.md) | Form for filling in dimensions that are used for force coefficients calculation. |
-| [**Outputs list**](./02.outputs-list/README.md) | A list containing all outputs to generate from the simulation | 
+| [**Reference dimensions**](./01.reference-dimensions.md) | Reference dimensions used for force and moment coefficient calculations |
+| [**Outputs list**](./02.outputs-list/README.md) | Configure all outputs to generate from the simulation, including available output fields |
+| [**Available Output Fields**](./02.outputs-list/00.output-fields.md) | Complete reference of all flow variables organized by output type |
+| [**Scaling Values and Nondimensionalization**](./02.outputs-list/00.scaling-values.md) | Reference values for nondimensionalization and converting to physical units | 
 
 ---
-
-## **Detailed Descriptions**
-
-### **[Reference dimensions](./01.reference-dimensions.md)**
-
-*Form for defining dimensions used in force coefficient calculations. Specifies reference area, length, and other geometric parameters essential for computing aerodynamic coefficients and non-dimensionalizing results.*
-
-### **[Outputs list](./02.outputs-list/README.md)**
-
-*Comprehensive list of all outputs to generate from the simulation. Controls what data is generated during and after simulation runs, including flow variables, output locations, frequencies, and file formats.*
-
-**Subsections:**
-- **[Volume Output](./02.outputs-list/01.volume-output.md)** - Flow field data throughout the computational volume
-- **[Time-averaging Volume Output](./02.outputs-list/02.time-averaging-volume-output.md)** - Time-averaged flow field data throughout the volume
-- **[Surface Output](./02.outputs-list/03.surface-output.md)** - Flow field data on geometry or volume mesh boundaries
-- **[Time-averaging Surface Output](./02.outputs-list/04.time-averaging-surface-output.md)** - Time-averaged flow field data on surfaces
-- **[Slice Output](./02.outputs-list/05.slice-output.md)** - Flow field data on user-defined slice planes
-- **[Time-averaging Slice Output](./02.outputs-list/06.time-averaging-slice-output.md)** - Time-averaged flow field data on slice planes
-- **[Probe Outputs](./02.outputs-list/07.probe-outputs.md)** - Flow field data monitoring during simulation
-- **[Time-averaging Probe Outputs](./02.outputs-list/08.time-averaging-probe-outputs.md)** - Time-averaged monitoring data
-- **[Surface Probe Output](./02.outputs-list/09.surface-probe-outputs.md)** - Flow field data at specific points projected onto surfaces
-- **[Surface Slice Output](./02.outputs-list/10.surface-slice-output.md)** - Flow field data on slices of surfaces
-- **[Surface Integral Output](./02.outputs-list/20.surface-integral-output.md)** - Surface integral of custom user variables on selected surfaces
-- **[Isosurface Output](./02.outputs-list/11.isosurface-output.md)** - Flow field data on surfaces of constant variable value
-- **[Time-averaging Isosurface Output](./02.outputs-list/12.time-averaging-isosurface-output.md)** - Time-averaged flow field data on surfaces of constant variable value
-- **[Aeroacoustic Output](./02.outputs-list/13.aeroacoustic-output.md)** - Data for aeroacoustic analysis at observer positions
-- **[Streamline Output](./02.outputs-list/14.streamline-output.md)** - Visualization of 3D flow structures
-- **[Time-averaging Streamline Output](./02.outputs-list/15.time-averaging-streamline-output.md)** - Time-averaged visualization of 3D flow structures
-- **[Force Output](./02.outputs-list/16.force-output.md)** - Force and moment coefficient outputs with optional statistics
-- **[Force Distribution Output](./02.outputs-list/17.force-distribution-output.md)** - Custom force and moment distribution along a specified direction
-- **[Time-averaging Force Distribution Output](./02.outputs-list/18.time-averaging-force-distribution-output.md)** - Time-averaged custom force and moment distribution
-- **[Output Formats](./02.outputs-list/19.output-formats.md)** - File format specifications for output data
 
 ```{toctree}
 :hidden:
 :maxdepth: 3
 ./01.reference-dimensions.md
 ./02.outputs-list/README.md
+./02.outputs-list/00.output-fields.md
+./02.outputs-list/00.scaling-values.md
 ``` 
-

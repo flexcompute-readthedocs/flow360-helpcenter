@@ -13,7 +13,7 @@
 > **Draft Configuration**: Modifications made in the Entities browser are saved as a **Draft** configuration. This draft can be retrieved and continued from the Project Tree view, allowing you to resume your work at any time.
 
 
-## **Primary Assets**
+## Primary Assets
 
 The primary asset defines the starting point of your simulation workflow. Only one primary asset type is available per project, depending on how the project was created.
 
@@ -27,7 +27,7 @@ The root entity for surface-mesh-based projects. Contains boundary definitions f
 The root entity for volume-mesh-based projects. Contains zones and boundaries ready for simulation setup. Volume mesh projects can proceed directly to solver configuration.
 
 
-## **Geometric Entities**
+## Geometric Entities
 
 These entities define spatial regions and monitoring locations within your simulation domain. Their availability depends on the primary asset type.
 
@@ -42,7 +42,7 @@ These entities define spatial regions and monitoring locations within your simul
 | [**Derived**](./07.derived.md) | Auto-generated entities (farfield, symmetry planes) | ✓ | ✓ | — |
 
 
-## **Configuration Tools**
+## Configuration Tools
 
 These entities are available in all project types and provide tools for visualization, organization, and scene management.
 
@@ -59,7 +59,7 @@ Scene and background customization settings for the viewer, including background
 Custom labels for organizing and grouping entities. Tags support expression-based filtering for automatic entity selection.
 
 
-## **Related pages**
+## Related pages
 
 - [Geometry](./01.geometry/README.md)
 - [Surface Mesh](./02.surface-mesh.md)

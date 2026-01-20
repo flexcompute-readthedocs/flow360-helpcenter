@@ -4,7 +4,7 @@
 
 Boundary conditions specify how the fluid behaves at the boundaries of the simulation domain. Boundaries conditions define the physical and mathematical conditions at the enclosed faces of the computational domain. Flow360 provides a comprehensive set of boundary conditions to support various simulation scenarios.
 
-## **Overview of Boundary Conditions**
+## Overview of Boundary Conditions
 
 | *Option* | *Description* | *Key Parameters* |
 |------------|----------------------------------|----------|

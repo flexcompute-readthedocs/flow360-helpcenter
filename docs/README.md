@@ -7,6 +7,7 @@ Content:
     -   [Workbench Layout](./01.introduction/03.workbench-layout/README.md)
     -   [General Workflow](./01.introduction/04.general-workflow.md)
     -   [Project Tree](./01.introduction/05.project-tree.md)
+    -   [Keyboard Shortcuts](./01.introduction/06.shortcuts.md)
     -   [Project Settings](./01.introduction/07.project-settings.md)
 -   [Simulation Setup](./02.simulation-setup/README.md)
     -   [Flow conditions](./02.simulation-setup/01.flow-conditions/README.md)
