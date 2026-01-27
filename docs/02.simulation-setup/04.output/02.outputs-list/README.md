@@ -26,6 +26,7 @@
 | **[Force Output](./16.force-output.md)** | Force and moment coefficient outputs with optional statistics | Tracking aerodynamic performance, monitoring convergence |
 | **[Force Distribution Output](./17.force-distribution-output.md)** | Custom force and moment distribution along a specified direction | Spanwise/chordwise loading analysis, directional force analysis |
 | **[Time-averaging Force Distribution Output](./18.time-averaging-force-distribution-output.md)** | Time-averaged custom force and moment distribution | Statistical analysis of unsteady force distributions |
+| **[Render Output](./21.render-output.md)** | Automatically rendered animations for unsteady simulations | Creating animations of time-dependent flow phenomena |
 
 ---
 
@@ -99,5 +100,6 @@ For configuration details specific to each output type, see the individual outpu
 ./16.force-output.md
 ./17.force-distribution-output.md
 ./18.time-averaging-force-distribution-output.md
+./21.render-output.md
 ./19.output-formats.md
 ```
