@@ -101,6 +101,5 @@ For configuration details specific to each output type, see the individual outpu
 ./17.force-distribution-output.md
 ./18.time-averaging-force-distribution-output.md
 ./21.render-output.md
-./00.output-fields.md
 ./19.output-formats.md
 ```
